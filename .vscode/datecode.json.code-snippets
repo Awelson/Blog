@@ -1,0 +1,15 @@
+{
+	"Current Date": {
+	"prefix": "ddc",
+	"body": [
+		"$CURRENT_DATE$CURRENT_MONTH$CURRENT_YEAR"
+	],
+	"description": "Add Current date & time"
+},
+"Furigana": {
+	"prefix": "fur",
+	"body": "\\stackrel{\\tiny }{}"
+	,
+	"description": "Add Current date & time"
+}
+}
