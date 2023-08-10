@@ -31,6 +31,8 @@ $$
 
 "Given a dependent type `B` over some `A:Type`, one may form the type `∏x:A B(x)`, called the dependent product type for `B`"
 
+> We could add in `A:Type` at the top bar to be more explicit but that is not necessary. Simply by stating `x:A ⊢ B(x):Type` we already know implicitly that `A` must be referring to a type.
+
 ### **Term elimination rule**
 
 $$
