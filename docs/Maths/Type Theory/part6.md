@@ -16,12 +16,13 @@ We also have
 
 - **Culmulativity:** If `A:U_i` then `A:U_(i+1)`
 - **Closure:** If `A:U_i` and `B:U_v` then `A+B, A→B, etc..` are in `U_(max i v)`
+    - more importantly `U_(max i v)` is the lowest universe level that contains these types
 
-We usually avoid mentioning the level of the universe explicitly, simply writing `A:U`, and assume that the levels can be assigned in a consistent way. For example, although confusing, we can write `U:U`. To interpret `U:U` we'll need to assign the universe levels, for example, level `0` to the first instance of `U` and `1` to the second instance, giving `U_0:U_1`. Of course, there are many other valid interpretations of `U:U` based on alternate level assignments. We use this notation in cases where having the explicit universe level is not relevant, which is mostly the case anyway. We can think of `U` (or an expression with `U`) as a superposition of all **valid** universe level assignments.
+We usually avoid mentioning the level of the universe explicitly, simply writing `U`, and assume that the levels can be assigned in a consistent way. For example, although confusing, we can write `U:U`. To interpret `U:U` we'll need to assign the universe levels, for example, level `0` to the first instance of `U` and `1` to the second instance, giving `U_0:U_1`. Of course, there are many other valid interpretations of `U:U` based on alternate level assignments. We use this notation in cases where having the explicit universe level is not relevant, which is mostly the case anyway. We can think of any expression involving (the ambiguous) `U` as a superposition of all **valid** universe level assignments to that expression.
 
-Having universes means that everything now has a type. Previously, if `a:A` then type of `a` is `A` but there is no answer to the question: "what is the type of `A`?". With universes, we know that `A:U_i` so the type of `A` is `U_i`. 
+Having universes means that everything now has a type. Previously, if `a:A` then type of `a` is `A` but, going one step higher, there is no answer to the question: "what is the type of `A`?". With universes, we know that since `A:Type` we have `A:U_i` for some `i:ℕ` so the type of `A` is `U_i`. 
 
-> But also valid is `A:U_(i+1)`, meaning `U_(i+1)` is another answer to "what is the type of `A`?". So with this principle, the type of an object is no longer unique.
+> But also valid is `A:U_(i+1)`, meaning `U_(i+1)` is another answer to "what is the type of `A`?". So with universes the type of an object is no longer unique.
 
 ### WHY????
 
@@ -36,9 +37,9 @@ Although this does make our system a lot more complicated to study, there are so
 > ```
 > A→U_0,  A→U_1,  A→U_2,  ...
 > ```
-> In particular, `B:A→U_99, C:A→U_122, D:A→U_0, etc..` are all dependent types on `A`. We can think of `A→U` as a superposition ranging across all universe levels.
+> In particular, `B:A→U_99, C:A→U_122, D:A→U_0, etc..` are all dependent types on `A`. Remember, we can think of the expression `A→U` as a superposition ranging across all universe levels.
 
-Hang on! Before we can make that definition we need to first show that `A→U` is a type. The formation rule for functions is given by
+Hang on! Before we can make that definition we need to make sure that `A→U` is a type. The formation rule for functions is given by
 
 $$
 \frac{\text{A:Type}, \quad \text{B:Type}}{\text{A}\to \text{B : Type}}
@@ -73,23 +74,23 @@ $$
 because that would break **closure**. Another valid interpretation is
 
 $$
-\frac{\text{A: }\mathcal{U}_i, \quad \text{B: }\mathcal{U}_j}{\text{A}\to \text{B: }\mathcal{U}_{(\text{max} \ i \ j)}}
+\frac{\text{A: }\mathcal{U}_i, \quad \text{B: }\mathcal{U}_j}{\text{A}\to \text{B: }\mathcal{U}_{(\text{max} \ i \ j)}}, \quad i,j:\mathbb{N} 
 $$
 
-If an interpretation is valid, it gives rise to a valid type formation rule. Thus, we can think of it as if there are many different copies of the type formation rule and we may use whichever one is appropriate. 
+If an interpretation is valid, it gives rise to a valid type formation rule. Thus, we can think of it as if there are many different copies (versions) of the type formation rule and we may use whichever one is appropriate. 
 
-Now setting `B := U` gives 
+Now setting `B:=U` gives 
 $$
 \frac{\text{A: }\mathcal{U}_i, \quad \mathcal{U}:\mathcal{U}_i}{\text{A}\to \mathcal{U}:\mathcal{U}_i}
 $$
 
-To make this valid, `i` is assumed to be a universe level higher than `A`'s or `U`'s so that both `A:U_i` and `U:U_i`. For example if `A:Type` lives in universe level 42 and we want to form `A → U_73`, then we can apply the formation rule with `i=99` :
+Where, to make this valid it suffices to select a large enough `i` so that both `A:U_i` and `U:U_i`. For example if `A:Type` lives in universe level 42 and we want to form `A → U_73`, then we can use the `i=99` version of the type formation rule,
 
 $$
 \frac{\text{A: }\mathcal{U}_{99}, \quad \mathcal{U}_{73}:\mathcal{U}_{99}}{\text{A}\to \mathcal{U}_{73}:\mathcal{U}_{99}}
 $$
 
-Obtaining the statement `A→U_73:U_99` which confirms that `A→U_73` is a type (because it lives in some universe) Of course there is nothing special about the level 99. Any level above 73 will do. For example, we can also obtain the statement `A→U_73:U_74`, but we don't care. The end result stays the same regardless: `A→U_73` lives in some universe, therefore `A→U_73` is a type.
+Obtaining the statement `A→U_73:U_99` which confirms that `A→U_73` is a type (because it lives in some universe) Of course there is nothing special about level 99. Any level above 73 will do. For example, we can also obtain the statement `A→U_73:U_74`, but we don't care. The end result stays the same regardless: `A→U_73` lives in some universe, therefore `A→U_73` is a type.
 
 Similarly, there is nothing special about `U_73` and we can repeat this argument for any universe `U`. Thus `A→U` is indeed a type. Check [here](https://cs.stackexchange.com/questions/13285/universes-in-dependent-type-theory) for more persepctives on this matter.
 
@@ -115,7 +116,11 @@ $$
 \frac{\mathcal{U}:\mathcal{U}_i, \quad \lambda_{C:\mathcal{U}},C\to C:\mathcal{U}\to \mathcal{U}_i}{\prod_{C:\mathcal{U}}C\to C:\mathcal{U}_i}
 $$
 
-Thus `∏C:U C→C` is indeed a type and we can define `Id := λC:U, (λx:C, x) : ∏C:U C→C`. 
+Thus `∏C:U C→C` is indeed a type and we can define the term 
+```
+Id := λC:U, (λx:C, x) : ∏C:U C→C
+```
+the polymorphic identity function.
 
 ### Some helpful links
 
