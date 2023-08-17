@@ -31,7 +31,7 @@ In type theory, a term is also uniquely contained in one type, that is to say we
 
 Another key idea in type theory is the equivalence between propositions and types (the proposition as types interpretation). For example, statements ranging from `RH` (Riemann's Hypothesis) to `∀n:ℕ,∃m:ℕ, m>n` are all types, i.e, `RH:Type` and `∀n:ℕ,∃m:ℕ, m>n:Type`, etc... But on the flip side this means that `ℕ:Type` can be viewed as a proposition, and it is not entirely clear what this means. I am not too confident with my ability to explain this topic, but [here](https://math.stackexchange.com/questions/3329956/how-can-types-represent-both-sets-and-propositions-in-lambda-calculus) is a stackexchange post that goes into detail.
 
-> In some alternate approaches we can only interpret types with at most one term as propositions. This is known as the proposition as some types interpretation. 
+> In some alternate approaches we can only interpret types with at most one term as propositions. This is known as the proposition as some types interpretation. We will actually switch to this interpretation later on for reasons to be explained later.
 
 If `A:Type` is to be interpreted as a proposition, then what are its terms supposed to be? The terms of `A` are given by the proof(s) of `A`. In other words, `A` is true iff it is a nonempty type and false otherwise. This idea seems weird at first, but it will be explained more precisely at some later section. The point is that type theory gives us the ability to treat proofs and propositions as mathematical objects in the exact same way we treat numbers as mathematical objects, and it is this idea that makes type theory more suitable for theorem proving software than set theory or other alternatives.
 

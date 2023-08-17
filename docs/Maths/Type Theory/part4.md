@@ -101,13 +101,13 @@ Let us explore some properties of the type `B(0) + B(1)`. First is that `B(0) �
 ```
 λx:B(0), (0,x) : B(0) → B(0) + B(1)
 ```
-Similarly, `B(1) → B(0) + B(1)` is inhabited. This is similar to how $A \to A \lor B$ and likewise $B \to A \lor B$ are true in propositional logic. Thus `+` corresponds to $\lor$.
+Similarly, `B(1) → B(0) + B(1)` is inhabited. This is similar to how $A \to A \lor B$ and likewise $B \to A \lor B$ are true in propositional logic. Thus `+` corresponds to $\lor$, another connection between type theory and logic!
 
 > $\neg A$ from propositional logic corresponds to the type `A→𝟘`. This makes sense because a term `p:A→𝟘` can be thought of as a proof that `A` is empty, i.e, false. This is because the existence of a `p:A→𝟘` contradicts with the existence of an `a:A` since otherwise we can combine them to form `p(a):𝟘`. Thus, for any `A:Type` we shall write `¬A` as shorthand for `A→𝟘`.   
 
 ## Product type
 
-We can repeat the same idea to construct, for any types `A,B:Type`, their product `A × B:Type`. I will leave you to fill in the rest of the details yourself, it is not too difficult to make sense of.
+We can repeat the same idea to construct, for any types `A,B:Type`, their product `A × B:Type`. I will leave you to fill in the rest of the details yourself, it is not too difficult to make sense of. (obvious hint: this corresponds to $\land$ from logic)
 
 Notice that `∑x:A B(x)` degenerates to `A × B` if `B` does not depend on `x:A`[^1] 
 
