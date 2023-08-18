@@ -148,3 +148,11 @@ You can verify that indeed for these choices of `b₀` and `bₛ`, a function th
       := (+ 0) (3)
       := 3
 ```
+
+### Order
+
+I'll be brief here as I don't want to discuss all aspects of arithmetic. For any `n,m:ℕ` the statement `n<m` is a proposition and so can be thought of as a type. How about we define
+
+$$ n≤m := \sum_{x:\mathbb{N}}(m=n+x) $$
+
+Of course this implies that `m=n+x` is a type, and we haven't discussed identity types yet (honestly its a confusing topic and I'm not sure if I want to), but you get the point: to construct a proof (term) of the type `n≤m` one must provide an `x:ℕ` along with a proof `q:m=n+x`. 

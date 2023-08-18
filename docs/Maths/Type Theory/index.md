@@ -12,4 +12,6 @@
 
 ## [Part 6 - Universes](part6.md)
 
+## [Part 7 - Propositions](part7.md)
+
 ## ...
