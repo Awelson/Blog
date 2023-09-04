@@ -75,7 +75,7 @@ This means that for any `a:A` there is a proof of `a=a`, namely `refl(a):a=a`.
 
 The term elimination rule (sometimes called the J-rule) is as follows:
 
-Let `A:U`. Then, given
+Let `A:U`. Then, given a dependent type
 
 $$ 
 C:\prod_{x,y:\text{A}}\left[(x=y)\to \mathcal{U}\right]
@@ -99,7 +99,9 @@ $$
 x:\text{A} \vdash f(x,x,\text{refl}(x)):= c(x)
 $$
 
-To explain, we can think of `C` as a dependent type with three inputs. The first two inputs are terms of `A` and the third input is a term of a path (equality) between those terms. I.e, given `x,y:A` and `p:x=y` we have `C(x,y,p):U`. 
+We called `C` a dependent type, though it isn't in the traditional sense since it accepts three inputs (instead of one) before outputting a type. The first two inputs are terms of `A` and the third input is a term of a path (equality) between those terms. I.e, given `x,y:A` and `p:x=y` we have `C(x,y,p):U`. 
+
+> We shall expand our worldview to include/consider instances like the above whenever we mention or deal with dependent types.
 
 Obtaining
 
@@ -107,13 +109,31 @@ $$
 f:\prod_{x,y:\text{A}}\prod_{p:x=y}C(x,y,p)
 $$
 
-is equivalent to showing that `C(x,y,p)` is inhabited for whatever `x,y:A` and `p:x=y`. To exhibit a term of `C(x,y,p)` one just has to feed `x,y,p` into `f`. 
+is equivalent to showing that `C(x,y,p)` is inhabited for whatever `x,y:A` and `p:x=y`. Why? To exhibit a term of `C(x,y,p)` one just has to feed `x,y,p` into `f`, i.e,
+
+```
+x,y:A, p:x=y, ⊢ f(x,y,p):C(x,y,p)
+```
 
 The elimination rule states that such an `f` can be obtained by exhibiting a term of
 
 $$
 \prod_{x:\text{A}}C(x,x,\text{refl}(x))
 $$
+
+### Judgemental equality
+
+You may have noticed that we have introduced equalities many times before, specifically when specifying a computation rule. In those instances the equality is given with the symbol `:=` to distinguish it from the "typal" notion of equality we defined above.
+
+How exactly these two notions of equality differ is not something that I understand completely, but here is what I know so far:
+
+- Judgemental equality is a stronger (meta-theoretic) notion of equality than typal equality. 
+
+- How to use: 
+    - A judgemental equality `a:=b` allows us to swap any instance of `a` into `b` (and vice versa) in any formula.
+    - A term `p:a=b` of a typal equality can be made use of by applying the term elimination (J) rule.
+
+See [here](https://math.stackexchange.com/questions/4014383/difference-between-propositional-and-judgmental-equality) for more info.
 
 ### Example 1
 
@@ -144,10 +164,8 @@ According to the term introduction rule, we know that there is a function called
 > Try to prove the transitive property of equality
 >
 > $$ \prod_{x,y,z:\text{A}}(x=y)\to (y=z) \to (x=z) $$
-
-**HINT:** The above can be written in the form
-
-$$ \prod_{x,y:\text{A}}\prod_{p:x=y}\left[\prod_{z:\text{A}}(y=z) \to (x=z)\right] $$
+>
+> check page 22 of this [document](https://www.math.lmu.de/~petrakis/Goetz.pdf) if you get stuck. The whole thing is a good read regardless if you want to learn more about identity types.
 
 ### Example 2 (transport)
 
@@ -156,7 +174,9 @@ Let `A:U`. If `P:A→U` is a dependent type on `A` then given `x,y:A` and `p:x=y
 We can think of equality as a path, i.e, `p:x=y` is a path from `x:A` to `y:A`. So the principle of transport can be stated as:
 
 ```
-if there is a path from `x:A` to `y:A` then terms can be transported (via a function) back and forth between `P(x)` and `P(y)`.
+if there is a path from `x:A` to `y:A` then terms can be
+transported (via a function) back and forth between 
+`P(x)` and `P(y)`.
 ```
 
 > we say back and forth because a path from `x:A` to `y:A` can also be considered as a path from `y:A` to `x:A` (symmetric property of equality) from which we can generate a backwards transport function `g:P(y)→P(x)`
@@ -179,7 +199,7 @@ $$
 \prod_{x,y:\text{A}}\prod_{p:x=y} C(x,y,p)
 $$
 
-to find a term of the type above, it suffices to exhibit a term with the following type :
+to find a term of the type above, it suffices to exhibit an inhabitant of :
 
 $$
 \prod_{x:\text{A}}C(x,x,\text{refl}(x)) := \prod_{x:\text{A}}\prod_{\text{P}:\text{A}\to\mathcal{U}}(P(x)\to P(x))
@@ -198,6 +218,20 @@ We call the inhabitant of (2) `Transport`. Notice that by the computation rule, 
 ```
 x:A, P:A→U ⊢ Transport(x,x,refl(x),P) := c(x,P) := Id(P(x)) 
 ```
+
+### Using `Transport` to prove Example 1
+
+Here is a rough proof sketch, suppose `a,b:A` and `p:a=b`, define a dependent type `B` on `A` with `B:=λx:A, x=a` then by transport, there exists a function `F:B(a)→B(b)`, feed `refl` into `F` and we get `F(refl):b=a` as needed. Below is a diagram
+
+[Diagram]
+
+The full proof term for `∏a,b:A,(a=b)→(b=a)` is
+
+```
+λa,b:A, λp:a=b, [Transport(a,b,p,(λx:A, x=a))](refl)
+```
+
+> With this same approach, try proving the transitive property of equality, it is much easier and satisfying to do it with the help of transport.
 
 ### A Universe of Propositions
 
@@ -218,31 +252,43 @@ It's possible to explicitly construct the universe `Prop` but I'll leave the exp
 ```
 Prop : U_0 : U_1 : U_2 : ...
 ```
-### Equality is a proposition
+### Extensional and Observational Type Theory
 
-Extensional type theory is a particular flavour of type theory in which equality types are propositional, that is, for every `A:Type` and `a,b:A`, the type `a=b` is an h-proposition, i.e, we can reformat the equality type formation rule into
+Extensional type theory is a particular flavour of type theory in which a term `p:a=b` of an equality type produces a judgemental equality. This is given by the following rule :
+
+$$ \frac{ p:a=b}{a:=b} $$
+
+This simplifies our type theory by a ton. For example, the J-rule is now redundant since we can (instead) "upgrade" typal equality into a judgemental equality, then this allows us to freely swap `a` for `b` or vice versa in any formula.
+
+Another consequence of extensional type theory is that equality types are propositional, that is, for every `A:Type` and `a,b:A`, the type `a=b` is an h-proposition, i.e, we can reformat the equality type formation rule into
 
 $$
 \frac{\text{A}:\mathcal{U}, \quad a,b:\text{A}}{a=b:\text{Prop}}
 $$
 
-Just to reiterate, the above is not a fact but rather an assumption about the type system. I will choose to follow this assumption just because it makes things a lot easier.
+Just to reiterate, the above is not a fact but rather an assumption about the type system. I will choose to follow this assumption at times just because it makes things a lot easier. Though there are [drawbacks](https://ncatlab.org/nlab/show/extensional+type+theory)
+
+There is also something called observational type theory which is also helpful. From what I can understand, equality is defined on types on a case by case basis. Equality between functions for example, is given by the following rule :
+
+$$ \frac{f,g:A\to B, \ p:\prod_{x:\text{A}}, f(x)=g(x)}{q:f=g}$$
+
+This rule is called functional extensionality. It cannot be proved, either we accept it as an axiom, or we can adopt observational type theory where this rule (and many other extensionality rules for different types) are included in the package already. 
 
 ### 𝟙 is an h-proposition 
 
-`𝟙:Type` is clearly an h-proposition. Can we prove it though? To do so we need to show that the type
+`𝟙:Type` is clearly an h-proposition. Can we prove it though? To do so we need to exhibit an inhabitant of the type
 
-$$ \text{IsProp}(1) := \prod_{x:1}\prod_{y:1}, \ x=y \tag{1} $$
+$$ \text{IsProp}(1) := \prod_{x:1}\prod_{y:1}, \ x=y \tag{3} $$
 
-is inhabited. If we define the dependent type `B:𝟙→U` with
+If we define the dependent type `B:𝟙→U` with
 
 $$ \text{B} := \lambda_{x:1}, \ \left[\prod_{y:1}, \ x=y\right] $$
 
 then (1) simplifies to
 
-$$ \prod_{x:1}, \  \text{B(x)} $$
+$$ \prod_{x:1}, \  \text{B(x)} \tag{4}$$
 
-and according to the elimination/induction rule for `𝟙:Type`, it suffices to find a term of type
+To find an inhabitant of the type (4), it suffices by the elimination/induction rule for `𝟙:Type`, to find an inhabitant of type
 
 $$ \text{B}(\star) := \prod_{y:1}, \ \star=y $$
 
@@ -279,7 +325,7 @@ $$
 Suppose we have a path `p:inl(⋆)=inr(⋆)`, then we use transport to obtain :
 
 $$
-\text{Transport}(\text{inl}(⋆), \text{inr}(⋆),p, P) : P(\text{inl}(⋆))→ P(\text{inr}(⋆)) \tag {3}
+\text{Transport}(\text{inl}(⋆), \text{inr}(⋆),p, P) : P(\text{inl}(⋆))→ P(\text{inr}(⋆)) \tag {5}
 $$
 
 According to the computation rules, we have
