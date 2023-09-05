@@ -34,6 +34,10 @@ f : ¬¬(∑x:ℕ, x>0) → ∑x:ℕ, x>0
 
 (corresponding to some sort of double negation elimination rule) which is impossible to construct without LEM (and remember we can't assume LEM). 
 
+> This is not to say that the type `∑x:ℕ, x>0` (and other similar types) is not a valid representation of the proposition "there exists an `x:ℕ` such that `x>0`", but rather `∑x:ℕ, x>0` represents a "constructive" version of that proposition, i.e, we cannot construct a term of this type via non-constructive methods (proof by contradiction)
+>
+> It is possible to create a "classical" version of `∑x:ℕ, x>0` and this is what we will be touching upon.
+
 ### The solution
 
 > Definition. Given `A:Type`, define
@@ -304,17 +308,17 @@ This completes our proof that `IsProp(𝟙)` is inhabited. Obviously it is great
 
 In propositional logic, if we have propositions $P$ and $Q$ then $P\lor Q, P\to Q, \cdots$ are all propositions as well. If we translate this to type theory will this still hold? That is to say, given `P,Q:Prop` are `P+Q, P→Q, ... ` h-propositions as well?
 
-The answer is... sometimes. For example
+The answer is... sometimes. For example the `→` operation is closed under `Prop`, meaning
 
 $$
 \prod_{P,Q:\text{Prop}} \text{IsProp}(P→Q)
 $$
 
-can be proved (has an inhabitant). However, the same is not true for the `+` operation. For example, `𝟙+𝟙:Type` is not an h-proposition. It has terms `inl(⋆),inr(⋆):𝟙+𝟙` 
+can be proved (has an inhabitant). However, the same is not true for the `+` operation. For example, `𝟙+𝟙:Type` is not an h-proposition (despite `𝟙` being an h-proposition). It has terms `inl(⋆),inr(⋆):𝟙+𝟙` 
 
-> check the rules for the [sum type](https://ncatlab.org/nlab/show/sum+type) if you haven't already
+> check the rules for the [sum type](https://ncatlab.org/nlab/show/sum+type) if you haven't already.
 
-but we have`inl(⋆)≠inr(⋆)`. How can we prove this? Well of course by exhibiting an inhabitant of `inl(⋆)=inr(⋆) → 𝟘`. This proof will showcase the principle of transport, so first let us define a dependent type `P` on `𝟙+𝟙` :
+but we have `inl(⋆)≠inr(⋆)`. How can we prove this? Well of course by exhibiting an inhabitant of `inl(⋆)=inr(⋆) → 𝟘`. This proof will utilize the principle of transport, so first let us define a dependent type `P` on `𝟙+𝟙` :
 
 $$
 P := \lambda_{x:1+1}, \ \text{match}(x,(\lambda_{z:1}, 1),(\lambda_{z:1}0))
@@ -334,7 +338,7 @@ $$
 P(\text{inl}(⋆)):= \text{match}(\text{inl}(⋆),(λ_{z:1}, 1),(\lambda_{z:1}, 0)) := [λ_{z:1}, 1](⋆) := 1
 $$
 
-and similarly `P(inr(⋆)):=𝟘`. Thus, (3) is a function of type `𝟙→𝟘`, and we can feed this function `⋆:𝟙` to obtain a term of type `𝟘`. All in all, we have infered a term of type `𝟘` from the assumption of a path `p:inl(⋆)=inr(⋆)`, so we are done. If we want to be more complete, here is the complete proof term
+and similarly `P(inr(⋆)):=𝟘`. Thus, (5) is a function of type `𝟙→𝟘`, and we can feed this function `⋆:𝟙` to obtain a term of type `𝟘`. All in all, we have infered a term of type `𝟘` from the assumption of a path `p:inl(⋆)=inr(⋆)`, so we are done. If we want to be more complete, here is the complete proof term
 
 $$\lambda_{p:\text{inl}(⋆)=\text{inr}(⋆)}, \ \left[\text{Transport}(\text{inl}(⋆), \text{inr}(⋆),p, P)\right](⋆) : (\text{inl}(⋆)=\text{inr}(⋆))\to 0$$
 
