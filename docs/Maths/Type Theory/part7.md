@@ -251,6 +251,8 @@ we can simply write
 ∏A:Prop, A + ¬A
 ```
 
+> The canonical inhabitant of the above type, by the way, we'll call `LEM` (short for law of excluded middle).  
+
 It's possible to explicitly construct the universe `Prop` but I'll leave the explanation out for brevity (for those interested, click [here](https://ncatlab.org/nlab/show/type+of+propositions#as_a_russell_universe)). I should also say that `Prop` sits at the bottom of the hierarchy of universes, i.e,
 
 ```
@@ -276,7 +278,13 @@ There is also something called observational type theory which is also helpful. 
 
 $$ \frac{f,g:A\to B, \ p:\prod_{x:\text{A}}, f(x)=g(x)}{q:f=g}$$
 
-This rule is called functional extensionality. It cannot be proved, either we accept it as an axiom, or we can adopt observational type theory where this rule (and many other extensionality rules for different types) are included in the package already. 
+This rule is called functional extensionality. It cannot be proved, either we accept it as an axiom, or we can adopt observational type theory where this rule (and many other extensionality rules for different types) are included in the package already.
+
+> The observational equality (extensional) rule for `Prop` is known as propositional extensionality
+>
+> $$\frac{\text{A, B}:\text{Prop}, \quad f:\text{A}\to \text{B}, \quad g:\text{B}\to \text{A}}{p:\text{A}=\text{B}}$$
+>
+> This should make sense as in propositional logic, two propositions `A` and `B` are equivalent if they imply each other. 
 
 ### 𝟙 is an h-proposition 
 
