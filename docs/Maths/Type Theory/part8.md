@@ -1,4 +1,4 @@
-# Part 7 - Propositional Truncation
+# Part 8 - Propositional Truncation
 
 **Type Formation Rule**
 
@@ -26,9 +26,7 @@ $$\frac{\text{A}:\text{Type}, \quad \text{B}:\text{Prop}, \quad f:\text{A}\to\te
 
 > A dependent version of the above rule exists, but is not particularly useful
 
-with the **computation rule** `g(|a|):=f(a)` for any `a:A`. The elimination rule basically means that whenever we are using a term of `|A|` to prove a proposition `B`, we may assume having a term of `A` at hand and then use that to construct a term of `B`.
-
-For example, suppose we have a `q:|A|` and we are attempting to prove a `B:Prop`. This amounts to constructing a function `g:|A|→B`, then exhibiting `g(q):B`. To construct such a `g`, the elimination rule states that it suffices to construct a function `f:A→B`[^1].  
+with the **computation rule** `g(|a|):=f(a)` for any `a:A`. The elimination rule basically means that when attempting to prove that a propositional truncation `|A|` implies a proposition `B`, then it suffices to prove (the often easier) `A` implies `B`. 
 
 ### The solution
 
@@ -44,9 +42,3 @@ Here is a full translation table
   ![Image title](Capture9.PNG){ width="640" }
 </figure>
 
-
-
-
-
-
-[^1]: which can be done by assuming that you have an `a:A` at hand, then constructing an expression `a:A⊢Φ(a):B`, then constructing the lambda expression `λa:A, Φ(a):A→B`.
