@@ -17,7 +17,7 @@ In type theory there is a separation between objects that act like containers (t
 
 > This is a naive view of type theory. In truth, there is a cumulative hierarchy of universes, much like [Von Neumann universes](https://en.wikipedia.org/wiki/Von_Neumann_universe). We will adopt this naive view for now and completely switch gears at some point.
 
-It is also important to note that a term has to **always** be associated to the type that it is contained in, that is to say, one cannot introduce a term `a` without reference to the type `A` that it is contained in. The notation "`a:A`" is used to express that a term `a` is contained in a type `A`. Whilst in set theory it is acceptable (but not good practice) to mention the object $1$ without the context that $1\in \mathbb{N}$[^1], it is nonsense to speak of a term `a` without reference to the type that it is contained in. Whenever we introduce a term, we do so by writing `a:A`, forcing us to make reference to a type `A` which contains the term.
+It is also important to note that a term has to **always** be associated to the type that it is contained in, that is to say, one cannot introduce a term `a` without reference to the type that it is contained in. The notation "`a:A`" is used to express that a term `a` is contained in a type `A`. Whilst in set theory it is acceptable (but perhaps not good practice) to mention the object $1:=\{\varnothing\}$ without the context that $1\in \mathbb{N}$[^1], it is nonsense to speak of a term `a` without reference to the type that it is contained in. Whenever we introduce a term, we do so by writing `a:A`, forcing us to make reference to a type `A` which contains the term. If I write `a` on its own, this means that it should be clear from context what the type of `A` is.
 
 In type theory, a term is also uniquely contained in one type, that is to say we cannot have both `a:A` and `a:B` unless `A := B`. One may then ask: if we think of $\mathbb{N}$ and $\mathbb{Z}$ as types then don't we have both `1:ℕ` and `1:ℤ`? The way type theory deals with this is to have different terms represent the multiplicative identity of $\mathbb{N}$ and $\mathbb{Z}$ (even if they have the same symbol)[^2]. If we want to be ultra-precise we may use the symbols `ℕ(1)` and `ℤ(1)` to refer to these two terms, but this is really no issue, ideally there is always enough context to clear up any confusion.
 
@@ -41,10 +41,8 @@ That is it for a brief overview of type theory. In the next section we go over t
 
 [**Next Section**](part2.md)
 
-[^1]: Although it is possible to extend this with [type universes](https://ncatlab.org/nlab/show/type+universe). I don't understand it however and just pretend it doesn't exist.
+[^1]: In the same vein that it is acceptable to mention $\varnothing$ without reference to some larger set it is a part of.
 
-[^2]: In the same vein that it is acceptable to mention $\varnothing$ without reference to some larger set it is a part of.
+[^2]: Similar to how we use the same symbol $+$ to denote addition between elements of $\mathbb{R}$ and addition between elements of $\mathbb{R}^2$ even though they count as two different operators.
 
-[^3]: Similar to how we use the same symbol $+$ to denote addition between elements of $\mathbb{R}$ and addition between elements of $\mathbb{R}^2$ even though they count as two different operators.
-
-[^4]: Precisely what a function is in terms of type theory will be discussed later, but right now the details don't matter. We all know how a function is supposed to work and this is no different in type theory than it is in set theory.
+[^3]: Precisely what a function is in terms of type theory will be discussed later, but right now the details don't matter. We all know how a function is supposed to work and this is no different in type theory than it is in set theory.
