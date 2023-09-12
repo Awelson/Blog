@@ -351,3 +351,5 @@ and similarly `P(inr(⋆)):=𝟘`. Thus, (5) is a function of type `𝟙→𝟘`
 $$\lambda_{p:\text{inl}(⋆)=\text{inr}(⋆)}, \ \left[\text{Transport}(\text{inl}(⋆), \text{inr}(⋆),p, P)\right](⋆) : (\text{inl}(⋆)=\text{inr}(⋆))\to 0$$
 
 It is a huge problem if operations between propositions don't return propositions, but fortunately there is a solution to this problem which we will discuss in the next part.
+
+> Let's not forget that since we have: if $P$ is a predicate on $A$ then $∀x∈A, P(x)$ is a proposition. We should also check that its translation into type theory also holds, i.e, if `P:A→Prop` then do we have `∏x:A, P(x):Prop`? We should also ask the same question for $\exists$ too. 

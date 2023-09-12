@@ -36,9 +36,13 @@ The only troublesome operations to worry about is `+` and `∑`. Therefore, if w
 
 > Again, `A∨B→A+B` is not an incorrect translation, rather `A+B` is a constructive version of `A∨B`. If we are working under the context of intuitionistic logic, then the translation would in fact be accurate.
 
-Here is a full translation table
+Here is a full translation table (given `P,Q:Prop`, except the last two rows where `P:A→Prop`)
 
 <figure markdown>
   ![Image title](Capture9.PNG){ width="640" }
 </figure>
+
+### Differences
+
+To better understand propositional truncation, let us examine the differences between the types `∑x:A, P(x)` and `|∑x:A, P(x)|:=∃x:A, P(x)`.
 
