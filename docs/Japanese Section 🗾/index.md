@@ -6,7 +6,7 @@ This section will mostly consist of bits of Japanese culture I find interesting,
 
 This section is further split into various subsections which you may find below:
 
-## - [Vocabulary](Vocabulary/index.md)
+## - Manga
 
 ## - Culture
 

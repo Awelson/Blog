@@ -107,19 +107,19 @@ We called `C` a dependent type, though it isn't in the traditional sense since i
 
 > We shall expand our worldview to include/consider instances like the above whenever we mention or deal with dependent types.
 
-Obtaining
+Obtaining a term :
 
 $$
 f:\prod_{x,y:\text{A}}\prod_{p:x=y}C(x,y,p)
 $$
 
-is equivalent to showing that `C(x,y,p)` is inhabited for whatever `x,y:A` and `p:x=y`. Why? To exhibit a term of `C(x,y,p)` one just has to feed `x,y,p` into `f`, i.e,
+is equivalent to showing that `C(x,y,p)` is inhabited for whatever `x,y:A` and `p:x=y`. Indeed, given the terms `x,y,p` one just has to feed these into `f` to exhibit a term of `C(x,y,p)`, i.e, 
 
 ```
 x,y:A, p:x=y, ⊢ f(x,y,p):C(x,y,p)
 ```
 
-The elimination rule states that such an `f` can be obtained by exhibiting a term of
+The elimination rule states that such an `f` can be obtained by exhibiting a term of type
 
 $$
 \prod_{x:\text{A}}C(x,x,\text{refl}(x))
@@ -133,15 +133,15 @@ How exactly these two notions of equality differ is not something that I underst
 
 - Judgemental equality is a stronger (meta-theoretic) notion of equality than typal equality. 
 
-- How to use: 
-    - A judgemental equality `a:=b` allows us to swap any instance of `a` into `b` (and vice versa) in any formula.
-    - A term `p:a=b` of a typal equality can be made use of by applying the term elimination (J) rule.
+- How to use/apply: 
+    - A judgemental equality `a:=b` allows us the ability to swap any instance of `a` into `b` (and vice versa) in any formula.
+    - A term `p:a=b` of a typal equality is made use of by applying the term elimination (J) rule.
 
 See [here](https://math.stackexchange.com/questions/4014383/difference-between-propositional-and-judgmental-equality) for more info.
 
 ### Example 1
 
-To get a hang of this rule, let's use it to prove that equality is symmetric, i.e, given `a,b:A` and `p:a=b` the type `b=a` is inhabited as well. 
+To get a hang of the J-rule, let's use it to prove that equality is symmetric, i.e, given `a,b:A` and `p:a=b` the type `b=a` is inhabited as well. 
 
 Proving the above statement is equivalent to finding a term with type
 
