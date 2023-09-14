@@ -253,6 +253,8 @@ we can simply write
 
 > The canonical inhabitant of the above type, by the way, we'll call `LEM` (short for law of excluded middle).  
 
+Another useful thing with the `Prop` universe is that a proposition $P$ in type theory terms simply means `P:Prop` and likewise a predicate $P$ on $A$ means `P:A→Prop`.
+
 It's possible to explicitly construct the universe `Prop` but I'll leave the explanation out for brevity (for those interested, click [here](https://ncatlab.org/nlab/show/type+of+propositions#as_a_russell_universe)). I should also say that `Prop` sits at the bottom of the hierarchy of universes, i.e,
 
 ```
@@ -352,4 +354,8 @@ $$\lambda_{p:\text{inl}(⋆)=\text{inr}(⋆)}, \ \left[\text{Transport}(\text{in
 
 It is a huge problem if operations between propositions don't return propositions, but fortunately there is a solution to this problem which we will discuss in the next part.
 
-> Let's not forget that since we have: if $P$ is a predicate on $A$ then $∀x∈A, P(x)$ is a proposition. We should also check that its translation into type theory also holds, i.e, if `P:A→Prop` then do we have `∏x:A, P(x):Prop`? We should also ask the same question for $\exists$ too. 
+Let's not forget that since we also have
+
+> if $P$ is a predicate on $A$ then $∀x∈A, P(x)$ is a proposition
+
+ We should also check that this statement holds in type theory as well, i.e, we should check that `P:A→Prop` implies `∏x:A, P(x):Prop`. Of course we should also check this for $\exists$ too. 
