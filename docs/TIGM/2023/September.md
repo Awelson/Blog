@@ -1,6 +1,11 @@
 ---
 title: September
 ---
+### **14/09/2023**: [Machine Girl](https://machinegirl.bandcamp.com/) ⋅ うずまき
+<iframe src="https://www.youtube.com/embed/53ulHedroTk" width="560" height="315" title="A YouTube video" frameborder="0" allowfullscreen></iframe>
+
+「Will add later」
+
 ### **04/09/2023**: [Willy Rodriguez](https://willyrodriguez.bandcamp.com/) ⋅ Bad Therapists
 <iframe src="https://www.youtube.com/embed/Fu0b9nUe3So" width="560" height="315" title="A YouTube video" frameborder="0" allowfullscreen></iframe>
 
@@ -18,9 +23,6 @@ The similarity is only in the artstyle, the music itself is quite different. It 
 
 I should also mention that Willy Rodriguez is a project by two people, William and [Star](https://starstarer.bandcamp.com/). They also go by WillyRodriguezWasTaken, because, well, Willy Rodiguez was already taken by [someone else](https://willyrodriguezmusic.com/).
 
-### **14/09/2023**: [Machine Girl](https://machinegirl.bandcamp.com/) ⋅ うずまき
-<iframe src="https://www.youtube.com/embed/53ulHedroTk" width="560" height="315" title="A YouTube video" frameborder="0" allowfullscreen></iframe>
 
-「Will add later」
 
 

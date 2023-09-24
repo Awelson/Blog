@@ -50,7 +50,7 @@ Surely `∑x:A, P(x) → A` is inhabited. `π₁` for example is an inhabitant o
 
 According to the elimination rule, a function `g:∃x:A, P(x) → A` can be obtained from `π₁:∑x:A, P(x) → A`, but this is supposing that `A` is an h-proposition which is not always the case. What we can guarantee however is that `g:∃x:A, P(x) → |A|` is inhabited since we have `|A|:Prop` by definition. So we can extract an inhabitant of `|A|` instead of `A`. 
 
-Whilst the judgement `a:A` demonstrates that `A` is inhabited, it also provides us access to a term of `A` that we can make use of. Meanwhile, the judegement `a:|A|` only has the benefit of demonstrating that `A` is inhabited.. and nothing else.
+Whilst the judgement `a:A` demonstrates that `A` is inhabited, it also provides us access to a term of `A` that we can make use of. Meanwhile, the judgement `a:|A|` only has the benefit of demonstrating that `A` is inhabited.. and nothing else.
 
 You may imagine that it will be troublesome to work with `∃x:A, P(x)`. For example, one can imagine a situation where the next step of a proof requires proving `B:Type` whilst having a `f:A→B` at hand. It is easy to do so starting from `q:∑x:A, P(x)` because `f(π₁(q)):B`. If instead we have `q:∃x:A, P(x)` then we can extract an `a:|A|` but we would be stuck since `a:|A|` can't be fed into `f:A→B`. 
 

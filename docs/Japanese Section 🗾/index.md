@@ -8,6 +8,8 @@ This section is further split into various subsections which you may find below:
 
 ## - Manga
 
+## - Transcripts
+
 ## - Culture
 
 ## - LLR
