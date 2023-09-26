@@ -14,4 +14,6 @@
 
 ## [Part 7 - Propositions](part7.md)
 
+## [Part 8 - Propositional Truncation](part8.md)
+
 ## ...
