@@ -104,7 +104,7 @@ We can replace `LEM(1<2)` with `inl(q)`, then the computation rule reduces the `
 [λp:1<2, 0](q) := 0
 ```
 
-If we had come up with a proof `q:¬1<2` instead you can imagine that `ite 1<2 0 1` will reduce to `1` instead of `0`. Hence, we can think of `ite 1<2 0 1` as the statement:
+If we had came up with a proof `q:¬1<2` instead it is easy to see that `ite 1<2 0 1` will reduce to `1` instead of `0`. Hence, we can think of `ite 1<2 0 1` as the statement:
 
 ```
 if 1<2 then 0 else 1

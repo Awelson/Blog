@@ -39,6 +39,6 @@ Let's say **.. Kf8 25. Bd3**, since queen back to the 8th rank is unacceptable, 
 
 Black can also try **.. Qd6** in response to **23. Rd3**, the idea is to meet Rxc3 with Ba2+, the resulting endgame still favors white albeit with a mere +1.3 valuation.
 
-A better resposne is to refrain from capturing the knight and playing **24. b3** stopping the Ba2+ idea from earlier, and reinforcing threat on the knight. 
+A better resposne is to refrain from capturing the knight and playing **24. b3** stopping the Ba2+ idea from earlier, and reinforcing threat on the knight. Black is toast after **.. Nd4 25. Bd3**.  
 
-
+[Link to full game](https://www.chess.com/game/live/89893832329)

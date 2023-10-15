@@ -187,7 +187,9 @@ transported (via a function) back and forth between
 
 The following diagram illustrates the principle of transport:
 
-[Figure]
+<figure markdown>
+  ![Image title](Capture10.PNG){ width="640" }
+</figure>
 
 The principle of transport can be expressed by the type
 
@@ -227,7 +229,9 @@ x:A, P:A→U ⊢ Transport(x,x,refl(x),P) := c(x,P) := Id(P(x))
 
 Here is a rough proof sketch, suppose `a,b:A` and `p:a=b`, define a dependent type `B` on `A` with `B:=λx:A, x=a` then by transport, there exists a function `F:B(a)→B(b)`, feed `refl` into `F` and we get `F(refl):b=a` as needed. Below is a diagram
 
-[Diagram]
+<figure markdown>
+  ![Image title](Capture11.PNG){ width="640" }
+</figure>
 
 The full proof term for `∏a,b:A,(a=b)→(b=a)` is
 
