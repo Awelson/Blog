@@ -22,7 +22,7 @@ or use the archives below (or the nav-bar on the left side) to navigate to a spe
 January > ...
 
 ### 2023
-[July](2023/July.md) > [August](2023/August.md) > [September](2023/September.md) > October > November > December
+[July](2023/July.md) > [August](2023/August.md) > [September](2023/September.md) > [October](2023/October.md) > November > December
 
 
 

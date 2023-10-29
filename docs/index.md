@@ -16,7 +16,7 @@ to my personal website. This is where I will try to document whatever I've learn
 
 ## - [Chess](Chess/index.md)
 
-## - [Maths](Maths/index.md)
+## - Maths
 
 ## - Science
 
