@@ -18,7 +18,7 @@ The dictionary form can be used in multiple contexts, I will showcase these usag
 
 or more accurately "I habitually drink beer". Sort of like how "I play video games" more accurately means that playing video games is a habit/hobby, a thing that they regularly do, or a part of their life.
 
-> The -て form of a verb can also be used to describe habitual action. The two forms are somewhat interchangable but with slight nuances: check [here](https://www.reddit.com/r/LearnJapanese/comments/enzbz0/difference_between_%E3%81%A6%E3%81%84%E3%81%BE%E3%81%99_and_%E3%81%BE%E3%81%99_for_describing/) and [here](https://japanese.stackexchange.com/questions/11925/habitual-aspect).
+ <!-- The -て form of a verb can also be used to describe habitual action. The two forms are somewhat interchangable but with slight nuances: check [here](https://www.reddit.com/r/LearnJapanese/comments/enzbz0/difference_between_%E3%81%A6%E3%81%84%E3%81%BE%E3%81%99_and_%E3%81%BE%E3%81%99_for_describing/) and [here](https://japanese.stackexchange.com/questions/11925/habitual-aspect). -->
 
 ### Future action
 
@@ -53,7 +53,7 @@ Of course you have to make "これを飲む" sound like a question by intonating
 人間は水を飲む - "People drink water"
 ```
 
-To some extent it can be argued that "stating facts" can be classified under habitual action in a sense that drinking water is a natural property / habit that comes with being human. Here is another example:
+To some extent it can be argued that "stating facts" can be classified under habitual action in a sense that drinking water is a natural property/habit that comes with being human. Here is another example:
 
 ```
 水は百度で沸騰する - "Water boils at 100 degrees (celcius)"
@@ -61,18 +61,18 @@ To some extent it can be argued that "stating facts" can be classified under hab
 
 Boiling at 100 degrees is a natural property of water, hence we use the dictionary form. Of course if a person believes that water boils at 50 degrees, then them saying "水は五十度で沸騰する" is still grammatically correct, even if what they say is not true.
 
-> Perhaps it would have been better to say "stating beliefs/information" instead of "stating facts" ... but eh 
+> Perhaps it would have been better to say "stating beliefs/information" instead of "stating facts" ... but oh well 
 
+Some facts however involve a continuous action, like the Earth revolving around the Sun or ownership of an object. Of course, the Earth doesn't "habitually" revolve around the sun, it is a continuous action. Likewise, you don't "habitually" own a certain object, you are continuously owning it over a certain period of time. How to express this situation will be dealt with later.
 
-Some facts however involve a continuous action, like the Earth revolving around the Sun or ownership of an object. Of course, the Earth doesn't "habitually" revolve around the sun, it is a continuous action. Likewise, you don't "habitually" own a certain object, you are continuously owning it over a certain period of time. 
+> Notice that in English we say "I own a computer" instead of "I am owning a computer" despite ownership being a continuous action. These sorts of language discrepancies can make it harder to identify situations involving continuous action, and it is just something that you will have to get used to.
 
-In situations like these it'd be more appropriate to use the -て form, though using the dictionary form wouldn't be considered much of a mistake
+<!-- In situations like these it'd be more appropriate to use the -て form, though using the dictionary form wouldn't be considered much of a mistake -->
 
-```
+<!-- ```
 私はパソコンを持つ - "I own a computer" (passable)
-
 私はパソコンを持っている - "I own a computer" (good)
-```
+``` -->
 
 ### The Three Types of Verbs
 
@@ -95,9 +95,3 @@ V = "食べる" => class 2
 V = "飲む" => class 1
 V = "来る" => class 3
 ```
-
-
-
-
-
-
