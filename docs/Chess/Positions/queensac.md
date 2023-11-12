@@ -19,7 +19,7 @@ this sets up a skewer along the 8th rank, Rd8+ will win the queen except the bla
 
 This narrows our choices down to **Rd6** (which kicks the knight out), **Bd3** (which forces the queen back), and **Nh5+** (which forces the king back). The correct sequence involves some combination of these moves.
 
-**23. Bd3 Qg8** already fails the first objective since upon kicking the king back, it can tuck itself to the right of the queen on g8. More than that, **Bd3** blocks the rook so it is not optimal.
+**23. Bd3 Qg8** already fails the first objective since upon kicking the king back, it can tuck itself to the right of the queen on h8. More than that, **Bd3** blocks the rook so it is not optimal.
 
 **23. Nh5+** fails not because of .. Kg6 since 24. Nh4+ Kg5 25. g3! threatening mate with f4, and .. Bg4 doesn't work because of 26. Bxg4 Kxg4 27. Nf6+. Rather, after **.. Kf8 24. Rd6** there is **.. Qg6**, instead of allowing white's plan (of kicking the black knight), black counterattacks our knight.
 
@@ -33,7 +33,7 @@ Let's say **.. Kf8 25. Bd3**, since queen back to the 8th rank is unacceptable, 
 
 1. **.. Bf5**, but Black loses a piece after **26. Nxd4 cxd4 27. Nf6 Qg7 28. Bxf5** the alternative .. Bxd3 27. Rd8+ Ke7 28. Nc6+ Ke6 29. Rxd3 also does not work out for black.
 
-2. **.. Nf5**. Notice that g4 does not work because of Nxd6 Bxh7 Bxg4 leads to a drawn endgame. We can improve on this by moving our rook away with tempo which we can do via **26. Rd8+ Ke8 27. Rf8!! Kd6** and now g4 works.
+2. **.. Nf5**. Notice that g4 does not work because Nxd6 Bxh7 Bxg4 leads to a drawn endgame. We can improve on this by moving our rook away with tempo which we can do via **26. Rd8+ Ke8 27. Rf8!! Kd6** and now g4 works (Qg6 can be met with h3).
 
 3. **.. f5** leaves the bishop hanging after Nxd4.
 
