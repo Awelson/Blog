@@ -1,7 +1,7 @@
 ---
 title: December
 ---
-### **2/12/2023**: [PINOCCHIOP](https://www.akikoyano.com/live/) ⋅ Non-breath oblige
+### **14/12/2023**: [PINOCCHIOP](https://www.akikoyano.com/live/) ⋅ Non-breath oblige
 <iframe src="https://www.youtube.com/embed/lw7pcm1W5tw" width="560" height="315" title="A YouTube video" frameborder="0" allowfullscreen></iframe>
 
 I refuse to believe that this song is humanly possible to sing. Especially that last part.. how is anyone supposed to do that. Yet.. yet, there are many covers of this song, I guess it just goes to show how talented these people are.
