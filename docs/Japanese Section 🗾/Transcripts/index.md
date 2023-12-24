@@ -16,3 +16,5 @@ You are free to use the transcript and its translation as a way to learn, or alt
 
 - [１０回言ってゲームで珍回答連発ｗｗｗｗｗｗｗｗｗ　まふまふ・となりの坂田](1.md)
 
+- [今年一爆笑した炙りカルビゲームという神ゲーｗｗｗｗｗｗ　まふまふ・となりの坂田](2.md)
+
