@@ -1,7 +1,12 @@
 ---
 title: December
 ---
-### **24/12/2023**: [1 Trait Danger](https://1traitdanger.bandcamp.com/) ⋅ Non-breath oblige
+### **24/12/2023**: [The Sleepwalk](http://watchman-web.com/) ⋅ Upon A Brown
+<iframe src="https://www.youtube.com/embed/6H9CRnnpLhA" width="560" height="315" title="A YouTube video" frameborder="0" allowfullscreen></iframe>
+
+The Sleepwalk is a not so well known Japanese [shoegaze](https://en.wikipedia.org/wiki/Shoegaze) band. It was hard to find information on this band, but thankfully a [reddit post](https://www.reddit.com/r/shoegaze/comments/dudktv/the_sleepwalk_an_obscure_japanese_popshoegaze/) did the job for me. Right now there are 5 albums in total and although I haven't listened to all of them properly, this is my favorite so far.
+
+### **24/12/2023**: [1 Trait Danger](https://1traitdanger.bandcamp.com/) ⋅ Sleds for Christmas
 <iframe src="https://www.youtube.com/embed/-SMBRzTJIB0" width="560" height="315" title="A YouTube video" frameborder="0" allowfullscreen></iframe>
 
 It's Christmas Eve! Have a Christmas song!
