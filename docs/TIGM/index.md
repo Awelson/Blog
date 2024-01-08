@@ -19,10 +19,10 @@ or use the archives below (or the nav-bar on the left side) to navigate to a spe
 
 ### 2024
 
-January > ...
+[January](2024/January.md) > ...
 
 ### 2023
-[July](2023/July.md) > [August](2023/August.md) > [September](2023/September.md) > [October](2023/October.md) > [November](2023/November.md) > December
+[July](2023/July.md) > [August](2023/August.md) > [September](2023/September.md) > [October](2023/October.md) > [November](2023/November.md) > [December](2023/December.md)
 
 
 
