@@ -9,7 +9,7 @@ I will try (my best) to share and talk a bit about a piece of music that I find 
 
 [comment]:: (to update the link, delete from right to left up till the # symbol then ctrl + spacebar + "ddc" + enter + ctrl + spacebar + enter; remove any unicode symbol; change the month if necessary)
 
-> Click [HERE](2023/November.md) to view today's good music
+> Click [HERE](2024/January.md) to view today's good music
 
 or use the archives below (or the nav-bar on the left side) to navigate to a specific date.
 
