@@ -1,0 +1,974 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../../">
+      
+      
+        <link rel="next" href="../../Type%20Theory/">
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.15">
+    
+    
+      
+        <title>Compactness - AWelson's Blog</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.7e359304.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="pink" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#compactness" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="AWelson&#39;s Blog" class="md-header__button md-logo" aria-label="AWelson's Blog" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            AWelson's Blog
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Compactness
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="pink" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="pink" data-md-color-accent="blue"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="AWelson&#39;s Blog" class="md-nav__button md-logo" aria-label="AWelson's Blog" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    AWelson's Blog
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Welcome
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../Chess/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Chess
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Chess
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../Chess/Benko%20Declined/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Benko Declined
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            Benko Declined
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Chess/Benko%20Declined/3.%20Nf3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3. Nf3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Chess/Positions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Positions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../Japanese%20Section%20%F0%9F%97%BE/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Japanese Section 🗾
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Japanese Section 🗾
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Japanese%20Section%20%F0%9F%97%BE/Manga/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Manga
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Japanese%20Section%20%F0%9F%97%BE/Transcripts/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Transcripts
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../TIGM/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    TIGM
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            TIGM
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../TIGM/2023/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    2023
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4_1" id="__nav_4_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1">
+            <span class="md-nav__icon md-icon"></span>
+            2023
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TIGM/2023/July/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    July
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TIGM/2023/August/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    August
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TIGM/2023/September/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    September
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TIGM/2023/October/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    October
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TIGM/2023/November/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    November
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TIGM/2023/December/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    December
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../TIGM/2024/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    2024
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            2024
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TIGM/2024/January/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    January
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TIGM/2024/February/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    February
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TIGM/2024/March/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    March
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="compactness">Compactness<a class="headerlink" href="#compactness" title="Permanent link">&para;</a></h1>
+<blockquote>
+<p><strong>Definition.</strong> If <span class="arithmatex">\(\mathcal{G}\)</span> is a collection of subsets of a metric space <span class="arithmatex">\(X\)</span> and <span class="arithmatex">\(E\subseteq X\)</span> then <span class="arithmatex">\(\mathcal{G}\)</span> is a cover of <span class="arithmatex">\(E\)</span> if <span class="arithmatex">\(E\subseteq \bigcup G\)</span>. Any subset of <span class="arithmatex">\(\mathcal{G}\)</span> that is still able to cover <span class="arithmatex">\(E\)</span> is known as a subcover. Additionally, a cover <span class="arithmatex">\(\mathcal{G}\)</span> is said to be open if every <span class="arithmatex">\(G\in \mathcal{G}\)</span> is open.</p>
+<p><strong>Definition.</strong> A subset <span class="arithmatex">\(E\)</span> of a metric space <span class="arithmatex">\(X\)</span> is said to be compact if every open cover of <span class="arithmatex">\(E\)</span> has a finite subcover.</p>
+<p><strong>Example.</strong> <span class="arithmatex">\(\mathbb{R}\)</span> is not compact. </p>
+<p>Proof. <span class="arithmatex">\(\mathcal{G}=\{(-n,n) | \ n\in \mathbb{N}\}\)</span> is clearly an open cover of <span class="arithmatex">\(\mathbb{R}\)</span> but it does not have a finite subcover.</p>
+<p><strong>Example.</strong> If <span class="arithmatex">\(X\)</span> is a metric space then any finite subset <span class="arithmatex">\(E\subseteq X\)</span> is compact.</p>
+<p>Proof. Let <span class="arithmatex">\(\mathcal{G}\)</span> be an open cover of <span class="arithmatex">\(E\)</span>, then for each <span class="arithmatex">\(p\in E\)</span> there exists a <span class="arithmatex">\(G\in \mathcal{G}\)</span> such that <span class="arithmatex">\(p\in G\)</span>. Since <span class="arithmatex">\(E\)</span> is finite, there is also a finite number of such <span class="arithmatex">\(G\)</span>'s, together they form a finite subcover of <span class="arithmatex">\(\mathcal{G}\)</span>.</p>
+<p><strong>Theorem.</strong> If <span class="arithmatex">\(E\subseteq X\)</span> is compact, then <span class="arithmatex">\(E\)</span> is closed and bounded.</p>
+</blockquote>
+<p>Proof. We'll prove that <span class="arithmatex">\(E^C\)</span> is open. Suppose <span class="arithmatex">\(x\in E^C\)</span>, it is clear that we can construct a function <span class="arithmatex">\(f:E\to \mathbb{R}^+\)</span> such that <span class="arithmatex">\(B(p,f(p)) \cap B(x,f(p)) = \varnothing\)</span> for any <span class="arithmatex">\(p\in E\)</span>. Obviously <span class="arithmatex">\(\{B(p,f(p)) | \ p\in E\}\)</span> is an open cover of <span class="arithmatex">\(E\)</span> and so there exists <span class="arithmatex">\(p_1,p_2,\ldots,p_n\in E\)</span> such that <span class="arithmatex">\(\{B(p_i,f(p_i))|\ 1\leq i\leq n\}\)</span> is an open cover of <span class="arithmatex">\(E\)</span>. Let <span class="arithmatex">\(r=\text{min}\{f(p_i)|\ 1\leq i\leq n\}\)</span> then it is easy to show that <span class="arithmatex">\(E\cap B(x,r) = \varnothing\)</span>, i.e, <span class="arithmatex">\(B(x,r)\subseteq E^C\)</span>, hence <span class="arithmatex">\(E^C\)</span> is open as desired.</p>
+<p>To show that <span class="arithmatex">\(E\)</span> is bounded, choose any point <span class="arithmatex">\(x\in X\)</span>. Clearly <span class="arithmatex">\(\{B(x,n)\vert \ n\in \mathbb{N}\}\)</span> is clearly an open cover of <span class="arithmatex">\(E\)</span> and hence a finite subcover, say <span class="arithmatex">\(\mathcal{G}\)</span> exists. Clearly <span class="arithmatex">\(\bigcup \mathcal{G}=B(x,N)\)</span> for some <span class="arithmatex">\(N\in \mathbb{N}\)</span>, i.e, <span class="arithmatex">\(E\subseteq B(x,N)\)</span> and hence <span class="arithmatex">\(E\)</span> is bounded.</p>
+<blockquote>
+<p><strong>Theorem.</strong> If <span class="arithmatex">\(E\subseteq X\)</span> is compact and <span class="arithmatex">\(F\subseteq E\)</span> is closed then <span class="arithmatex">\(F\)</span> is compact</p>
+</blockquote>
+<p>Proof. Suppose <span class="arithmatex">\(\mathcal{G}\)</span> is an open cover of <span class="arithmatex">\(F\)</span>. Since <span class="arithmatex">\(F^C\)</span> is open, <span class="arithmatex">\(\{F^C\} \cup \mathcal{G}\)</span> is an open cover of <span class="arithmatex">\(E\)</span> so there is a finite subcover <span class="arithmatex">\(\mathcal{F}\)</span>. Clearly <span class="arithmatex">\(F\subseteq \bigcup \mathcal{F}\)</span> and we can remove (if it's there) <span class="arithmatex">\(F^C\)</span> from <span class="arithmatex">\(\mathcal{F}\)</span> without affecting this property, giving the finite subcover that we need.</p>
+<blockquote>
+<p><strong>Theorem.</strong> If <span class="arithmatex">\(X.Y\)</span> are metric spaces, <span class="arithmatex">\(E\subseteq X\)</span> is compact, and <span class="arithmatex">\(f:X\to Y\)</span> is a continuous function, then <span class="arithmatex">\(f(E)\)</span> is a compact subset of <span class="arithmatex">\(Y\)</span>.</p>
+</blockquote>
+<p>Proof. Let <span class="arithmatex">\(\mathcal{G}\)</span> be an open cover of <span class="arithmatex">\(f(E)\)</span> then since <span class="arithmatex">\(f\)</span> is continuous, <span class="arithmatex">\(\mathcal{U}=\{f^{-1}(G) \vert \ G\in \mathcal{G}\}\)</span> is an open cover of <span class="arithmatex">\(E\)</span>. Thus there exists <span class="arithmatex">\(G_1, G_2, \ldots, G_n\in \mathcal{G}\)</span> such that <span class="arithmatex">\(E\subseteq \bigcup_{i=1}^n f^{-1}(G_i)\)</span> and hence <span class="arithmatex">\(f(E)\subseteq \bigcup_{i=1}^n G_i\)</span>, i.e, <span class="arithmatex">\(\{G_1,\ldots, G_n\}\)</span> is the finite subcover we need.</p>
+<blockquote>
+<p><strong>Definition.</strong> In the context of a metric space <span class="arithmatex">\(X\)</span> and a subset <span class="arithmatex">\(K\subseteq X\)</span>. A collection of subsets <span class="arithmatex">\(\mathcal{F}\)</span> of <span class="arithmatex">\(K\)</span> has the finite intersection property (FIP) if for any finite subcollection <span class="arithmatex">\(F\subseteq \mathcal{F}\)</span>, we have <span class="arithmatex">\(\bigcap F\neq \varnothing\)</span>.</p>
+<p>If <span class="arithmatex">\(X,Y:\text{Type}\)</span> and <span class="arithmatex">\(f:X\to Y\)</span> then there exists a function <span class="arithmatex">\(g:Y\to X\)</span> such that: <span class="arithmatex">\(\forall x\in f(\text{fullset}), f(g(x))=x\)</span>. </p>
+<p>More generally, we can choose any set <span class="arithmatex">\(K:\text{set }X\)</span> and there will exist a function <span class="arithmatex">\(g:Y\to X\)</span> such that: <span class="arithmatex">\(\forall x\in f(K), \ f(g(x))=x \land g(x)\in K\)</span></p>
+</blockquote>
+<div class="highlight"><pre><span></span><code>FIP {X:Type}[Metric_Space X] {K:Set X} 
+(F:Set Set X)[⋃F⊆E] : Prop := 
+(f:Set Set X)[f⊆F][finite f] → ⋂f≠∅
+
+
+
+Context : {X:Type}[Metric_Space X] {K:Set X}[Closed K]
+---
+WS --&gt;
+h1 : Compact K
+h2 : ⋂F=∅ 
+    → h2.1 : ⋃(F^C) = fullset
+h3 : F^C open_cover_of K
+h4 : ⋂f^C ⊆ K
+        K^C ⊆ (⋂f^C)^C
+        K ⊆ (⋂f^C)^C
+        fullset ⊆ (⋂f^C)^C
+        (⋂f^C)^C = fullset
+        (⋂f^C) = ∅
+
+-
+F : Set Set X + [∀x∈F, closed x ∧ x⊆K][FIP F]
+f : Set Set X + [f⊆F^C] + [K⊆⋃f=(⋂(f^C))^C] + [finite f]
+FIP F f^C :  ⋂f^C≠∅
+
+
+⋃f = (⋂(f^C))^C
+
+
+
+---
+Goal : contradiction
+</code></pre></div>
+<p>K⊆⋃(F^C)</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.bd41221c.min.js"></script>
+      
+        <script src="../../../javascripts/katex.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js"></script>
+      
+        <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+      
+    
+  </body>
+</html>
