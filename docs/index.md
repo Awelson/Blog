@@ -8,7 +8,7 @@ to my personal website. This is where I will try to document whatever I've learn
 
 ## - [Japanese Section 🗾](Japanese%20Section%20🗾/index.md)
 
-## - Anime Stuff
+## - [Anime Stuff](Anime/index.md)
 
 ## - Video Games
 
