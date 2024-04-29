@@ -10,7 +10,7 @@ I initially thought that this seemed like a ridiculous (I mean that in a positiv
 ### **22/04/2024**: [Balming Tiger](https://balmingtiger.com/) ⋅ SOS
 <iframe src="https://www.youtube.com/embed/e6gP0UcYJi0" width="560" height="315" title="A YouTube video" frameborder="0" allowfullscreen></iframe>
 
-Balming Tiger has quickly become one of my favorite bands. Each of their music is unique and not defined by a single genre/theme. Their music videos are also unique, especially in terms of cinematography. Take for instance at 0:34 where the camera moves in for a close-up and then continues moving past, switching to a reverse shot. Or at 3:25 with the rotating zoom-in whose effect continues past what we presumed to be the object of focus (the man in the car).
+Balming Tiger has quickly become one of my favorite bands. Each of their music is unique and not defined by a single genre/theme. Their music videos are also unique, especially in terms of cinematography. Take for instance at 0:34 where the camera moves in for a close-up and then continues moving past, switching to a reverse shot. Or at 3:25 with the rotating zoom-in whose effect continues past what we presumed to be the object of focus (the man in the car). And OMG you have to check their official website too, its so cool to play around with.
 
 > I don't know cinematography terms that well, so I might be using these terms inaccurately.  
 
