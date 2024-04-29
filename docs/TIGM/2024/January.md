@@ -8,8 +8,6 @@ The Smile is a quite recently formed [Radiohead](https://en.wikipedia.org/wiki/R
 
 I haven't listened to the album yet, but I'm sure it will be a banger considering how good "Bending Hectic" is.
 
-
-
 ### **18/01/2024**: [Joe Valence & Brae](https://www.jvbsucks.com/) ⋅ PUNK TACTICS
 <iframe src="https://www.youtube.com/embed/OklSZmIx9-o" width="560" height="315" title="A YouTube video" frameborder="0" allowfullscreen></iframe>
 
