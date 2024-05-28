@@ -1,21 +1,11 @@
 # Japanese Section 🗾
 
-$\small こんにち$-what's up! This is the japanese section; where you will find all to do with Japan (except anime; because honestly that requires its own section).
+$\small こんにち$-what's up! This is the japanese section where you can find all to do with Japan (except anime; because honestly that requires its own section). This includes bits of Japanese culture I find interesting, and also some resources to do with learning Japanese. I am still learning myself so there might be inaccuracies when I present or translate relevant information.
 
-This section will mostly consist of bits of Japanese culture I find interesting, and also some resources to do with learning Japanese. I am still learning myself so there might be inaccuracies when I present or translate relevant information. If you happen to notice any of these innaccuracies you can let me know by writing a comment (at the very bottom of the page).
+## - [Japanese Language Learning Resources](Resources.md)
 
-This section is further split into various subsections which you may find below:
 
-## - Manga
-
-## - Transcripts
-
-## - Culture
-
-## - LLR
-
-## - ... more soon
-
+<!---
 <script src="https://giscus.app/client.js"
         data-repo="Awelson/Blog"
         data-repo-id="R_kgDOJ3gOdQ"
@@ -31,4 +21,5 @@ This section is further split into various subsections which you may find below:
         crossorigin="anonymous"
         async>
 </script>
+-->
 
