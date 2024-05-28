@@ -7,19 +7,17 @@ Inspired by [Mikasacus's](https://www.youtube.com/@mikasacus) tradition of shari
 
 I will try (my best) to share and talk a bit about a piece of music that I find cool each day. This can be a single song or an entire albumn, I also listen to and enjoy most genres so you will find the catalouge to be quite diverse.
 
-[comment]:: (to update the link, delete from right to left up till the # symbol then ctrl + spacebar + "ddc" + enter + ctrl + spacebar + enter; remove any unicode symbol; change the month if necessary)
-
 > Click [HERE](2024/May.md) to view today's good music
 
-or use the archives below (or the nav-bar on the left side) to navigate to a specific date.
+or use the archives below to navigate to a specific month.
 
-> Note. Some entries will be blank. Obviously, keeping a daily pace is very difficult and I don't expect to keep a perfect attendance while doing this.
+> Obviously I won't be updating this daily (that's probably too much work), but I will try to be frequent.
 
 ## Archives
 
 ### 2024
 
-[January](2024/January.md) > ...
+[January](2024/January.md) > [February](2024/February.md) > [March](2024/March.md) > [April](2024/April.md) > [May](2024/May.md) ...
 
 ### 2023
 [July](2023/July.md) > [August](2023/August.md) > [September](2023/September.md) > [October](2023/October.md) > [November](2023/November.md) > [December](2023/December.md)

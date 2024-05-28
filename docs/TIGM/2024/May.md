@@ -1,10 +1,20 @@
 ---
 title: May
 ---
+
+### **28/05/2024**: [Christopher Larkin](https://composerlarkin.com) ⋅ Hollow Knight Piano Collections
+<iframe src="https://www.youtube.com/embed/videoseries?list=OLAK5uy_nbhT7o5cOs84RryYxWkXCQMwbh-duRL1U&si=eCdUWdxgS6Bi3654" width="560" height="315" title="A YouTube video" frameborder="0" allowfullscreen></iframe>
+
+An actual daily update!? (when was the last time that happened?). These are piano versions of the [Hollow Knight](https://store.steampowered.com/app/367520/Hollow_Knight/) original soundtrack (my all-time favorite game). The [OST](https://www.youtube.com/playlist?list=PLmOldskd2VbL7_t-NE9p6rEboq_v0AHko) (which is more orchestral in nature) was composed by Christopher Larkin, but the piano compositions are from [David Peacock](https://www.daviddpeacock.com) and [Augustine Mayuga Gonzales](https://amgonz.com) who are also involved with making music for other famous indie video games like [Hyper Light Drifter](https://store.steampowered.com/app/257850/Hyper_Light_Drifter/), [Ori and the Blind Forest](https://store.steampowered.com/app/261570/Ori_and_the_Blind_Forest/), etc...
+
+I used to be able to play White Palace, Sealed Vessel, and Radiance on piano (not as elegantly as is here ofc), but that was like 5-6 years ago. I haven't touched the piano since so it was kinda sad listening to these pieces coz it's like "man.. I used to be able to play this.. and now I can't" 
+
+> There is also a ["Piano Collections" for Undertale](https://www.youtube.com/playlist?list=PLjEqnQYTsgI8ke2tCb2nMYtsD9cqeQv8f); also by David Peacock and Augustine Mayuga Gonzales.
+
 ### **27/05/2024**: [Pharoah Sanders](https://www.pharoahsanders.com) ⋅ Harvest Time
 <iframe src="https://www.youtube.com/embed/P8sN5cwBGHM" width="560" height="315" title="A YouTube video" frameborder="0" allowfullscreen></iframe>
 
-This is the first time an artist has appeared twice on TIGM!! It's Pharaoh Sanders [again](/docs/TIGM/2023/October.md#15102023-pharoah-sanders--kazuko). This time I'm showcasing the 20 minute long "Harvest Time" from his 1977 self-titled album. The album was reissued in 2023, now including two live performances of "Harvest Time" and you can hear them [here](https://pharoahsanders.bandcamp.com/album/pharoah) (though they sound very different from the studio version).
+This is the first time an artist has appeared twice on TIGM!! It's Pharaoh Sanders [again](../2023/October.md#15102023-pharoah-sanders--kazuko). This time I'm showcasing the 20 minute long "Harvest Time" from his 1977 self-titled album. The album was reissued in 2023, now including two live performances of "Harvest Time" and you can hear them [here](https://pharoahsanders.bandcamp.com/album/pharoah) (though they sound very different from the studio version).
 
 ### **08/05/2024**: [Sloche](https://en.wikipedia.org/wiki/Sloche_(band)) ⋅ Stadaconé
 <iframe src="https://www.youtube.com/embed/SI8wDr0avGo" width="560" height="315" title="A YouTube video" frameborder="0" allowfullscreen></iframe>
