@@ -41,6 +41,8 @@ markdown_extensions:
   - pymdownx.keys
   - pymdownx.mark
   - pymdownx.tilde
+  - pymdownx.tabbed:
+    alternate_style: true
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
@@ -59,10 +61,8 @@ extra_javascript:
   - javascripts/katex.js 
   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js  
   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js
-  - https://unpkg.com/mermaid/dist/mermaid.min.js 
-  - javascripts/glide.js
+  - https://unpkg.com/mermaid/dist/mermaid.min.js
 
 extra_css:
   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css
-  - stylesheets/glide.core.css
-  - stylesheets/glide.theme.css
+

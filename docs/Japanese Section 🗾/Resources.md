@@ -1,9 +1,3 @@
-<script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
-
-<script>
-  new Glide('.glide').mount()
-</script>
-
 # Japanese Language Learning Resources
 
 This is a curated list of Japanese language learning resources I find to be helpful
@@ -75,18 +69,14 @@ Most of these websites generally have the same content, but the most complete is
 
 ### Youtube Channels with JP subs
 
-<div class="container">
-<div class="glide">
-  <div class="glide__track" data-glide-el="track">
-    <ul class="glide__slides">
-      <li class="glide__slide">0</li>
-      <li class="glide__slide">1</li>
-      <li class="glide__slide">2</li>
-    </ul>
-  </div>
-  <div class="glide__arrows" data-glide-el="controls">
-    <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
-    <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
-  </div>
-</div>
-</div>
+=== "Test1"
+
+!!! example
+
+    test 1
+
+=== "Test2"
+
+!!! example
+
+    test2
