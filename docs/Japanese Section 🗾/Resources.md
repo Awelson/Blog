@@ -1,3 +1,7 @@
+<script>
+  new Glide('.glide').mount()
+</script>
+
 # Japanese Language Learning Resources
 
 This is a curated list of Japanese language learning resources I find to be helpful
@@ -84,7 +88,3 @@ Most of these websites generally have the same content, but the most complete is
   </div>
 </div>
 </div>
-
-<script>
-  new Glide('.glide').mount()
-</script>
