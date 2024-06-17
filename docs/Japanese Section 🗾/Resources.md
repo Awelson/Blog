@@ -71,16 +71,28 @@
 
 ### Youtube Channels with JP subs
 
+<div class="container">
 <div class="glider-contain">
   <div class="glider">
-    <div>your content here</div>
-    <div>your content here</div>
-    <div>your content here</div>
-    <div>your content here</div>
+    <div>
+        $asd$ Test $x^2$
+    </div>
+    <div>
+        > Test
+    </div>
+    <div>
+        !!! note
+
+            HELP
+    </div>
+    <div>
+        **asd**
+    </div>
   </div>
 
   <button aria-label="Previous" class="glider-prev">«</button>
   <button aria-label="Next" class="glider-next">»</button>
   <div role="tablist" class="dots"></div>
+</div>
 </div>
 
