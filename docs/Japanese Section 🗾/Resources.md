@@ -71,12 +71,34 @@ Most of these websites generally have the same content, but the most complete is
 
 === "Test1"
 
-!!! example
+    !!! example
 
-    test 1
+        test 1
 
 === "Test2"
 
-!!! example
+    !!! example
 
-    test2
+        test2
+
+=== "C"
+
+    ``` c
+    #include <stdio.h>
+
+    int main(void) {
+      printf("Hello world!\n");
+      return 0;
+    }
+    ```
+
+=== "C++"
+
+    ``` c++
+    #include <iostream>
+
+    int main(void) {
+      std::cout << "Hello world!" << std::endl;
+      return 0;
+    }
+    ```
