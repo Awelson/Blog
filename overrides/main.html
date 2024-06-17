@@ -4,9 +4,17 @@
   <!-- Add scripts that need to run before here -->
   {{ super() }}
   <!-- Add scripts that need to run afterwards here -->
-        <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
-        
-        <script> 
-            new Glide(".glide").mount(); 
+        <script>
+            window.addEventListener('load', function(){
+                new Glider(document.querySelector('.glider'), {
+                    slidesToShow: 1,
+                    dots: '#dots',
+                    draggable: true,
+                    arrows: {
+                        prev: '.glider-prev',
+                        next: '.glider-next'
+                    }
+                });
+            })
         </script>
 {% endblock %}

@@ -71,16 +71,16 @@
 
 ### Youtube Channels with JP subs
 
-<div class="glide">
-  <div class="glide__track" data-glide-el="track">
-    <ul class="glide__slides">
-      <li class="glide__slide"><img src="https://picsum.photos/200" /></li>
-      <li class="glide__slide"><img src="https://picsum.photos/200" /></li>
-      <li class="glide__slide"><img src="https://picsum.photos/200" /></li>
-    </ul>
+<div class="glider-contain">
+  <div class="glider">
+    <div>your content here</div>
+    <div>your content here</div>
+    <div>your content here</div>
+    <div>your content here</div>
   </div>
-    <div class="glide__arrows" data-glide-el="controls">
-    <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
-    <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
-  </div>
+
+  <button aria-label="Previous" class="glider-prev">«</button>
+  <button aria-label="Next" class="glider-next">»</button>
+  <div role="tablist" class="dots"></div>
 </div>
+
