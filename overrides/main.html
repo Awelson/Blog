@@ -3,8 +3,8 @@
 {% block scripts %}
   <!-- Add scripts that need to run before here -->
   {{ super() }}
-  <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
-  <script>
-    new Glide('.glide').mount()
-  </script>
+  <!-- Add scripts that need to run afterwards here -->
+        <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+        
+        <script> new Glide('.glide').mount </script>
 {% endblock %}
