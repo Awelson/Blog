@@ -1,3 +1,5 @@
+<script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+
 <script>
   new Glide('.glide').mount()
 </script>
