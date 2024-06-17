@@ -71,7 +71,6 @@
 
 ### Youtube Channels with JP subs
 
-<div class="container">
 <div class="glide">
   <div class="glide__track" data-glide-el="track">
     <ul class="glide__slides">
@@ -84,5 +83,4 @@
     <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
     <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
   </div>
-</div>
 </div>
