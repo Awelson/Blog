@@ -67,6 +67,6 @@ extra_javascript:
 
 extra_css:
   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css
-  - stylesheets/glide.core.css
-  - stylesheets/glide.theme.css
+  - https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.core.css
+  - https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.theme.css
 
