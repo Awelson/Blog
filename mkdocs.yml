@@ -21,6 +21,8 @@ theme:
       toggle:
         icon: material/toggle-switch
         name: Switch to light mode
+    
+    custom_dir: overrides
 
 # Extensions
 markdown_extensions:
@@ -65,4 +67,6 @@ extra_javascript:
 
 extra_css:
   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css
+  - stylesheets/glide.core.css
+  - stylesheets/glide.theme.css
 

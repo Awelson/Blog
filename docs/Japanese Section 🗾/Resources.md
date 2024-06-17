@@ -1,27 +1,29 @@
 # Japanese Language Learning Resources
 
-This is a curated list of Japanese language learning resources I find to be helpful
+**This is a curated list of Japanese language learning resources I find to be helpful**
 
 ### Cool Language Learning Websites
 
-- General Guides
-    - [TheMoeWay](https://learnjapanese.moe)
-    - [Immersion-Based Japanese Learning](https://donkuri.github.io/learn-japanese/)
-    - [JP Lazy Guide](https://xelieu.github.io/jp-lazy-guide/)
-    - [Itazuraneko](https://gohoneko.neocities.org)
-        - [alt](https://djtguide.github.io/learn/learnmain.html)
-    - [Tatsumoto Ren](https://tatsumoto-ren.github.io/blog/index.html)
-        - [alt](https://tatsumoto.neocities.org/blog/)
-    - [IgrecL](https://github.com/IgrecL/japanese)
-    - [animecards](https://animecards.site)
-- Grammar
-    - [Ixrec's Guide to Japanese](https://ixrec.neocities.org)
-    - [Tae Kim's Guide to Learning Japanese](https://guidetojapanese.org/learn/)
-    - [Core6000](https://core6000.neocities.org)
-    - [japbase](https://japbase.neocities.org/full_night)
-    - [boirodaisuki](https://boirodaisuki.neocities.org/dark)
+#### General Guides
+- [TheMoeWay](https://learnjapanese.moe)
+- [Immersion-Based Japanese Learning](https://donkuri.github.io/learn-japanese/)
+- [JP Lazy Guide](https://xelieu.github.io/jp-lazy-guide/)
+- [Itazuraneko](https://gohoneko.neocities.org)
+    - [alt](https://djtguide.github.io/learn/learnmain.html)
+- [Tatsumoto Ren](https://tatsumoto-ren.github.io/blog/index.html)
+    - [alt](https://tatsumoto.neocities.org/blog/)
+- [IgrecL](https://github.com/IgrecL/japanese)
+- [animecards](https://animecards.site)
+#### Grammar
+- [Ixrec's Guide to Japanese](https://ixrec.neocities.org)
+- [Tae Kim's Guide to Learning Japanese](https://guidetojapanese.org/learn/)
+- [Core6000](https://core6000.neocities.org)
+- [japbase](https://japbase.neocities.org/full_night)
+- [boirodaisuki](https://boirodaisuki.neocities.org/dark)
 
-Most of these websites generally have the same content, but the most complete is probably TheMoeWay, Tatsumoto Ren, and Itazuraneko. For grammar specifically, japbase and Tae Kim's Guide is good.
+!!! note ""
+
+    Most of these websites generally have the same content, but the most complete is probably TheMoeWay, Tatsumoto Ren, and Itazuraneko. For grammar specifically, japbase and Tae Kim's Guide is good.
 
 ### Books, Manga, etc...
 
@@ -35,13 +37,13 @@ Most of these websites generally have the same content, but the most complete is
 - [nhentai](https://nhentai.net)
 - [hitomi](https://hitomi.la)
 
-- Paid (but occasionally has free stuff too)
-    - A [guide](https://www.tofugu.com/japanese/how-to-buy-japanese-ebooks/) on buying japanese ebooks
-    - [booklive](https://booklive.jp)
-    - [cmoa](https://www.cmoa.jp)
-    - [ebookjapan](https://ebookjapan.yahoo.co.jp)
-    - [pixiv](https://comic.pixiv.net)
-    - [amazon.co.jp](https://www.amazon.co.jp/-/en/本-書籍-通販/b/?ie=UTF8&node=465392&ref_=nav_cs_books)
+#### Paid (but occasionally has free stuff too)
+- A [guide](https://www.tofugu.com/japanese/how-to-buy-japanese-ebooks/) on buying japanese ebooks
+- [booklive](https://booklive.jp)
+- [cmoa](https://www.cmoa.jp)
+- [ebookjapan](https://ebookjapan.yahoo.co.jp)
+- [pixiv](https://comic.pixiv.net)
+- [amazon.co.jp](https://www.amazon.co.jp/-/en/本-書籍-通販/b/?ie=UTF8&node=465392&ref_=nav_cs_books)
 
 ### General File Sharing
 
@@ -69,36 +71,18 @@ Most of these websites generally have the same content, but the most complete is
 
 ### Youtube Channels with JP subs
 
-=== "Test1"
-
-    !!! example
-
-        test 1
-
-=== "Test2"
-
-    !!! example
-
-        test2
-
-=== "C"
-
-    ``` c
-    #include <stdio.h>
-
-    int main(void) {
-      printf("Hello world!\n");
-      return 0;
-    }
-    ```
-
-=== "C++"
-
-    ``` c++
-    #include <iostream>
-
-    int main(void) {
-      std::cout << "Hello world!" << std::endl;
-      return 0;
-    }
-    ```
+<div class="container">
+<div class="glide">
+  <div class="glide__track" data-glide-el="track">
+    <ul class="glide__slides">
+      <li class="glide__slide">0</li>
+      <li class="glide__slide">1</li>
+      <li class="glide__slide">2</li>
+    </ul>
+  </div>
+    <div class="glide__arrows" data-glide-el="controls">
+    <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
+    <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
+  </div>
+</div>
+</div>
