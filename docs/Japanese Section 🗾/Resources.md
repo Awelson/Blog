@@ -4,16 +4,14 @@ This is a curated list of Japanese language learning resources I find to be help
 
 ### Cool Language Learning Websites
 
-Most of these websites generally have the same content, but the most complete is probably TheMoeWay, Tatsumoto Ren, and Itazuraneko. For grammar specifically, japbase and Tae Kim's Guide is good.
-
 - General Guides
     - [TheMoeWay](https://learnjapanese.moe)
     - [Immersion-Based Japanese Learning](https://donkuri.github.io/learn-japanese/)
     - [JP Lazy Guide](https://xelieu.github.io/jp-lazy-guide/)
     - [Itazuraneko](https://gohoneko.neocities.org)
-        - [alt 1](https://djtguide.github.io/learn/learnmain.html)
+        - [alt](https://djtguide.github.io/learn/learnmain.html)
     - [Tatsumoto Ren](https://tatsumoto-ren.github.io/blog/index.html)
-        - [alt 1](https://tatsumoto.neocities.org/blog/)
+        - [alt](https://tatsumoto.neocities.org/blog/)
     - [IgrecL](https://github.com/IgrecL/japanese)
     - [animecards](https://animecards.site)
 - Grammar
@@ -23,15 +21,19 @@ Most of these websites generally have the same content, but the most complete is
     - [japbase](https://japbase.neocities.org/full_night)
     - [boirodaisuki](https://boirodaisuki.neocities.org/dark)
 
+Most of these websites generally have the same content, but the most complete is probably TheMoeWay, Tatsumoto Ren, and Itazuraneko. For grammar specifically, japbase and Tae Kim's Guide is good.
+
 ### Books, Manga, etc...
 
 - [Itazuraneko](https://itazuraneko.org/index.html)
 - [Bilingual Manga](https://bilingualmanga.org)
 - [Manga Zip](https://manga-zip.is/post)
-    - [alt 1](https://manga-zip.info/home.i1/)
+    - [alt](https://manga-zip.info/home.i1/)
 - [Dlraw](https://dlraw.to/raw/)
 - [rawkuma](https://rawkuma.com)
 - [mangaz](https://www.mangaz.com)
+- [nhentai](https://nhentai.net)
+- [hitomi](https://hitomi.la)
 
 - Paid (but occasionally has free stuff too)
     - A [guide](https://www.tofugu.com/japanese/how-to-buy-japanese-ebooks/) on buying japanese ebooks
@@ -46,13 +48,15 @@ Most of these websites generally have the same content, but the most complete is
 - [aarinfantasy](https://aarinfantasy.com/forum/forum.php) - BL stuff
 - [anime-sharing](https://www.anime-sharing.com)
 - [nyaa.si](https://nyaa.si/?f=0&c=1_2&q)
-    - [sukubei](https://sukebei.nyaa.si/rules)
+    - [sukubei](https://sukebei.nyaa.si/rules) - NSFW
 
 ### Tools
 
-- [yomitan](https://github.com/themoeway/yomitan) - Japanese pop-up dictionary for browser
+- [yomitan](https://github.com/themoeway/yomitan) - Pop-up dictionary for browser
+- [jpdb](https://jpdb.io) - Dictionary
 - [asbplayer](https://github.com/killergerbah/asbplayer) - Add subtitles to streaming videos
-    - [jimaku.cc](https://jimaku.cc) - jp subtitles
+- [jimaku.cc](https://jimaku.cc) - jp subtitles
+
 - OCR
     - [mokuro](https://github.com/kha-white/mokuro) - Manga ocr
     - [YomiNinja](https://github.com/matt-m-o/YomiNinja) - Screen ocr (for Japanese video games)
@@ -61,7 +65,26 @@ Most of these websites generally have the same content, but the most complete is
     - [sentencesearch](https://sentencesearch.neocities.org)
     - [massif.la](https://massif.la/ja)
     - [immersionkit](https://www.immersionkit.com) - example sentences from anime
+    - [youglish](https://youglish.com/japanese) - example sentences from YouTube videos with JP subs
 
-### Dictionary
+### Youtube Channels with JP subs
 
-- [jpdb](https://jpdb.io)
+<div class="container">
+<div class="glide">
+  <div class="glide__track" data-glide-el="track">
+    <ul class="glide__slides">
+      <li class="glide__slide">0</li>
+      <li class="glide__slide">1</li>
+      <li class="glide__slide">2</li>
+    </ul>
+  </div>
+  <div class="glide__arrows" data-glide-el="controls">
+    <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
+    <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
+  </div>
+</div>
+</div>
+
+<script>
+  new Glide('.glide').mount()
+</script>
