@@ -71,9 +71,9 @@
 
 ### Youtube Channels with JP subs
 
-<div class="container">
-<div class="glider-contain">
-  <div class="glider">
+<div class="container" markdown>
+<div class="glider-contain" markdown>
+  <div class="glider" markdown>
     <div markdown align="center">
         $asd$ Test $x^2$
     </div>
