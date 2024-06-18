@@ -9,6 +9,19 @@ width="720" height="480" frameborder="0" allowfullscreen></iframe>
     <iframe width="560" height="349" src="https://awelson.github.io/Proofs/Proof1.html" frameborder="0"></iframe>
 </div>
 
+<div class="glider-contain">
+  <div class="glider">
+    <div>your content here</div>
+    <div>your content here</div>
+    <div>your content here</div>
+    <div>your content here</div>
+  </div>
+
+  <button aria-label="Previous" class="glider-prev">«</button>
+  <button aria-label="Next" class="glider-next">»</button>
+  <div role="tablist" class="dots"></div>
+</div>
+
 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
 
 

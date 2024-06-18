@@ -22,6 +22,21 @@ If $f:X\to Z$ is continuous at all points of $X$, that is to say : `∀x:X, is_c
 
 ### Proof
 
+<!---
 <div class="videoWrapper">
     <iframe width="560" height="349" src="https://awelson.github.io/Proofs/index.html" frameborder="0"></iframe>
+</div>
+--->
+
+<div class="glider-contain">
+  <div class="glider">
+    <div><img src="https://awelson.github.io/Proofs/Pasted%20image%2020240618214910.png" style="width: 70%; height: auto"></img></div>
+    <div><img src="https://awelson.github.io/Proofs/Pasted%20image%2020240618214910.png" style="width: 70%; height: auto"></img></div>
+    <div><img src="https://awelson.github.io/Proofs/Pasted%20image%2020240618223158.png" style="width: 70%; height: auto"></img></div>
+    <div><img src="https://awelson.github.io/Proofs/Pasted%20image%2020240618223717.png"></img></div>
+  </div>
+
+  <button aria-label="Previous" class="glider-prev">«</button>
+  <button aria-label="Next" class="glider-next">»</button>
+  <div role="tablist" class="dots"></div>
 </div>
