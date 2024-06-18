@@ -23,6 +23,6 @@ If $f:X\to Z$ is continuous at all points of $X$, that is to say : `∀x:X, is_c
 ### Proof
 
 <div class="videoWrapper">
-    <iframe width="560" height="349" src="https://awelson.github.io/Proofs" frameborder="0"></iframe>
+    <iframe width="560" height="349" src="https://awelson.github.io/Proofs/index.html" frameborder="0"></iframe>
 </div>
 
