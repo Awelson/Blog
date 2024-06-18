@@ -74,21 +74,21 @@
 <div class="container">
 <div class="glider-contain">
   <div class="glider">
-    <div class="admonition note" align="center">
+    <div class="admonition note">
         $asd$ Test $x^2$
     </div>
-    <div align="center">
+    <div>
         <blockquote>
         <p> q </p>
         </blockquote>
     </div>
-    <div align="center">
+    <div>
         <div class="admonition note">
             HELP
         </div>
     </div>
-    <div markdown align="center">
-        <b> asd </b>
+    <div markdown>
+        **test**
     </div>
   </div>
 
@@ -96,12 +96,4 @@
   <button aria-label="Next" class="glider-next">»</button>
   <div role="tablist" class="dots"></div>
 </div>
-</div>
-
-<div markdown="block">
-**Test**
-</div>
-
-<div markdown>
-**Test**
 </div>
