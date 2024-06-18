@@ -74,24 +74,17 @@
 <div class="container">
 <div class="glider-contain">
   <div class="glider">
-    <div class="admonition note">
-        $asd$ Test $x^2$
+    <div>
+        <figure>
+            <img src="https://media.discordapp.net/attachments/830377799973994509/1252544821588000790/image.png?ex=66729ac4&is=66714944&hm=b13c4c0e24205eb69f8e5e24defc2db5b0e6537239ee67aa2f3b8195c778ef64&=&format=webp&quality=lossless&width=1111&height=428">
+            <figcaption>A test $x^2$ text</figcaption>
+        </figure>
     </div>
     <div>
-        <blockquote>
-        <p> q </p>
-        </blockquote>
-    </div>
-    <div>
-        <div class="admonition note">
-            <ul>
-                <li>$p:M, \ [p&gt;0] \ [\text{increasing} \ p]$</li>
-                <li>$r:\mathbb{R}, \ [r&gt;0]$  </li>
-            </ul>
-        </div>
-    </div>
-    <div>
-        test
+        <figure>
+            <img src="https://media.discordapp.net/attachments/830377799973994509/1252544821588000790/image.png?ex=66729ac4&is=66714944&hm=b13c4c0e24205eb69f8e5e24defc2db5b0e6537239ee67aa2f3b8195c778ef64&=&format=webp&quality=lossless&width=1111&height=428">
+            <figcaption>A test $x^2$ text</figcaption>
+        </figure>
     </div>
   </div>
 
