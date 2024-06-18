@@ -113,6 +113,4 @@
 - [Japanese with Shun](https://www.youtube.com/@JapanesewithShun)
 - [Moshi Moshi Yusuke](https://www.youtube.com/@moshimoshi.yusuke/featured)
 
-<div class="container">
-  <iframe src="https://awelson.github.io/Proofs/Proof1.html"></iframe>
-</div>
+<iframe src="https://awelson.github.io/Proofs/Proof1.html"></iframe>
