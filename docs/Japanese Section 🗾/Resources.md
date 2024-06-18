@@ -2,15 +2,15 @@
 
 **This is a curated list of Japanese language learning resources I find to be helpful**
 
-### Cool Language Learning Websites
+## Cool Language Learning Websites
 
 <h4>General Guides</h4>
 
 - [TheMoeWay](https://learnjapanese.moe)
 - [Immersion-Based Japanese Learning](https://donkuri.github.io/learn-japanese/)
 - [JP Lazy Guide](https://xelieu.github.io/jp-lazy-guide/)
-- [Itazuraneko](https://gohoneko.neocities.org) ([alt](https://djtguide.github.io/learn/learnmain.html))
-- [Tatsumoto Ren](https://tatsumoto-ren.github.io/blog/index.html) ([alt](https://tatsumoto.neocities.org/blog/))
+- [Itazuraneko](https://gohoneko.neocities.org) -> [alt](https://djtguide.github.io/learn/learnmain.html)
+- [Tatsumoto Ren](https://tatsumoto-ren.github.io/blog/index.html) -> [alt](https://tatsumoto.neocities.org/blog/)
 - [IgrecL](https://github.com/IgrecL/japanese)
 - [animecards](https://animecards.site)
 
@@ -26,16 +26,20 @@
 
     Most of these websites generally have the same content, but the most complete is probably TheMoeWay, Tatsumoto Ren, and Itazuraneko. For grammar specifically, japbase and Tae Kim's Guide is good.
 
-### Books, Manga, etc...
+## Books, Manga, etc...
 
 - [Itazuraneko](https://itazuraneko.org/index.html)
 - [Bilingual Manga](https://bilingualmanga.org)
-- [Manga Zip](https://manga-zip.is/post) ([alt](https://manga-zip.info/home.i1/))
+- [Manga Zip](https://manga-zip.is/post) -> [alt](https://manga-zip.info/home.i1/)
 - [Dlraw](https://dlraw.to/raw/)
 - [rawkuma](https://rawkuma.com)
 - [mangaz](https://www.mangaz.com)
 - [nhentai](https://nhentai.net)
 - [hitomi](https://hitomi.la)
+- [aarinfantasy](https://aarinfantasy.com/forum/forum.php) - BL stuff
+- [anime-sharing](https://www.anime-sharing.com)
+- [nyaa.si](https://nyaa.si/?f=0&c=1_2&q)
+    - [sukubei](https://sukebei.nyaa.si/rules) - nyaa.si with NSFW included
 
 <h4>Paid (but occasionally has free stuff too)</h4>
 
@@ -46,17 +50,15 @@
 - [pixiv](https://comic.pixiv.net)
 - [amazon.co.jp](https://www.amazon.co.jp/-/en/本-書籍-通販/b/?ie=UTF8&node=465392&ref_=nav_cs_books)
 
-### General File Sharing
+## Tools
 
-- [aarinfantasy](https://aarinfantasy.com/forum/forum.php) - BL stuff
-- [anime-sharing](https://www.anime-sharing.com)
-- [nyaa.si](https://nyaa.si/?f=0&c=1_2&q)
-    - [sukubei](https://sukebei.nyaa.si/rules) - NSFW
-
-### Tools
+<h4>Dictionary</h4>
 
 - [yomitan](https://github.com/themoeway/yomitan) - Pop-up dictionary for browser
 - [jpdb](https://jpdb.io) - Dictionary
+
+<h4>Subtitles</h4>
+
 - [asbplayer](https://github.com/killergerbah/asbplayer) - Add subtitles to streaming videos
 - [jimaku.cc](https://jimaku.cc) - jp subtitles
 
@@ -71,7 +73,7 @@
 - [sentencesearch](https://sentencesearch.neocities.org)
 - [massif.la](https://massif.la/ja)
 - [immersionkit](https://www.immersionkit.com) - example sentences from anime
-- [youglish](https://youglish.com/japanese) - example sentences from YouTube videos with JP subs
+- [youglish](https://youglish.com/japanese) - example sentences from YouTube
 
 ### Youtube Channels with JP subs
 
@@ -103,7 +105,10 @@
     - [Hawk Eyes](https://www.youtube.com/@HawkEyes-uk5do)
     - [Swallow Tail](https://www.youtube.com/@SwallowTail-cq1fd)
 - [Chrono reverse](https://www.youtube.com/@Chronover_info)
+- [tasukukoma](https://www.youtube.com/@komatasuku)
 
 <h4>Others</h4>
 
 - [EGA channel](https://www.youtube.com/@EGA-CHANNEL)
+- [Japanese with Shun](https://www.youtube.com/@JapanesewithShun)
+- [Moshi Moshi Yusuke](https://www.youtube.com/@moshimoshi.yusuke/featured)
