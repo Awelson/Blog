@@ -30,13 +30,55 @@ If $f:X\to Z$ is continuous at all points of $X$, that is to say : `∀x:X, is_c
 
 <div class="glider-contain">
   <div class="glider">
-    <div><img src="https://awelson.github.io/Proofs/Pasted%20image%2020240618214910.png" style="width: 70%; height: auto"></img></div>
-    <div><img src="https://awelson.github.io/Proofs/Pasted%20image%2020240618214910.png" style="width: 70%; height: auto"></img></div>
-    <div><img src="https://awelson.github.io/Proofs/Pasted%20image%2020240618223158.png" style="width: 70%; height: auto"></img></div>
-    <div><img src="https://awelson.github.io/Proofs/Pasted%20image%2020240618223717.png"></img></div>
+    <div><figure>
+        <img src="https://awelson.github.io/Proofs/Pasted%20image%2020240618214457.png"></img>
+        <figcaption> Step 1 </figcaption>
+    </figure></div>
+    <div><figure>
+        <img src="https://awelson.github.io/Proofs/Pasted%20image%2020240618214910.png"></img>
+        <figcaption> Step 2 </figcaption>
+    </figure></div>
+    <div><figure>
+        <img src="https://awelson.github.io/Proofs/Pasted%20image%2020240618220258.png"></img>
+        <figcaption> Step 3 </figcaption>
+    </figure></div>
+    <div><figure>
+        <img src="https://awelson.github.io/Proofs/Pasted%20image%2020240618223158.png"></img>
+        <figcaption> Step 1 (reverse) </figcaption>
+    </figure></div>
+    <div><figure>
+        <img src="https://awelson.github.io/Proofs/Pasted%20image%2020240618223717.png"></img>
+        <figcaption> Step 2 </figcaption>
+    </figure></div>
   </div>
 
   <button aria-label="Previous" class="glider-prev">«</button>
   <button aria-label="Next" class="glider-next">»</button>
   <div role="tablist" class="dots"></div>
 </div>
+
+=== "Step 1"
+
+    We prove the forward direction first. Intros $\epsilon$
+
+=== "Step 2"
+
+    Since $f$ is continuous at $a$, there exists a $\delta>0$ such that
+
+    - $\forall x:X, d(x,a) < \delta \Rightarrow d(f(x),f(a)) < \epsilon$
+
+=== "Step 3"
+
+    Since $x \to a$ there is an $N:\mathbb{N}$ large enough so that $d((x n),a) < \delta$ for $n\geq N$. However, via `H` this translates to :
+
+    - $d((f(x n)),f(a)) < \epsilon$ for $n\geq N$
+
+    by the above. Hence we are done.
+
+=== "Step 1 (reverse)"
+
+    asd
+
+=== "Step 2"
+
+    asd
