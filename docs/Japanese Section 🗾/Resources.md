@@ -71,22 +71,24 @@
 
 ### Youtube Channels with JP subs
 
-<div class="container" markdown>
-<div class="glider-contain" markdown>
-  <div class="glider" markdown>
-    <div markdown align="center">
+<div class="container">
+<div class="glider-contain">
+  <div class="glider">
+    <div class="admonition note" align="center">
         $asd$ Test $x^2$
     </div>
-    <div align="center" markdown>
-        > Test
+    <div align="center">
+        <blockquote>
+        <p> q </p>
+        </blockquote>
     </div>
-    <div align="center" markdown>
-        !!! note
-        
+    <div align="center">
+        <div class="admonition note">
             HELP
+        </div>
     </div>
     <div markdown align="center">
-        **asd**
+        <b> asd </b>
     </div>
   </div>
 
