@@ -74,18 +74,18 @@
 <div class="container">
 <div class="glider-contain">
   <div class="glider">
-    <div>
+    <div text-align="center" markdown="1">
         $asd$ Test $x^2$
     </div>
-    <div>
+    <div text-align="center" markdown="1">
         > Test
     </div>
-    <div>
+    <div text-align="center" markdown="1">
         !!! note
-
+        
             HELP
     </div>
-    <div>
+    <div text-align="center" markdown="1">
         **asd**
     </div>
   </div>
