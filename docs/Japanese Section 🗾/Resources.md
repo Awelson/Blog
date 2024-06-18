@@ -84,11 +84,14 @@
     </div>
     <div>
         <div class="admonition note">
-            HELP
+            <ul>
+                <li>$p:M, \ [p&gt;0] \ [\text{increasing} \ p]$</li>
+                <li>$r:\mathbb{R}, \ [r&gt;0]$  </li>
+            </ul>
         </div>
     </div>
-    <div markdown>
-        **test**
+    <div>
+        test
     </div>
   </div>
 
