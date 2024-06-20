@@ -77,7 +77,7 @@
 
 ## Youtube Channels with JP subs
 
-<h4>BL stuff</h4>
+<h4>BL stuff (WHY ARE THERE SO MANY!! GAHH)</h4>
 
 - [BL sandwich](https://www.youtube.com/@BLsandwich)
 - [BL skip](https://www.youtube.com/@blskip)
@@ -114,6 +114,8 @@
 - [EGA channel](https://www.youtube.com/@EGA-CHANNEL)
 - [Japanese with Shun](https://www.youtube.com/@JapanesewithShun)
 - [Moshi Moshi Yusuke](https://www.youtube.com/@moshimoshi.yusuke/featured)
+
+I also occasionally [annotate](Annotated.md) Japanese videos, e.g, highlighting relevant vocabulary, explaining contexts, etc...
 
 <div id="player"></div>
 <div id="text-display" align="center">Text will be shown here based on video time.</div>
