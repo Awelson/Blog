@@ -93,6 +93,8 @@
 - [iketen](https://www.youtube.com/@bl3835)
 - [BL student council](https://www.youtube.com/@BLComic)
 - [Mickymacky](https://www.youtube.com/@mickymacky25)
+- [BL and Gente](https://www.youtube.com/@BL_andGENTE)
+- [Gush and Emo](https://www.youtube.com/@GUSH_and.Emo_BLch)
 
 <h4>Animations</h4>
 
@@ -112,3 +114,28 @@
 - [EGA channel](https://www.youtube.com/@EGA-CHANNEL)
 - [Japanese with Shun](https://www.youtube.com/@JapanesewithShun)
 - [Moshi Moshi Yusuke](https://www.youtube.com/@moshimoshi.yusuke/featured)
+
+<div class="responsive-container"><div id="player"></div></div>
+<script>
+  var tag = document.createElement('script');
+  tag.src = "https://www.youtube.com/iframe_api";
+  var firstScriptTag = document.getElementsByTagName('script')[0];
+  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+  var player;
+  function onYouTubeIframeAPIReady() {
+    player = new YT.Player('player', {
+      videoId: 'S4cZjaXmuzE',
+    });
+  }
+  function setCurrentTime(slideNum) {
+    var object = [ 0, 133, 193 ];
+    player.seekTo(object[slideNum]);
+  }
+</script>
+
+<strong>Timestamps:</strong>
+<ul>
+ 	<li><a href="javascript:void(0);" onclick="setCurrentTime(0)">0:00 Intro</a></li>
+ 	<li><a href="javascript:void(0);" onclick="setCurrentTime(1)">2:13 1 Minute Challenge</a></li>
+ 	<li><a href="javascript:void(0);" onclick="setCurrentTime(2)">3:13 Website Speed Results</a></li>
+</ul>
