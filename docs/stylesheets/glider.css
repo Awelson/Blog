@@ -153,21 +153,16 @@
   width: 80%;
   height: auto;
 }
-.responsive-container {
-	position: relative;
-	padding-bottom: 56.25%; /* 16:9 */
-	padding-top: 0px;
-	height: 0;
-	overflow: hidden;
+#text-display {
+  margin-top: 20px;
+  font-size: 20px;
+  transition: all 2s ease;
 }
-.responsive-container iframe,
-.responsive-container object,
-.responsive-container embed,
-.responsive-container video
-{
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
+#timestamps {
+  margin-top: 20px;
+}
+.timestamp {
+  cursor: pointer;
+  color: blue;
+  text-decoration: underline;
 }

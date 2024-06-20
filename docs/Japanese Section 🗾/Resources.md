@@ -115,27 +115,59 @@
 - [Japanese with Shun](https://www.youtube.com/@JapanesewithShun)
 - [Moshi Moshi Yusuke](https://www.youtube.com/@moshimoshi.yusuke/featured)
 
-<div class="responsive-container"><div id="player"></div></div>
-<script>
-  var tag = document.createElement('script');
-  tag.src = "https://www.youtube.com/iframe_api";
-  var firstScriptTag = document.getElementsByTagName('script')[0];
-  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-  var player;
-  function onYouTubeIframeAPIReady() {
-    player = new YT.Player('player', {
-      videoId: 'S4cZjaXmuzE',
-    });
-  }
-  function setCurrentTime(slideNum) {
-    var object = [ 0, 133, 193 ];
-    player.seekTo(object[slideNum]);
-  }
-</script>
+<div id="player"></div>
+<div id="text-display" align="center">Text will be shown here based on video time.</div>
+<div id="timestamps" markdown>
+**Relevant Vocabulary:**
+    <div class="timestamp" data-time="5">Go to 0:05 - Custom text for 5 **seconds**</div> **asd asd**
+    <div class="timestamp" data-time="10">Go to 0:10 - Custom text for 10 seconds</div>
+    <div class="timestamp" data-time="15">Go to 0:15 - Custom text for 15 seconds</div>
+</div>
 
-<strong>Timestamps:</strong>
-<ul>
- 	<li><a href="javascript:void(0);" onclick="setCurrentTime(0)">0:00 Intro</a></li>
- 	<li><a href="javascript:void(0);" onclick="setCurrentTime(1)">2:13 1 Minute Challenge</a></li>
- 	<li><a href="javascript:void(0);" onclick="setCurrentTime(2)">3:13 Website Speed Results</a></li>
-</ul>
+<script src="https://www.youtube.com/iframe_api"></script>
+<script>
+    let player;
+    let timePoints = [
+        { time: 5, text: "This is text for 5 seconds" },
+        { time: 10, text: "This is text for 10 seconds" },
+        { time: 15, text: "This is text for 15 seconds" }
+    ];
+    function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+            height: '360',
+            width: '640',
+            videoId: 'DMJRVanFPnI',
+            events: {
+                'onReady': onPlayerReady,
+                'onStateChange': onPlayerStateChange
+            }
+        });
+    }
+    function onPlayerReady(event) {
+        event.target.playVideo();
+        setupTimestamps();
+    }
+    function onPlayerStateChange(event) {
+        if (event.data == YT.PlayerState.PLAYING) {
+            setInterval(checkTime, 1000); // Check the video time every second
+        }
+    }
+    function checkTime() {
+        let currentTime = player.getCurrentTime();
+        for (let i = 0; i < timePoints.length; i++) {
+            if (Math.floor(currentTime) === timePoints[i].time) {
+                document.getElementById('text-display').innerText = timePoints[i].text;
+                break;
+            }
+        }
+    }
+    function setupTimestamps() {
+        let timestampElements = document.querySelectorAll('.timestamp');
+        timestampElements.forEach(el => {
+            el.onclick = () => {
+                let time = parseInt(el.getAttribute('data-time'));
+                player.seekTo(time);
+            };
+        });
+    }
+</script>
