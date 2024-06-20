@@ -35,7 +35,7 @@
     <div class="timestamp" data-time="39"> <h3>時間潰す</h3> </div>
 - to kill time
 - 潰す : to smash, crush, slaughter (livestock), etc...
-    <div class="timestamp" data-time="40"> <h3>物理に</h3> </div>
+    <div class="timestamp" data-time="40"> <h3>物理的に</h3> </div>
 - physically, literally
     <div class="timestamp" data-time="42"> <h3>暇</h3> </div>
 - free time, spare time
@@ -45,8 +45,7 @@
 </div>
 
 
-<!--- SCRIPTS>
-<--->
+
 
 <script src="https://www.youtube.com/iframe_api"></script>
 <script>
