@@ -2,10 +2,12 @@
 
 <div id="player" data-video-id="q5QVX7BCnUk" data-time-points='[{ "time": 5, "text": "道草を食う is a Japanese proverb meaning : to loiter around, but he&#39;s literally eating roadside grass lol" },{ "time": 9, "text": " " },{ "time": 22, "text": "This time he&#39;s actually selling oil, \"油を売る\" another Japanese proverb for loitering around and slacking off, etc..." },{ "time": 26, "text": " \"He&#39;s not just gossiping or chatting around...\" \n The proverb originates from the Edo period : there were people who sold hair oil and engaged in idle chatter with women while doing business, leading to slacking off at work. " },{ "time": 30, "text": " " },{ "time": 39, "text": " \"Time is breaking...\" " },{ "time": 40, "text": " \"like in a physical, literal sense it is breaking.\" " },{ "time": 44, "text": " " }]'>
 </div>
-<div id="text-display"> </div>
+<div id="text-display" align="center"> </div>
 <div id="timestamps" markdown>
 **Relevant Vocabulary:**
+
 - START :
+
     <div class="timestamp" data-time="１"> <h3>監督</h3> </div>
 - boss, supervisor, coach, etc..
 - \-suru verb (to supervise)
@@ -45,5 +47,3 @@
 - compression
 - \-suru verb (to compress)
 </div>
-
-<script src="https://www.youtube.com/iframe_api"></script>
