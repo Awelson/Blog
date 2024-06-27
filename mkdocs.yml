@@ -55,7 +55,7 @@ markdown_extensions:
 
 plugins:
   - search
-  - roamlinks 
+  - roamlinks
   - awesome-pages
   - section-index
 
@@ -67,6 +67,7 @@ extra_javascript:
   - javascripts/glider.js
   - https://www.youtube.com/iframe_api
   - javascripts/YTTS.js
+  - javascripts/Proof.js
 
 extra_css:
   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css

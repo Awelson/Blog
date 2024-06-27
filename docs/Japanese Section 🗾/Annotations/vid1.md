@@ -1,6 +1,6 @@
 # マジで道草食ってるやつ
 
-<div id="player" data-video-id="q5QVX7BCnUk" data-time-points='[{ "time": 5, "text": "道草を食う is a Japanese proverb meaning : to loiter around, but he&#39;s literally eating roadside grass lol" },{ "time": 9, "text": " " },{ "time": 22, "text": "This time he&#39;s actually selling oil (油を売る) another Japanese proverb for slacking off" },{ "time": 26.4, "text": " \"無駄話してなくて\" \n \"He&#39;s not just gossiping or chatting around...\" \n \n The proverb originates from the Edo period : there were people who sold hair oil and engaged in idle chatter with women while doing business, leading to slacking off at work. " },{ "time": 31, "text": " " },{ "time": 39.2, "text": " \"時間潰してます\" \n This usually means \"killing time\", as in \"to spend time doing something while one is waiting\", however in a literal sense this means \"Time is being crushed (is no longer working)\" " },{ "time": 46, "text": " " }]'>
+<div id="player" data-video-id="q5QVX7BCnUk" data-time-points='[{ "time": 5.5, "text": "道草を食う is a Japanese proverb meaning : to loiter around, but he&#39;s literally eating roadside grass lol" },{ "time": 9, "text": " " },{ "time": 22.9, "text": "This time he&#39;s actually selling oil (油を売る) another Japanese proverb for slacking off" },{ "time": 26.4, "text": " \"無駄話してなくて\" \n \"He&#39;s not just gossiping or chatting around...\" \n \n The proverb originates from the Edo period : there were people who sold hair oil and engaged in idle chatter with women while doing business, leading to slacking off at work. " },{ "time": 31, "text": " " },{ "time": 39.2, "text": " \"時間潰してます\" \n This usually means \"killing time\", as in \"to spend time doing something while one is waiting\", however in a literal sense this means \"Time is being crushed (is no longer working)\" " },{ "time": 46, "text": " " }]'>
 </div>
 <div id="text-display" align="center"> </div>
 <div id="timestamps" markdown>
@@ -25,7 +25,7 @@
     <div class="timestamp" data-time="12"> <h3>サボる</h3> </div>
 - Shortening of "sabotage" (サボタージュ) <br>
 - to slack off, skip class, etc...
-    <div class="timestamp" data-time="22.9"> <h3>油売る</h3> </div>
+    <div class="timestamp" data-time="22.9"> <h3>油を売る</h3> </div>
 - Another Japanese proverb : loafing around, slacking off, etc..
 - Literally : to sell oil
     <div class="timestamp" data-time="26.4"> <h3>無駄話</h3> </div>
@@ -36,7 +36,7 @@
 - half price
     <div class="timestamp" data-time="33.4"> <h3>売り切れる</h3> </div>
 - to be sold out
-    <div class="timestamp" data-time="39.1"> <h3>時間潰す</h3> </div>
+    <div class="timestamp" data-time="39.1"> <h3>時間を潰す</h3> </div>
 - to kill time
 - 潰す : to smash, crush, slaughter (livestock), etc...
     <div class="timestamp" data-time="40.2"> <h3>物理的に</h3> </div>

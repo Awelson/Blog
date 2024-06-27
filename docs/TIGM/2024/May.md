@@ -14,7 +14,7 @@ I used to be able to play White Palace, Sealed Vessel, and Radiance on piano (no
 ### **27/05/2024**: [Pharoah Sanders](https://www.pharoahsanders.com) ⋅ Harvest Time
 <iframe src="https://www.youtube.com/embed/P8sN5cwBGHM" width="560" height="315" title="A YouTube video" frameborder="0" allowfullscreen></iframe>
 
-This is the first time an artist has appeared twice on TIGM!! It's Pharaoh Sanders [again](../2023/October.md#15102023-pharoah-sanders--kazuko). This time I'm showcasing the 20 minute long "Harvest Time" from his 1977 self-titled album. The album was reissued in 2023, now including two live performances of "Harvest Time" and you can hear them [here](https://pharoahsanders.bandcamp.com/album/pharoah) (though they sound very different from the studio version).
+This is the first time an artist has appeared twice on TIGM!! It's Pharaoh Sanders [again](../2023/October.md#15102023-pharoah-sanders-kazuko). This time I'm showcasing the 20 minute long "Harvest Time" from his 1977 self-titled album. The album was reissued in 2023, now including two live performances of "Harvest Time" and you can hear them [here](https://pharoahsanders.bandcamp.com/album/pharoah) (though they sound very different from the studio version).
 
 ### **08/05/2024**: [Sloche](https://en.wikipedia.org/wiki/Sloche_(band)) ⋅ Stadaconé
 <iframe src="https://www.youtube.com/embed/SI8wDr0avGo" width="560" height="315" title="A YouTube video" frameborder="0" allowfullscreen></iframe>

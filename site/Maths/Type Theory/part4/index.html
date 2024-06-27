@@ -1,0 +1,1290 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../part3/">
+      
+      
+        <link rel="next" href="../part5/">
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.27">
+    
+    
+      
+        <title>Part 4 - More Types - AWelson's Blog</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.6543a935.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css">
+    
+      <link rel="stylesheet" href="../../../stylesheets/glider.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="pink" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#part-4-more-types" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="AWelson&#39;s Blog" class="md-header__button md-logo" aria-label="AWelson's Blog" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            AWelson's Blog
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Part 4 - More Types
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="pink" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="pink" data-md-color-accent="blue"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="AWelson&#39;s Blog" class="md-nav__button md-logo" aria-label="AWelson's Blog" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    AWelson's Blog
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Welcome
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../Chess/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Chess
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Chess
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../Chess/Benko%20Declined/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Benko Declined
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            Benko Declined
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Chess/Benko%20Declined/3.%20Nf3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3. Nf3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Chess/Positions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Positions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Chess/Tips/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tips
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../Japanese%20Section%20%F0%9F%97%BE/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Japanese Section 🗾
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Japanese Section 🗾
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Japanese%20Section%20%F0%9F%97%BE/Resources/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Japanese Language Learning Resources
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Japanese%20Section%20%F0%9F%97%BE/Annotated/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Annotated Videos
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../TIGM/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    TIGM
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            TIGM
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../TIGM/2023/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    2023
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4_1" id="__nav_4_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1">
+            <span class="md-nav__icon md-icon"></span>
+            2023
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TIGM/2023/July/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    July
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TIGM/2023/August/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    August
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TIGM/2023/September/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    September
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TIGM/2023/October/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    October
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TIGM/2023/November/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    November
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TIGM/2023/December/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    December
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../TIGM/2024/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    2024
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            2024
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TIGM/2024/January/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    January
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TIGM/2024/February/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    February
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TIGM/2024/March/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    March
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TIGM/2024/April/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    April
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TIGM/2024/May/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    May
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TIGM/2024/June/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    June
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Anime/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Anime
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#the-unit-type" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Unit Type
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Unit Type">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-formation-rule" class="md-nav__link">
+    <span class="md-ellipsis">
+      Type formation rule
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#term-introduction-rule" class="md-nav__link">
+    <span class="md-ellipsis">
+      Term introduction rule
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#term-elimination-rule" class="md-nav__link">
+    <span class="md-ellipsis">
+      Term elimination rule
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#computation-rule" class="md-nav__link">
+    <span class="md-ellipsis">
+      Computation rule
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bool-type" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bool Type
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Bool Type">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#term-elimination-rule_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Term elimination rule
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#computation-rule_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Computation rule
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sum-type" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sum Type
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#product-type" class="md-nav__link">
+    <span class="md-ellipsis">
+      Product type
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="part-4-more-types">Part 4 - More Types<a class="headerlink" href="#part-4-more-types" title="Permanent link">&para;</a></h1>
+<p>Now that we have covered dependent types this gives us more freedom of expression to define new types and redefine old ones. For example, dependent types allows us to provide an alternative term elimination rule for the empty type.</p>
+<p>Recall that in set theory :</p>
+<div class="arithmatex">\[
+\forall x\in \varnothing, \ \text{B}(x)
+\]</div>
+<p>is true for any predicate <span class="arithmatex">\(\text{B}\)</span>. If we interpret <span class="arithmatex">\(\forall\)</span> as the dependent product type, <span class="arithmatex">\(\varnothing\)</span> as the empty type and <span class="arithmatex">\(\text{B}\)</span> as a dependent type then we get the following rule :</p>
+<div class="arithmatex">\[
+\frac{x:0\vdash \text{B}(x):\text{Type}}{\text{rec}_0:\prod_{x:0} \ \text{B}(x)}
+\]</div>
+<p>"Given a dependent type <code>B</code> over <code>𝟘</code>, we obtain a term of type <code>∏x:𝟘 B(x)</code>." Such a term corresponds to the <a href="https://en.wikipedia.org/wiki/Function_(mathematics)#empty_function">empty function</a>. The elimination rule here and the one presented earlier are essentially equivalent. </p>
+<h2 id="the-unit-type">The Unit Type<a class="headerlink" href="#the-unit-type" title="Permanent link">&para;</a></h2>
+<p>We would like to create a type which has only one term, this type will be called the unit type and be given the symbol <code>𝟙</code>.</p>
+<h3 id="type-formation-rule">Type formation rule<a class="headerlink" href="#type-formation-rule" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[
+\frac{}{1:\text{Type}}
+\]</div>
+<h3 id="term-introduction-rule">Term introduction rule<a class="headerlink" href="#term-introduction-rule" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[
+\frac{}{*:1}
+\]</div>
+<p>"The unit type is equipped with the sole term <code>*:𝟙</code>"</p>
+<h3 id="term-elimination-rule">Term elimination rule<a class="headerlink" href="#term-elimination-rule" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p>Now that we have discussed dependent types we can talk about the elimination rule more generally. For <strong>most</strong> (but not all) types <code>A</code> the elimination rule has to specify, given any dependent type <code>B</code> over <code>A</code>, a construction of a term of type <code>∏x:A B(x)</code>. </p>
+</blockquote>
+<p>To construct a term of type <code>∏x:𝟙 B(x)</code> is equivalent to proving that <code>B(x)</code> is true for all <code>x:𝟙</code>, but since there is only 1 term <code>*:𝟙</code> then logically speaking we would only need to prove (contruct a term of) <code>B(*)</code> to obtain a term of <code>∏x:𝟙 B(x)</code>.    </p>
+<p>Thus, we come up with the following elimination rule :</p>
+<div class="arithmatex">\[
+\frac{x:1 \vdash \text{B}(x):\text{Type}}{\text{rec}_1:\text{B}(*) \to \prod_{x:1} \text{B}(x)}
+\]</div>
+<p>"Given a dependent type <code>B</code> over <code>𝟙</code>, there is a term <code>rec₁</code> of type <code>B(*) → ∏x:1 B(x)</code>. Feed <code>rec₁</code> a term of <code>B(*)</code> and you will obtain a term of type <code>∏x:𝟙 B(x)</code> as desired."</p>
+<h3 id="computation-rule">Computation rule<a class="headerlink" href="#computation-rule" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[
+\frac{x:1 \vdash \text{B}(x):\text{Type}, \quad p:\text{B}(*)}{\text{rec}_1(p,*):=p:\text{B}(*)}
+\]</div>
+<p>It appears as if <code>rec₁</code> is taking in two inputs at once but it is actually doing it one at a time. First, <code>p:B(*)</code> is fed into <code>rec₁</code> to create <code>rec₁(p) : ∏x:𝟙 B(x)</code>. Then, to <code>rec₁(p)</code> we feed <code>*:𝟙</code> to create <code>rec₁(p)(*):B(*)</code>, which by the rule above simplifies back to <code>p:B(*)</code> again. When a function takes in multiple inputs one at a time as in the above, we simplify the notation like so <code>rec₁(p)(*) → rec₁(p,*)</code>, removing unnecessary brackets.</p>
+<p>The following diagram illustrates this computation rule :</p>
+<figure>
+<p><img alt="Image title" src="../Capture6.PNG" width="640" /></p>
+</figure>
+<h2 id="bool-type">Bool Type<a class="headerlink" href="#bool-type" title="Permanent link">&para;</a></h2>
+<p>You've guessed it, we've created a type with zero terms, a type with one term, now it's time for a type with two terms, the bool type. Let's give it the symbol <code>𝟚:Type</code> and terms <code>0,1:𝟚</code>.</p>
+<blockquote>
+<p>Type formation and term introduction rules skipped because they should be obvious by now</p>
+</blockquote>
+<h3 id="term-elimination-rule_1">Term elimination rule<a class="headerlink" href="#term-elimination-rule_1" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[
+\frac{x:2\vdash \text{C}(x):\text{Type}}{\text{rec}_2:\text{C}(0)\to \text{C}(1)\to \prod_{x:2}\text{C}(x)}
+\]</div>
+<h3 id="computation-rule_1">Computation rule<a class="headerlink" href="#computation-rule_1" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[
+\frac{x:2\vdash \text{C}(x):\text{Type}, \quad c_0:\text{C}(0), \quad c_1:\text{C}(1)}{\text{rec}_2(c_0,c_1,0):=c_0 : \text{C}(0), \quad \text{rec}_2(c_0,c_1,1):=c_1 : \text{C}(1)}
+\]</div>
+<p>Alright, let's break this down. A term of <code>∏x:𝟚 C(x)</code> is supposed to map <code>0:𝟚</code> to a term of type <code>C(0)</code> and map <code>1:𝟚</code> to a term of type <code>C(1)</code>. So to construct a term of <code>∏x:𝟚 C(x)</code>, all we need to do is specify the terms that <code>0,1:𝟚</code> will map to. </p>
+<p><code>rec_𝟚</code>, is simply the function that takes in those specifications, i.e, a term of <code>C(0)</code> and a term of <code>C(1)</code>, and outputs a term of <code>∏x:𝟚 C(x)</code> based on the provided specification. </p>
+<p>Suppose <code>x:C(0)</code> and <code>y:C(1)</code> and we feed these into <code>rec_𝟚</code> to get <code>f := rec(x,y) : ∏x:𝟚 C(x)</code>. The diagram below illustrates how <code>f</code> behaves.</p>
+<figure>
+<p><img alt="Image title" src="../Capture7.PNG" width="640" /></p>
+</figure>
+<h2 id="sum-type">Sum Type<a class="headerlink" href="#sum-type" title="Permanent link">&para;</a></h2>
+<p>Recall that the dependent sum type <code>∑x:A B(x)</code> can be thought of as the sum over all <code>B(x)'s</code> for each <code>x:A</code>. If <code>A:Type</code> consists only of 2 terms, say <code>A := 𝟚</code>, then <code>∑x:A B(x)</code> can be thought of as adding two types, <code>B(0)</code> and <code>B(1)</code> together, i.e, </p>
+<p><div class="highlight"><pre><span></span><code>∑x:𝟚 B(x) := B(0) + B(1)
+</code></pre></div>
+Let us explore some properties of the type <code>B(0) + B(1)</code>. First is that <code>B(0) → B(0) + B(1)</code> is inhabited, i.e, we can construct a term of that type :
+<div class="highlight"><pre><span></span><code>λx:B(0), (0,x) : B(0) → B(0) + B(1)
+</code></pre></div>
+Similarly, <code>B(1) → B(0) + B(1)</code> is inhabited. This is similar to how <span class="arithmatex">\(A \to A \lor B\)</span> and likewise <span class="arithmatex">\(B \to A \lor B\)</span> are true in propositional logic. Thus <code>+</code> corresponds to <span class="arithmatex">\(\lor\)</span>, another connection between type theory and logic!</p>
+<blockquote>
+<p><span class="arithmatex">\(\neg A\)</span> from propositional logic corresponds to the type <code>A→𝟘</code>. This makes sense because a term <code>p:A→𝟘</code> can be thought of as a way of generating a contradiction from <code>A</code> (if we have a term <code>a:A</code> we can apply <code>p:A→𝟘</code> to generate <code>p(a):𝟘</code>, a contradiction!) Thus, for any <code>A:Type</code> we shall write <code>¬A</code> as shorthand for <code>A→𝟘</code>.  </p>
+</blockquote>
+<h2 id="product-type">Product type<a class="headerlink" href="#product-type" title="Permanent link">&para;</a></h2>
+<p>We can repeat the same idea to construct, for any types <code>A,B:Type</code>, their product <code>A × B:Type</code>. I will leave you to fill in the rest of the details yourself, it is not too difficult to make sense of. (obvious hint: this corresponds to <span class="arithmatex">\(\land\)</span> from logic)</p>
+<blockquote>
+<p>Notice that <code>∑x:A B(x)</code> degenerates to <code>A × B</code> if <code>B</code> does not depend on <code>x:A</code><sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> </p>
+<p>There are independent (and equivalent) formulations for the rules of the <a href="https://ncatlab.org/nlab/show/sum+type">sum</a> and <a href="https://ncatlab.org/nlab/show/product+type">product</a> type which I encourage you to look through by clicking the respective links</p>
+</blockquote>
+<!--
+## The First Theorem
+
+Let us introduce and prove the first theorem of this series :
+
+> Theorem. Let `A,B,C:Type`, then the type
+>
+> <div class="highlight"><pre><span></span><code>               (A + B) → (A → C) → (B → C) → C
+</code></pre></div>
+> is inhabited (has a term).
+
+> What is the significance of this theorem? Viewed as propositions instead of types, the theorem states that : if we have a proof of `A + B` and we wish to prove `C` then it suffices to prove both `A → C` and `B → C`. This is the principle of proof by cases. 
+
+Proof. First let us construct the dependent types :
+
+<div class="highlight"><pre><span></span><code>x:𝟚 ⊢ D(x):Type, D(0) := A, D(1) := B
+
+x:𝟚 ⊢ E(x):Type, E := λx:𝟚, D(x) → C
+</code></pre></div>
+We can then rewrite our goal into
+<div class="highlight"><pre><span></span><code>                 ∑x:𝟚 D(x) → E(0) → E(1) → C
+</code></pre></div>
+Essentially what we want to do is construct a function that takes in a term of type `∑x:𝟚 D(x)`, a term of type `E(0)`, and a term of type `E(1)` and returns a term of type `C`. We also know that the construction a function involves making use of a lambda abstraction, so let us start with the following template :
+
+<div class="highlight"><pre><span></span><code>λh1:(∑x:𝟚 D(x)), λh2:E(0), λh3:E(1), [something]
+</code></pre></div>
+
+By applying the elimination rule of `𝟚:Type` with the dependent type `E` we obtain
+
+<div class="highlight"><pre><span></span><code>rec₂ : E(0) → E(1) → ∏x:𝟚 E(x)
+</code></pre></div>
+via the elimination rule for `∑` we can decompose `h1:∑x:𝟚 D(x)` as follows:
+<div class="highlight"><pre><span></span><code>π₁(h1) : 𝟚,   π₂(h1) : D(π₁(h1))
+</code></pre></div>
+Given terms `h2:E(0)` and `h3:E(1)` :
+<div class="highlight"><pre><span></span><code>rec₂(h2,h3,π₁(h1)) : E(π₁(h1)) := D(π₁(h1)) → C
+
+-- and hence --
+
+rec₂(h2,h3,π₁(h1),π₂(h1)) : C
+</code></pre></div>
+
+We can now fill in the previously unknown `[something]` :
+
+<div class="highlight"><pre><span></span><code>λh1:(∑x:𝟚 D(x)), λh2:E(0), λh3:E(1), rec₂(h2,h3,π₁(h1),π₂(h1))
+</code></pre></div>
+The above is a term of `∑x:𝟚 D(x) → E(0) → E(1) → C`, thus `(A + B) → (A → C) → (B → C) → C` is inhabited as required. ∎
+-->
+
+<p><a href="../part3/"><strong>Previous Section</strong></a></p>
+<p><a href="../part5/"><strong>Next Section</strong></a></p>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>see <a href="https://cs.stackexchange.com/questions/81112/why-product-type-is-a-dependent-sum">this</a>&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+  <!-- Add scripts that need to run before here -->
+  
+      <script src="../../../assets/javascripts/bundle.ad660dcc.min.js"></script>
+      
+        <script src="../../../javascripts/katex.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js"></script>
+      
+        <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+      
+        <script src="../../../javascripts/glider.js"></script>
+      
+        <script src="https://www.youtube.com/iframe_api"></script>
+      
+        <script src="../../../javascripts/YTTS.js"></script>
+      
+    
+  <!-- Add scripts that need to run afterwards here -->
+        <script>
+            window.addEventListener('load', function(){
+                new Glider(document.querySelector('.glider'), {
+                    slidesToShow: 1,
+                    dots: '#dots',
+                    draggable: true,
+                    arrows: {
+                        prev: '.glider-prev',
+                        next: '.glider-next'
+                    }
+                });
+            })
+        </script>
+
+  </body>
+</html>
