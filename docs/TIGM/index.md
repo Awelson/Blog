@@ -5,13 +5,9 @@ date: 20230705
 # Today in Good Music
 Inspired by [Mikasacus's](https://www.youtube.com/@mikasacus) tradition of sharing a piece of music he likes at the description of every uploaded video ---
 
-I will try (my best) to share and talk a bit about a piece of music that I find cool each day. This can be a single song or an entire albumn, I also listen to and enjoy most genres so you will find the catalouge to be quite diverse.
+I will try (my best) to share and talk a bit about a piece of music that I find cool <s>each day</s> once in a while. This can be a single song or an entire album, I also listen to and enjoy most genres so you will find the catalouge to be quite diverse.
 
-> Click [HERE](2024/June.md) to view today's good music
-
-or use the archives below to navigate to a specific month.
-
-> Obviously I won't be updating this daily (that's probably too much work), but I will try to be frequent.
+> [Today's TIGM](2024/June.md)
 
 ## Archives
 

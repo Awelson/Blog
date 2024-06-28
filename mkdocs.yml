@@ -2,6 +2,9 @@ site_name: AWelson's Blog
 
 theme:
     name: 'material'
+    features:
+      - navigation.tabs
+      - navigation.tabs.sticky
     palette:
 
     # Light mode

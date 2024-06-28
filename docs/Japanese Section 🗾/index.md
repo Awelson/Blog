@@ -2,7 +2,8 @@
 
 $\small こんにち$-what's up! This is the japanese section where you can find all to do with Japan (except anime; because honestly that requires its own section). This includes bits of Japanese culture I find interesting, and also some resources to do with learning Japanese. I am still learning myself so there might be inaccuracies when I present or translate relevant information.
 
-## - [Japanese Language Learning Resources](Resources.md)
+- ## [Language Learning Resources](Resources.md)
+- ## [Annotated Videos](Annotated.md)
 
 
 <!---

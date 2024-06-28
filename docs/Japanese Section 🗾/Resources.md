@@ -1,4 +1,4 @@
-# Japanese Language Learning Resources
+# Language Learning Resources
 
 **This is a curated list of Japanese language learning resources I find to be helpful**
 
@@ -43,12 +43,16 @@
 
 <h4>Paid (but occasionally has free stuff too)</h4>
 
-- A [guide](https://www.tofugu.com/japanese/how-to-buy-japanese-ebooks/) on buying japanese ebooks
+- [How to buy japanese ebooks](https://www.tofugu.com/japanese/how-to-buy-japanese-ebooks/)
 - [booklive](https://booklive.jp)
 - [cmoa](https://www.cmoa.jp)
 - [ebookjapan](https://ebookjapan.yahoo.co.jp)
 - [pixiv](https://comic.pixiv.net)
 - [amazon.co.jp](https://www.amazon.co.jp/-/en/本-書籍-通販/b/?ie=UTF8&node=465392&ref_=nav_cs_books)
+
+<h4>Subtitles</h4>
+
+- [jimaku.cc](https://jimaku.cc) - jp subtitles
 
 ## Tools
 
@@ -57,16 +61,11 @@
 - [yomitan](https://github.com/themoeway/yomitan) - Pop-up dictionary for browser
 - [jpdb](https://jpdb.io) - Dictionary
 
-<h4>Subtitles</h4>
-
-- [asbplayer](https://github.com/killergerbah/asbplayer) - Add subtitles to streaming videos
-- [jimaku.cc](https://jimaku.cc) - jp subtitles
-
-<h4>OCR</h4>
+<h4>Character Recogntion</h4>
 
 - [mokuro](https://github.com/kha-white/mokuro) - Manga ocr
 - [YomiNinja](https://github.com/matt-m-o/YomiNinja) - Screen ocr (for Japanese video games)
-- [textractor](https://github.com/Artikash/Textractor) - (not OCR) extracts text from software
+- [textractor](https://github.com/Artikash/Textractor) - Extract/mine text from visual novels
 
 <h4>Example sentence search</h4>
 
@@ -74,6 +73,10 @@
 - [massif.la](https://massif.la/ja)
 - [immersionkit](https://www.immersionkit.com) - example sentences from anime
 - [youglish](https://youglish.com/japanese) - example sentences from YouTube
+
+<h4>Video players</h4>
+
+- [asbplayer](https://github.com/killergerbah/asbplayer) - Add subtitles to online/streaming videos
 
 ## Youtube Channels with JP subs
 
