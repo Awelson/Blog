@@ -4,6 +4,11 @@ title: June
 
 It's pride month, so I will feature LGBT-themed songs for this month
 
+### **28/06/2024**: Jason Tam \& Anthony Rapp ⋅ Best Worst Mistake
+<iframe src="https://www.youtube.com/embed/r53hsqbz9jE" width="560" height="315" title="A YouTube video" frameborder="0" allowfullscreen></iframe>
+
+Very cute song from a musical called [If/Then](https://en.wikipedia.org/wiki/If/Then). I first discovered this song, not from the musical, but from a Suntan (a ship from the game [OMORI](https://en.wikipedia.org/wiki/Omori_(video_game))) [animatic](https://www.youtube.com/watch?v=JbUhlypTlVs) which is just as cute.
+
 ### **27/06/2024**: When I See Him
 <iframe src="https://www.youtube.com/embed/VUOvuKW2O_I" width="560" height="315" title="A YouTube video" frameborder="0" allowfullscreen></iframe>
 
