@@ -183,6 +183,8 @@
   padding: 20px;
   margin-bottom: 20px;
   min-height: 100px;
+  font-family: mononoki;
+  text-align: left;
 }
 .controls button {
   padding: 10px 20px;

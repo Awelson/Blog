@@ -9,5 +9,5 @@ Here are some Japanese YouTube videos that I have annotated which can be used as
 into YouTube. I also take videos from the channels [私立パラの丸高校](https://www.youtube.com/@parako) and [マリマリマリー](https://www.youtube.com/@marymarymary80s) which make comedic animations.
 
 
-### - [マジで道草食ってるやつ](Annotations/vid1.md)
-
+- ### [マジで道草食ってるやつ](Annotations/vid1.md)
+- ### [【切り抜き】AtRハウスを建てたいまふまふとあまり乗り気じゃないそらる【手描き】](Annotations/vid2.md)

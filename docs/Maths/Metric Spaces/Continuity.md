@@ -170,7 +170,7 @@ X,Z : Type [metric_space X,Z] <br>
 f : X $\to$ Z [continuous f], U : set Z [is_open U]
 </blockquote>
 <blockquote style="text-align: left; font-family: mononoki">
-Goal : is_open f$^{-1}$[U] 
+Goal : is_open f$^{-1}$[U]
 </blockquote>
 
 <div class="proof-container">
@@ -247,12 +247,8 @@ Goal : continuous f
 </div>
     <div class="workspace-contents" style="display: none;">
         <div class="workspace-content" data-step="1">
-            <blockquote style="text-align: left; font-family: mononoki">
-            a : X, $\epsilon:\mathbb{R}$ [$\epsilon$>0]
-            </blockquote>
-            <blockquote style="text-align: left; font-family: mononoki">
+            a : X, $\epsilon:\mathbb{R}$ [$\epsilon$>0] <br>
             Goal : $\exists\delta:\mathbb{R}$ [$\delta$>0], f[B a $\delta$] $\subseteq$ B (f a) $\epsilon$ 
-            </blockquote>
         </div>
         <div class="workspace-content" data-step="2">
             <blockquote style="text-align: left; font-family: mononoki">

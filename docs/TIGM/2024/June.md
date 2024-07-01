@@ -4,7 +4,16 @@ title: June
 
 It's pride month, so I will feature LGBT-themed songs for this month
 
-### **28/06/2024**: Jason Tam \& Anthony Rapp ⋅ Best Worst Mistake
+### **30/06/2024**: [Car Seat Headrest](https://carseatheadrest.com) ⋅ Twin Fantasy
+<iframe src="https://www.youtube.com/embed/videoseries?list=PLUkpIIjyrx_snVKZyBGd8HKPEp2Hhvluu" width="560" height="315" title="A YouTube video" frameborder="0" allowfullscreen></iframe>
+
+My favorite album of all time, really the first piece of music I came across that went the extra mile and made me feel things other than "damn.. this music is good". I've cried, anguished, laughed, you name it, all with this album playing in the background, fuelling those emotions. The story and emotions that Toledo was trying to convey through this concept album deeply resonated within me, and his music helped me process the things that were going on during that weird and confusing period in my life. 
+
+To put it shortly, Twin Fantasy is a glimpse into the overarching story behind a relationship that was never meant to be; the highs, the lows, the little cracks, the nail in the coffin, and the aftermath. This album is a very intimate expression of Toledo's introspection of these events. 
+
+There are actually two versions of this album, a [2011]() and 2018 version (you're listening to the 2018 version), the changes being a remaster of the audio and most importantly the minor changes in lyrics here and there which indicates a shift in perception regarding the break-up towards a general acceptance of the events.
+
+### **28/06/2024**: Jason Tam & Anthony Rapp ⋅ Best Worst Mistake
 <iframe src="https://www.youtube.com/embed/r53hsqbz9jE" width="560" height="315" title="A YouTube video" frameborder="0" allowfullscreen></iframe>
 
 Very cute song from a musical called [If/Then](https://en.wikipedia.org/wiki/If/Then). I first discovered this song, not from the musical, but from a Suntan (a ship from the game [OMORI](https://en.wikipedia.org/wiki/Omori_(video_game))) [animatic](https://www.youtube.com/watch?v=JbUhlypTlVs) which is just as cute.
