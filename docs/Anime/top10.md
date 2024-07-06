@@ -6,7 +6,7 @@ Not in any particular order, here are my top 10 anime :
 
 You know those types of shows where you have multiple, initially unrelated plotlines focused on different characters slowly intertwining with each successive episode until finally, the mystery of how everything connects to each other is revealed and the point of the story becomes clear? Well, Odd Taxi is exactly that type of show and it did a fantastic job at building up this mystery. Another similar (and also very good) show worth mentioning is [Durarara!!](https://myanimelist.net/anime/6746/Durarara).
 
-Also, I LOVE Yano, he's a character that always speaks in [raps and ryhmes](https://www.youtube.com/watch?v=kbAIS_7FPPA) for who knows what reason, but he's super cool for it.
+Also, I LOVE Yano, he's a character that always speaks in [raps and rhymes](https://www.youtube.com/watch?v=kbAIS_7FPPA) for who knows what reason, but he's super cool for it.
 
 ## [Sousou no Frieren](https://myanimelist.net/anime/52991/Sousou_no_Frieren)
 
@@ -26,17 +26,23 @@ On an unrelated note, "Cannon Fodder" was taken in a single continuous shot, i.e
 
 ## Fumetsu no Anata e
 
-## Nichijou
+## [Nichijou](https://myanimelist.net/anime/10165/Nichijou)
 
-## Violet Evergarden
+Hands down the funniest anime ever, I've never laughed harder. Worth mentioning is [Danshi Koukousei no Nichijou](https://myanimelist.net/anime/11843/Danshi_Koukousei_no_Nichijou) which is essentially the same thing but with guys instead, also very funny.  
 
-## Mob Psycho
+## [Violet Evergarden](https://myanimelist.net/anime/33352/Violet_Evergarden)
+
+I'm not one to cry while watching shows, and by that I mean it has probably happened not more than 5 times. So when Violet Evergarden made me cry, not just once but multiple times throughout the show, you know they did a damn well job. It is, the only anime to this day (I think) that has made me shed a tear. Aside from that, the anime is so beautiful, like movie-quality levels of beautiful.
+
+## [Mob Psycho](https://myanimelist.net/anime/32182/Mob_Psycho_100)
+
+Despite being an action-packed show, I think it handled a bunch of human-related themes and issues, for example how power corrupts people, really well. It also had a very satisfying ending such that it did not leave me wanting for more despite how much I enjoyed the show.
 
 ## Bungou Stray Dogs
 
 ## [Golden Kamuy](https://myanimelist.net/anime/36028/Golden_Kamuy)
 
-A historical anime set in the early 1900s after the [Russ-Japanese War](https://en.wikipedia.org/wiki/Russo-Japanese_War). You can surprisingly learn a lot about this important historical period, and in particular about the culture of the [Ainu people](https://en.wikipedia.org/wiki/Ainu_people), an ethnic minority group residing in northern Japan (Hokkaido, Sakhalin, etc..) where the forefront of the war took place.
+A historical anime set in the early 1900s after the [Russo-Japanese War](https://en.wikipedia.org/wiki/Russo-Japanese_War). You can surprisingly learn a lot about this important historical period, and in particular about the culture of the [Ainu people](https://en.wikipedia.org/wiki/Ainu_people), an ethnic minority group residing in northern Japan (Hokkaido, Sakhalin, etc..) where the forefront of the war took place.
 
 It also has a very complex story with multiple independent groups, each with their own dynamic motives. Betrayals are a frequent occurence, a character can be part of one group then all of a sudden switch sides to a different group, two groups may cooperate temporarily only to become enemies again later on, etc.. Although this makes it hard to keep track sometimes, the story is never boring as a result.
 
