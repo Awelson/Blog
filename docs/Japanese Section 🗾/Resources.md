@@ -21,6 +21,7 @@
 - [Core6000](https://core6000.neocities.org)
 - [japbase](https://japbase.neocities.org/full_night)
 - [boirodaisuki](https://boirodaisuki.neocities.org/dark)
+- [tofugu](https://www.tofugu.com)
 
 !!! note ""
 
@@ -31,6 +32,9 @@
 - [Itazuraneko](https://itazuraneko.org/index.html)
 - [Bilingual Manga](https://bilingualmanga.org)
 - [Manga Zip](https://manga-zip.is/post) -> [alt](https://manga-zip.info/home.i1/)
+- [Alphapolis](https://www.alphapolis.co.jp)
+- [syosetsu](https://yomou.syosetu.com)
+- [yaoi-sei](https://yaoi-sei.com/home.html)
 - [Dlraw](https://dlraw.to/raw/)
 - [rawkuma](https://rawkuma.com)
 - [mangaz](https://www.mangaz.com)
