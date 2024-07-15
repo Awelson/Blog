@@ -7,7 +7,7 @@ Inspired by [Mikasacus's](https://www.youtube.com/@mikasacus) tradition of shari
 
 I will try (my best) to share and talk a bit about a piece of music that I find cool <s>each day</s> once in a while. This can be a single song or an entire album, I also listen to and enjoy most genres so you will find the catalouge to be quite diverse.
 
-> [Today's TIGM](2024/June.md)
+> [Today's TIGM](2024/July.md)
 
 ## Archives
 

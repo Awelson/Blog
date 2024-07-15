@@ -1,6 +1,12 @@
 ---
 title: July
 ---
+### **14/07/2024**: [Lizard in the Spring](https://lizardinthespring.bandcamp.com) ⋅ A quick One Before the Eternal Worm Devours Appalachia
+<iframe src="https://www.youtube.com/embed/feLsyQ_homk" width="560" height="315" title="A YouTube video" frameborder="0" allowfullscreen></iframe>
+
+This is a country/folk cover of the song ["A Quick One Before the Eternal Worm Devours Connecticut" by Have a Nice Life](https://www.youtube.com/watch?v=8QmPCrC7uXw)
+
+
 ### **14/07/2024**: [Gregory Alan Isakov](https://gregoryalanisakov.com) ⋅ The Stable Song
 <iframe src="https://www.youtube.com/embed/jGDjO9kuKyY" width="560" height="315" title="A YouTube video" frameborder="0" allowfullscreen></iframe>
 
@@ -14,7 +20,7 @@ The Stable Song is the second song of the 2007 album "That Sea, the Gambler" by 
 唐獅子牡丹 (Karajishi Botan) is a combination of two traditional Japanese symbols, The Chinese Lion (唐獅子 - karajishi), and The Peony (牡丹 - botan). Patterns featuring these two symbols are often used in Yakuza tatoos, but also for clothes design, etc...
 
 <div align="center" markdown="1">
-![image](https://lh3.googleusercontent.com/proxy/50yPkGpjzd7CClabhKD-2iyOrg45eyrxTAy9_kbcQ6RGH9Q8e9OO7StgrDoqkinxWYKX43doF8zVsDYWgnvFEVIi3PwvuszcGEnmxMrHwGXVJ2LkH8vLMxVmK0QEZVk)
+![image](http://www.matoi.kyoto.jp/wp/wp-content/uploads/2016/01/post_ma0020.jpg)
 </div>
 
 ### **01/07/2024**: [88Kasyo Junrei](https://88kasyo.com) ⋅ Genma Taisai
