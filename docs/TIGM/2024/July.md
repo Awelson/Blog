@@ -1,7 +1,13 @@
 ---
 title: July
 ---
-### **14/07/2024**: [Lizard in the Spring](https://lizardinthespring.bandcamp.com) ⋅ A quick One Before the Eternal Worm Devours Appalachia
+### **16/07/2024**: [Car Seat Headrest](https://carseatheadrest.com) ⋅ Misheard Lyrics (ft. Nora Knight)
+<iframe src="https://www.youtube.com/embed/4tRYcekYHnk" width="560" height="315" title="A YouTube video" frameborder="0" allowfullscreen></iframe>
+
+This song is filled with such hard hitting lines like "I can't go back to not knowing what you mean to me", "did you do something wrong was there something you did that I could blame", and "I was a situation that you were glad went away". It frickin hurts.
+
+
+### **15/07/2024**: [Lizard in the Spring](https://lizardinthespring.bandcamp.com) ⋅ A quick One Before the Eternal Worm Devours Appalachia
 <iframe src="https://www.youtube.com/embed/feLsyQ_homk" width="560" height="315" title="A YouTube video" frameborder="0" allowfullscreen></iframe>
 
 This is a country/folk cover of the song ["A Quick One Before the Eternal Worm Devours Connecticut" by Have a Nice Life](https://www.youtube.com/watch?v=8QmPCrC7uXw)

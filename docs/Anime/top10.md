@@ -28,7 +28,7 @@ On an unrelated note, "Cannon Fodder" was taken in a single continuous shot, i.e
 
 ## [Nichijou](https://myanimelist.net/anime/10165/Nichijou)
 
-Hands down the funniest anime ever, I've never laughed harder. Worth mentioning is [Danshi Koukousei no Nichijou](https://myanimelist.net/anime/11843/Danshi_Koukousei_no_Nichijou) which is essentially the same thing but with guys instead, also very funny.  
+Hands down the funniest anime ever, I've never laughed harder. Worth mentioning is [Danshi Koukousei no Nichijou](https://myanimelist.net/anime/11843/Danshi_Koukousei_no_Nichijou) which is essentially the same thing but with guys instead, also very funny. edit: Ok [Shikanoko](https://myanimelist.net/anime/58426/Shikanoko_Nokonoko_Koshitantan) might be a worthy contender.
 
 ## [Violet Evergarden](https://myanimelist.net/anime/33352/Violet_Evergarden)
 
