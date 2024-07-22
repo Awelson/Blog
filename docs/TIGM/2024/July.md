@@ -1,10 +1,10 @@
 ---
 title: July
 ---
-### **18/07/2024**: [Sampha](https://www.sampha.com) \& [Little Simz](https://littlesimz.com) ⋅ Satellite Business 2.0
+### **18/07/2024**: [Sampha](https://www.sampha.com) & [Little Simz](https://littlesimz.com) ⋅ Satellite Business 2.0
 <iframe src="https://www.youtube.com/embed/THre1r5KGR0" width="560" height="315" title="A YouTube video" frameborder="0" allowfullscreen></iframe>
 
-Released just a couple days ago, this is an extended version of the original "Satellite Business" from Sampha's latest album, Lahai.
+Released just a couple days ago, this is an extended version of the [original "Satellite Business"](https://www.youtube.com/watch?v=9GGhNO7udcQ&list=OLAK5uy_nAzbJnksSW-3lirXy1HdNTmhJ1vC3FMnM&index=5) from Sampha's latest album, Lahai.
 
 ### **16/07/2024**: [Car Seat Headrest](https://carseatheadrest.com) ⋅ Misheard Lyrics (ft. Nora Knight)
 <iframe src="https://www.youtube.com/embed/4tRYcekYHnk" width="560" height="315" title="A YouTube video" frameborder="0" allowfullscreen></iframe>

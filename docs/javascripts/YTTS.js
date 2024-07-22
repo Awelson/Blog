@@ -29,7 +29,10 @@ function onYouTubeIframeAPIReady() {
     function checkTime(timePoints) {
         let currentTime = player.getCurrentTime();
         for (let i = 0; i < timePoints.length; i++) {
-            if (Math.abs(currentTime - timePoints[i].time) < 0.1) { // Check if within 100ms
+            let startTime = timePoints[i].time;
+            let endTime = i < timePoints.length - 1 ? timePoints[i + 1].time : player.getDuration();
+
+            if (currentTime >= startTime && currentTime < endTime) {
                 document.getElementById('text-display').innerText = timePoints[i].text;
                 break;
             }
