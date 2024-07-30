@@ -1,6 +1,13 @@
 ---
 title: July
 ---
+### **30/07/2024**: [bo en](https://bo-en.info) & [Pas Tasta](https://pastasta.net) ⋅ Our Time
+<iframe src="https://www.youtube.com/embed/8fe-xBODpT4" width="560" height="315" title="A YouTube video" frameborder="0" allowfullscreen></iframe>
+
+This is a remixed version of "My Time" found in Pale Machine 2, which contains other remixed versions of songs from the original Pale Machine album. A [higher pitched version](https://www.youtube.com/watch?v=mzgYj_qCHLg) of "My Time" was used in the game [OMORI](https://store.steampowered.com/app/1150690/OMORI/) which is where I first heard this song. I still get chills from listening to it, but I unfortunately can't elaborate without getting into spoilers.
+
+> Another cool "My Time" remix is the one by [Kikuo](https://www.youtube.com/watch?v=ZHl7JHiOxOM)
+
 ### **18/07/2024**: [Sampha](https://www.sampha.com) & [Little Simz](https://littlesimz.com) ⋅ Satellite Business 2.0
 <iframe src="https://www.youtube.com/embed/THre1r5KGR0" width="560" height="315" title="A YouTube video" frameborder="0" allowfullscreen></iframe>
 
