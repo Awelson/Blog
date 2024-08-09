@@ -2,6 +2,8 @@
 
 Not in any particular order, here are my top 10 anime :
 
+> My [Anilist](https://anilist.co/user/AWelson/) for more anime. It's not complete, but I will be gradually filling it up
+
 ## [Odd Taxi](https://myanimelist.net/anime/46102/Odd_Taxi)
 
 You know those types of shows where you have multiple, initially unrelated plotlines focused on different characters slowly intertwining with each successive episode until finally, the mystery of how everything connects to each other is revealed and the point of the story becomes clear? Well, Odd Taxi is exactly that type of show and it did a fantastic job at building up this mystery. Another similar (and also very good) show worth mentioning is [Durarara!!](https://myanimelist.net/anime/6746/Durarara).

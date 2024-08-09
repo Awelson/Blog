@@ -9,7 +9,7 @@ a
 <div align="center" markdown="1"> **Script** </div>
 
 <div class="meter">
-    <span style="width:100%;"><span class="progress" data-label="0%"></span></span>
+    <span style="width:0%;"><span class="progress" data-label="0%"></span></span>
 </div>
 
 <div align="center" markdown="1"> **Recording** </div>
