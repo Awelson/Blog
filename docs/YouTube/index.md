@@ -3,8 +3,8 @@
 I have a [YouTube channel](https://www.youtube.com/@aaronwelson). This space will include progress/updates on the current video I am working on, some ideas for future videos, research/references for some videos, etc..
 
 ## What I am currently working on
-a
-**Video Title :** Find the "FOX" (hint: you can't)
+
+### **Video Title :** Find the "FOX" (hint: you can't)
 
 <div align="center" markdown="1"> **Script** </div>
 
@@ -26,3 +26,4 @@ a
 
 ## Future Video Ideas
 
+- an exploration into the MAD genre

@@ -7,3 +7,7 @@ is a [book](https://www.amazon.co.uk/Unlocking-Japanese-Making-simple-really/dp/
 ### [Chapter 2](Chapter2.md)
 
 ### [Chapter 3](Chapter3.md)
+
+### [Chapter 4](Chapter4.md)
+
+### [Chapter 5](Chapter5.md)

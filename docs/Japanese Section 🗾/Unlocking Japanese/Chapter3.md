@@ -21,7 +21,13 @@ Given that you are able to infer the subject correctly based from the context, t
 
 ## "I tired"
 
-Despite how wrong this sounds, it is grammatically correct ("tire", although almost always used transitively, [can also be used intransitively](https://www.merriam-webster.com/dictionary/tire)). It is in fact as grammatically correct as the sentence "I ran". We are simply taking the sentence "I tire" and turning the verb to its past tense.
+Despite how wrong this sounds, it is grammatically correct.
+
+!!! note
+
+    "tire", although almost always used transitively, [can also be used intransitively](https://www.merriam-webster.com/dictionary/tire)
+    
+It is in fact as grammatically correct as the sentence "I ran". We are simply taking the sentence "I tire" and turning the verb to its past tense.
 
 $$ \begin{align*} \text{"I run"} \quad &\Longrightarrow \quad \text{"I ran"} \\
 \text{"I tire"} \quad &\Longrightarrow \quad \text{"I tired"} \end{align*} $$
@@ -35,7 +41,7 @@ An additional point that I can make with this segway is to illustrate that there
 
 ## クレープが食べたい
 
-This sentence [has been used to prove](https://guidetojapanese.org/learn/there-is-no-such-thing-as-a-subject/) that there is no subject in Japanese grammar. This is a logical conclusion to make, the sentence translates to "I want to eat crepes" so "I" is the subject, but if that is the case then why is "クレープ" marked with a が? And if "クレープ" is indeed the subject, then wouldn't the sentence translate to "The crepe wants to eat"?
+This sentence [has been used to prove](https://guidetojapanese.org/learn/there-is-no-such-thing-as-a-subject/) that there is no subject in Japanese grammar. This is a logical conclusion to make. The sentence translates to "I want to eat crepes" so "I" is the subject, but if that is the case then why is "クレープ" marked with a が? And if "クレープ" is indeed the subject, then wouldn't the sentence translate to "The crepe wants to eat"?
 
 The source of confusion lies with our initial assumption that "クレープが食べたい" (accurately) translates to "I want to eat crepes". Of course as we have discussed, translations are not meant to be accurate. 食べたい is (the verb) 食べる attached to the auxiliary たい, which causes the verb to behave like an i-adjective[^1]. In this case, 食べたい is viewed as an adjective referring to "the state of wanting to be eaten". Thus, "(私は)クレープが食べたい"[^2] means "(To me), crepes manifest the state of wanting to be eaten" and in this more accurate translation "crepes" are indeed the subject of the sentence; thus the confusion is no more.
 

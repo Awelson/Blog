@@ -49,12 +49,16 @@ However, は vs が is a very complicated topic and this is only the tip of the 
 
 ## $\varnothing$ ≅ it
 
-If the idea of an implicit / hidden grammatical subject seems unnatural, then it may help to consider that English has an equivalent idea, and that is the word "it". In the sentence "it is cold", "it" serves as the subject of the sentence. Although "it" is explicitly present in the sentence, what "it" actually means or corresponds to is implicit. For example, what is really meant by "it is cold" could be "the weather is cold", "the water I'm drinking is cold", etc.. "it" is simply a placeholder for the actual subject of the sentence (which is made clear by context). Thus, "it" plays a similar role to $\varnothing$. The only difference is that "it" has a sound while $\varnothing$ does not.   
+If the idea of an implicit / hidden grammatical subject seems unnatural, then it may help to consider that English has an equivalent idea, and that is the word "it". In the sentence "it is cold", "it" serves as the subject of the sentence. Although "it" is explicitly present in the sentence, what "it" actually means or corresponds to is implicit. For example, what is really meant by "it is cold" could be "the weather is cold", "the water I'm drinking is cold", etc.. "it" is simply a placeholder for the actual subject of the sentence (which is made clear by context). Thus, "it" plays a similar role to the Japanese $\varnothing$. The only difference is that "it" has a sound while $\varnothing$ does not.   
 
-To illustrate, 寒いです is often translated as "it is cold". "it" is not explicitly written or spoken out in "寒いです". Instead, "it" is the implicit (and silent) grammatical subject of the sentence, i.e, 
+To illustrate, 寒いです is often translated as "it is cold". "it" is not explicitly present in "寒いです". Instead, "it" is the implicit (and silent) grammatical subject of the sentence, i.e, 
 
 $$\overset{\raisebox{3px}{\text{it}}}{(\varnothingが)} \quad \overset{\raisebox{4px}{\text{is cold}}}{寒いです}$$
 
-Although there is no explicit way to express the word "it" in Japanese, people are aware and make reference to the idea of the word "it" whenever they make statements like "寒いです". Point is, whenever you have a sentence in which the implicit grammatical subject is unclear you can just replace it with the word "it" when translating.
+!!! note
+
+    It should be noted that "寒い" is only used to describe the coldness of the weather. For the coldness of objects like water, wind, etc... we use "冷たい". Thus, without any further context, we know that the "it" in the above statement refers to the weather. However, what the "it" refers to when the speaker says "冷たいです" is more ambiguous.  
+
+Point is, whenever you have a sentence in which the implicit grammatical subject is unclear you can just replace it with the word "it" when translating.
 
 

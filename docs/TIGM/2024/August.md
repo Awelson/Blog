@@ -1,7 +1,12 @@
 ---
 title: August
 ---
-### **03/08/2024**: [EHAMIC](http://ehamic.com) ⋅ Koinu no Carnival (Dog Carnival)
+### **11/08/2024**: [墓石](https://www.youtube.com/@hakaishi) ⋅ [2号](https://www.nicovideo.jp/user/13299951?ref=thumb_nicopedia) ⋅ 原曲を刻む
+<iframe src="https://www.youtube.com/embed/dgN7PGmdC-8" width="560" height="315" title="A YouTube video" frameborder="0" allowfullscreen></iframe>
+
+I wrote down a lot more than I expected to for this song and I think the topics I went over are interesting enough to deserve its own page. You can find my exposition in the [Misc section](../../Misc/MAD.md).
+
+### **09/08/2024**: [EHAMIC](http://ehamic.com) ⋅ Koinu no Carnival (Dog Carnival)
 <iframe src="https://www.youtube.com/embed/ZhZxKhAilZk" width="560" height="315" title="A YouTube video" frameborder="0" allowfullscreen></iframe>
 
 犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬犬
