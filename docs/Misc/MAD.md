@@ -17,7 +17,7 @@ This is an arrangement/remix (by 墓石) of [the original「原曲を刻む」by
 
 > Check [this playlist](https://www.youtube.com/playlist?list=PL4xvXFEd4_cfkhXyd1oCDSqb2KA4eF7d3) out for a full list of examples
 
-The 音MAD genre is a derivative of the [MADムービー](https://ja.wikipedia.org/wiki/MADムービー) (MADmovie) genre of videos which is, well, a term used to describe videos created by editing, combining, and reconstructing existing audio, images, videos, and animations from media like TV and games : [Example](https://www.youtube.com/watch?v=maOA2StQgq0). 
+The 音MAD genre is a derivative of the [MADムービー](https://ja.wikipedia.org/wiki/MADムービー) (MADmovie) genre of videos which is, well, a term used to describe videos created by editing, combining, and reconstructing existing audio, images, videos, and animations from media like TV and games : [Old Example 1](https://www.nicovideo.jp/watch/sm19423759), [Old Example 2](https://www.nicovideo.jp/watch/sm2275421), [Modern Example](https://www.youtube.com/watch?v=maOA2StQgq0). 
 
 Sometimes, original animations, music, etc... are created in order to facilitate the "mashing" of different media sources. For example, [this original animation by「絵を描きマツセ」](https://www.youtube.com/watch?v=UG3Huou-1ZI) was created to insert characters from [Dungeon Meshi](https://myanimelist.net/anime/52701/Dungeon_Meshi) into the [Chainsaw Man 4th episode ED](https://www.youtube.com/watch?v=xIKW3NKYBWw). This type of MAD in particular is known as a 手描きMAD.
 

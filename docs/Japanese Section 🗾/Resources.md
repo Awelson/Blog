@@ -102,6 +102,7 @@
 - [Mickymacky](https://www.youtube.com/@mickymacky25)
 - [BL and Gente](https://www.youtube.com/@BL_andGENTE)
 - [Gush and Emo](https://www.youtube.com/@GUSH_and.Emo_BLch)
+- [Kajiyama](https://www.youtube.com/@blch735)
 
 <h4>Animations</h4>
 

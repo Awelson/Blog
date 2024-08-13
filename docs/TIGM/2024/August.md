@@ -1,6 +1,17 @@
 ---
 title: August
 ---
+### **11/08/2024**: [Bakar](https://bakarofficial.com) ⋅ NW3
+<iframe src="https://www.youtube.com/embed/E6LrnIMdsLY" width="560" height="315" title="A YouTube video" frameborder="0" allowfullscreen></iframe>
+
+> *From Genius.com :*
+> 
+> NW3 is the UK postcode for Hamsptead, London. Hampstead is known for its intellectual, liberal, artistic, musical, and literary associations. It has some of the most expensive housing in the London area. Hampstead has more millionaires within its boundaries than any other area of the United Kingdom.
+>
+> Bakar says of the song, “I had moved to Hampstead, a nicer area. I had gone from the bottom of the hill in Camden, Chalk Farm, to being at the top of the hill. That’s a crazy thing to do from where I’m from. I guess the whole concept is me saying to a girl, ‘I think I’ve found the spot. There’s a whole new world up here, the top of the hill it looks different. Come see it.’”
+
+This song trips me up so much because I can never tell when he's spelling out NW or saying "end up with you".
+
 ### **11/08/2024**: [墓石](https://www.youtube.com/@hakaishi) ⋅ [2号](https://www.nicovideo.jp/user/13299951?ref=thumb_nicopedia) ⋅ 原曲を刻む
 <iframe src="https://www.youtube.com/embed/dgN7PGmdC-8" width="560" height="315" title="A YouTube video" frameborder="0" allowfullscreen></iframe>
 
