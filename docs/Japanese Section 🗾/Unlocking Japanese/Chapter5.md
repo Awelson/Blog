@@ -1,7 +1,7 @@
 ---
 title : Chapter 5
 ---
-# Understanding the が, を, and に particles
+# Understanding the が, and を particles
 
 There are two prerequisites to mastering these particles. First, we need to be accustomed to transitive and intransitive verbs. Second, we need to be accustomed to the use of passive voice. We review these topics in English before moving on to Japanese.
 
@@ -29,7 +29,7 @@ $$ \underbrace{\text{He}}_{\text{subject}} \ \overbrace{\text{yawned}}^{\text{ve
 
     A lot of English verbs can function both transitively and intransitively in different contexts (such verbs are known as [ambitransitive verbs](https://en.wikipedia.org/wiki/Ambitransitive_verb)). Take the example :
  
-    $$ \underbrace{\text{She}}_{\text{subject}} \ \overbrace{\text{broke}}^{\text{verb}} \ \underbrace{\text{the vase}}_{\text{object}} $$
+    $$ \underbrace{\text{She}}_{\text{subject}} \overbrace{\text{broke}}^{\text{verb}} \ \underbrace{\text{the vase}}_{\text{object}} $$
 
     $$ \underbrace{\text{The phone}}_{\text{subject}} \ \overbrace{\text{broke}}^{\text{verb}} $$
 
@@ -47,7 +47,9 @@ Notice that the passive form of a verb still functions as a verb in the usual se
 
 $$ \underbrace{\text{The ball}}_{\text{subject}} \ \overbrace{\text{is kicked}}^{\text{passive verb}} $$
 
-we can view "is kicked" as the action/verb "to recieve a kick from some agent"; nothing drastic is happening when we switch to the passive. Put together : the subject (the ball) performs the action "to recieve a kick from some agent". It can be hard to wrap your head around passive voice and intransitive verbs due to the structural similarities. Here is an example to help. Consider the following:
+we can view "is kicked" as the action/verb "to recieve a kick from some agent"; nothing drastic is happening when we switch to the passive. Put together : the subject (the ball) performs the action "to recieve a kick from some agent". 
+
+It can be hard to wrap your head around passive voice and intransitive verbs due to the structural similarities. Here is an example to help. Consider the following:
 
 - **Intransitive** : The door opened.
 - **Passive** : The door was opened.
@@ -56,15 +58,17 @@ Although similar, these two sentences communicate different meanings. The first 
 
 !!! note
 
-    In "The door opened", or when a verb is used intransitively in general, the speaker does not strictly believe that the door opened on its own. For example, they may simply not want to bring attention to the existence of an agent for whatever reason <- This thought pattern is very common in Japanese as we shall see.
+    In "The door opened", or when a verb is used intransitively in general, the speaker does not necessarily believe that the door opened on its own. For example, they may simply not want to bring attention to the existence of an agent for whatever reason <- This thought pattern is very common in Japanese as we shall see.
 
 !!! note
 
     You may have heard from somewhere that intransitive verbs cannot be put into passive voice. The above example seems to break that rule, but notice that "open" is ambitransitive. 
 
-    "The door was opened" is simply the passive voice of the sentence "He opened the door" (in which "open" is being used transitively). The existence of an agent, in this case "He", is implied but not made explicit upon conversion to the passive voice. The agent can be made explicit with prepositional phrases (explained soon). For example, we can include the prepositional phrase "by him" : 
+    "The door was opened" is the passive voice of the sentence "He opened the door" (in which "open" is being used transitively). The existence of an agent, in this case "He", is implied but not made explicit upon conversion to the passive voice. The agent can be made explicit with prepositional phrases (explained soon). For example, we can include the prepositional phrase "by him" : 
 
-    <p align="center">"The door was opened by him"</p> 
+    <p align="center">"The door was opened by him"</p>
+
+    Thus, it is perhaps more accurate to say that a sentence in which a verb is used intransitively cannot be put into the passive voice.
 
 ## Intransitive verbs can behave transitively
 
@@ -78,11 +82,11 @@ with the use of a prepositional phrase (PP). Now, what is a PP?
 
 Example :
 
-$$ \underbrace{\text{He}}_{\text{subject}} \overbrace{\text{laughed}}^{\text{passive verb}} \ \underbrace{\text{at }\overbrace{\text{me}}^{\text{object}}}_{\text{PP}} $$
+$$ \underbrace{\text{He}}_{\text{subject}} \overbrace{\text{laughed}}^{\text{verb}} \ \underbrace{\text{at }\overbrace{\text{me}}^{\text{object}}}_{\text{PP}} $$
 
 Eventhough "laugh" is an intransitive verb, it behaves transitively in this example since we get the impression that the "laugh" action is directed towards the object "me". However, notice that "me" is simply an object within the PP "at me" and it is the PP as a whole that helps to describe the verb "laughed". Thus, while "me" *is* an object, it cannot be considered as a direct object in this context.
 
-While it has been said that intransitive verbs cannot be put into passive voice, we can likewise make use of PPs to create a passive construction of an intransitive verb. For example,
+While it has been said that intransitive verbs cannot be put into passive voice, we can make use of PPs to create a passive construction of an intransitive verb. For example,
 
 $$ \underbrace{\text{I}}_{\text{subject}} \overbrace{\text{was laughed}}^{\text{passive verb}} \ \underbrace{\text{at (by him)}}_{\text{PP}} $$
 
@@ -94,9 +98,6 @@ and we may or may not include "by him" to reveal or hide the agent (but you shou
 
     - the subject is marked with が
     - the direct object is marked with を
-    - an object inside of a PP is marked with に
-
-    These guidelines are not perfect, but they help explain particle usage in most cases
 
 ## Back to Japanese
 
@@ -137,7 +138,7 @@ Consider the following :
 </div>
 > Note. The emphasis on the agent diminishes as we descend the table
 
-While "see" can be used intransitively like in the sentence "I can see clearly now", there is no way that we can use "see" to fill in ?????. Intransitive verbs are separated into two categories based on whether or not they can fulfill this role. We say that "see" is unergative because it cannot fulfill this role while "turn" is unaccusative since it is able to.
+While "see" can be used intransitively like in the sentence "I can't see without my glasses", there is no way that we can use "see" to fill in ?????. Intransitive verbs are separated into two categories based on whether or not they can fulfill this role. We say that "see" is unergative because it cannot fulfill this role while "turn" is unaccusative since it is able to.
 
 In Japanese, intransitive verbs in a verb pair are almost always unaccusative. For example,「見える」and the intransitive "see" do not correspond with each other since one of them is unergative and the other is unaccusative. Thus,「見える」has no perfect English equivalent since there is no unaccusative "see". The closest we can get to an English equivalent is probably "to be visible".
 
@@ -150,19 +151,42 @@ Here is the previous table in Japanese :
 |    Passive   | 箱が回られる | 鳥が見られる |
 | Intransitive |   箱が回す   |    鳥が見える     |
 </div>
-> In Japanese, the intransitive form is almost always preferred over the passive
 
 Here is another example using the unergative "catch"
 
 <div style="text-align: center" markdown>
 |              |        catch       |       捕まえる/捕まる      |
 |:------------:|:-----------------:|:--------------:|
-|  Transitive  |   The policemen caught the thief  |  お巡りさんが犯人を捕まえる  |
+|  Transitive  |   The policeman caught the thief  |  お巡りさんが犯人を捕まえた  |
 |    Passive   | The thief was caught | 犯人が捕まえられた |
-| Intransitive |   ?????   |    犯人が捕まる     |
+| Intransitive |   ?????   |    犯人が捕まった     |
 </div>
 
+> Note again the decreasing emphasis on "the agent" (the policeman) as we descend the table. In Japanese, there is a cultural preference to not emphasize the agent, only doing so when absolutely necessary. Thus, the intransitive form is almost always preferred when communicating.
+
+## Transitivity mismatch
+
+The verb「分かる」is often translated in English as "understand", though this is inaccurate since「分かる」is intransitive while "understand" is transitive. If we insist on using this translation, then「(私は)これが分かる」translates to "(I) understand this". In the Japanese sentence the subject is「これ」while in the English sentence it is "I", this is due to the transitivity mismatch.
+
+Like the "thief" example above, there is no direct English equivalent to「これが分かる」. Here is an excerpt from [wiktionary](https://en.wiktionary.org/wiki/わかる) that explains this clearly :
+
+> The Japanese verb wakaru is most often glossed as to understand. However, wakaru is intransitive, and it takes the thing that is understood, distinguished, or recognized as the subject (usually marked by particle が (ga)), and not the object (usually marked by particle を (o)). Strictly speaking, wakaru is thus closer to English to be understandable, as the verb wakaru describes the thing itself, unlike English to understand, which describes the action of the person doing the understanding, distinguishing, or recognizing.
+
+「分かる」's transitive pair is「分ける」, but this means "separate" instead of "understand". Somehow, throughout history, the Japanese intransitive "separate", that is「分かる」, had its meaning morphed into "to understand". Here is the most likely explanation for this bit of etymology :
+
+> My guess is that the English translation “to distinguish” (or more accurately, to be distinguishable!) is probably the closest bridge between the meanings “understand” and “separate”. The root “dis” even means “apart”.
+>
+> You can distinguish one red marble in a bag from all the other blue marbles. That both carries this mental image for me of the red marble standing out, or being apart from, all the others; you can see it’s borders; in your mind’s eye, you draw a mental border around it’s edges and cut it away from all the other noise in the picture. This sense of “distinguish” seems related to separating, to me.
+> 
+> But “distinguish” also means you’re seeing it clearly-- you can’t distinguish a blurry shape in the bag if you have bad eyesight. To see it clearly and sharply sounds a lot like what your mind would do with a hazy, non-concrete concept. You can distinguish a concept and make it out-- it is distinguishable in your mind. You understand it.
+>
+> [Source](https://community.wanikani.com/t/wakeru-and-wakaru/33389/3)
+
+Another example of a verb that suffers from this "transitivity mismatch" is「できる」which is often mistranslated as "to be able to do" despite「できる」being intransitive. 
+
 ## The intransitive passive?
+
+
 
 ## The sufferring passive
 
