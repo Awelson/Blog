@@ -9,7 +9,7 @@
 - [TheMoeWay](https://learnjapanese.moe)
 - [Immersion-Based Japanese Learning](https://donkuri.github.io/learn-japanese/)
 - [JP Lazy Guide](https://xelieu.github.io/jp-lazy-guide/)
-- [Itazuraneko](https://gohoneko.neocities.org) -> [alt](https://djtguide.github.io/learn/learnmain.html)
+- [Itazuraneko](https://gohoneko.neocities.org) -> [alt 1](https://djtguide.github.io/learn/learnmain.html) -> [alt 2](https://djtguide.neocities.org)
 - [Tatsumoto Ren](https://tatsumoto-ren.github.io/blog/index.html) -> [alt](https://tatsumoto.neocities.org/blog/)
 - [IgrecL](https://github.com/IgrecL/japanese)
 - [animecards](https://animecards.site)
@@ -103,8 +103,9 @@
 - [BL and Gente](https://www.youtube.com/@BL_andGENTE)
 - [Gush and Emo](https://www.youtube.com/@GUSH_and.Emo_BLch)
 - [Kajiyama](https://www.youtube.com/@blch735)
+- [Kadokawa](https://www.youtube.com/@kadokawa6694)
 
-<h4>Animations</h4>
+<h4>Manga/Animation with kanji subtitles</h4>
 
 - [Paranormal HS](https://www.youtube.com/@parako)
 - [MariMariMari](https://www.youtube.com/@marymarymary80s/featured)
@@ -114,12 +115,15 @@
     - [Snake Pit](https://www.youtube.com/@SnakePit-il1dc)
     - [Hawk Eyes](https://www.youtube.com/@HawkEyes-uk5do)
     - [Swallow Tail](https://www.youtube.com/@SwallowTail-cq1fd)
+    - [Night Owl](https://www.youtube.com/@NightOwl-HN)
 - [Chrono reverse](https://www.youtube.com/@Chronover_info)
 - [tasukukoma](https://www.youtube.com/@komatasuku)
+- [FermiLab](https://www.youtube.com/@fermi_lab)
+- [teipen](https://www.youtube.com/@teipen.official)
+- [manimani](https://www.youtube.com/@manimani-people)
 
-<h4>Others</h4>
+## YouTube channels teaching Japanese
 
-- [EGA channel](https://www.youtube.com/@EGA-CHANNEL)
 - [Japanese with Shun](https://www.youtube.com/@JapanesewithShun)
 - [Moshi Moshi Yusuke](https://www.youtube.com/@moshimoshi.yusuke/featured)
 

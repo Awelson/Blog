@@ -4,7 +4,7 @@ search:
   exclude: true
 ---
 
-There might be some mistakes since I manually typed all this stuff in. You can check [here]()
+There might be some mistakes since I manually typed all this stuff in. You can check [here](https://github.com/Awelson/NekoParaDialogue/tree/main) to download the csv file.
 
 | Character | Japanese                                                                  | English                                                                                                                                                                                                                |
 | --------- | ------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

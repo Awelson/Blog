@@ -47,7 +47,9 @@ Notice that the passive form of a verb still functions as a verb in the usual se
 
 $$ \underbrace{\text{The ball}}_{\text{subject}} \ \overbrace{\text{is kicked}}^{\text{passive verb}} $$
 
-we can view "is kicked" as the action/verb "to recieve a kick from some agent"; nothing drastic is happening when we switch to the passive. Put together : the subject (the ball) performs the action "to recieve a kick from some agent". 
+we can think of "is kicked" as "to recieve a kick from some agent"; nothing drastic is happening when we switch to the passive. Put together : the subject (the ball) performs the action "to recieve a kick from some agent".
+
+> This is just one of the ways to think of / understand the passive voice. I don't think it is a standard (or even correct) way to do so, but this way of thinking, I think, is the most compatible with Japanese.  
 
 It can be hard to wrap your head around passive voice and intransitive verbs due to the structural similarities. Here is an example to help. Consider the following:
 
@@ -138,9 +140,9 @@ Consider the following :
 </div>
 > Note. The emphasis on the agent diminishes as we descend the table
 
-While "see" can be used intransitively like in the sentence "I can't see without my glasses", there is no way that we can use "see" to fill in ?????. Intransitive verbs are separated into two categories based on whether or not they can fulfill this role. We say that "see" is unergative because it cannot fulfill this role while "turn" is unaccusative since it is able to.
+While "see" can be used intransitively like in the sentence "I can't see without my glasses", there is no way that we can use "see" to fill in ?????. When a verb is used intransitively it can be separated into two categories based on whether or not they can fulfill this role. We say that "see" is unergative because it cannot fulfill this role while "turn" is unaccusative since it is able to.
 
-In Japanese, intransitive verbs in a verb pair are almost always unaccusative. For example,「見える」and the intransitive "see" do not correspond with each other since one of them is unergative and the other is unaccusative. Thus,「見える」has no perfect English equivalent since there is no unaccusative "see". The closest we can get to an English equivalent is probably "to be visible".
+In Japanese, intransitive verb pairs are almost always unaccusative. For example,「見える」and the intransitive "see" do not correspond with each other since one of them is unergative and the other is unaccusative. Thus,「見える」has no perfect English equivalent since there is no unaccusative "see". The closest we can get to an English equivalent is probably "to be visible".
 
 Here is the previous table in Japanese :
 
@@ -168,11 +170,11 @@ Here is another example using the unergative "catch"
 
 The verb「分かる」is often translated in English as "understand", though this is inaccurate since「分かる」is intransitive while "understand" is transitive. If we insist on using this translation, then「(私は)これが分かる」translates to "(I) understand this". In the Japanese sentence the subject is「これ」while in the English sentence it is "I", this is due to the transitivity mismatch.
 
-Like the "thief" example above, there is no direct English equivalent to「これが分かる」. Here is an excerpt from [wiktionary](https://en.wiktionary.org/wiki/わかる) that explains this clearly :
+Like the "thief" example above, there is no direct English equivalent to「これが分かる」(since "understand" is unergative). Here is an excerpt from [wiktionary](https://en.wiktionary.org/wiki/わかる) that explains this clearly :
 
 > The Japanese verb wakaru is most often glossed as to understand. However, wakaru is intransitive, and it takes the thing that is understood, distinguished, or recognized as the subject (usually marked by particle が (ga)), and not the object (usually marked by particle を (o)). Strictly speaking, wakaru is thus closer to English to be understandable, as the verb wakaru describes the thing itself, unlike English to understand, which describes the action of the person doing the understanding, distinguishing, or recognizing.
 
-「分かる」's transitive pair is「分ける」, but this means "separate" instead of "understand". Somehow, throughout history, the Japanese intransitive "separate", that is「分かる」, had its meaning morphed into "to understand". Here is the most likely explanation for this bit of etymology :
+「分かる」's transitive pair is「分ける」, but this means "to separate" instead of "to understand". Throughout the course of history the Japanese intransitive "separate", that is「分かる」, somehow had its meaning morphed into "to understand". Here is the most likely explanation for this :
 
 > My guess is that the English translation “to distinguish” (or more accurately, to be distinguishable!) is probably the closest bridge between the meanings “understand” and “separate”. The root “dis” even means “apart”.
 >
@@ -186,21 +188,68 @@ Another example of a verb that suffers from this "transitivity mismatch" is「�
 
 ## The intransitive passive?
 
+The examples of passive form (in Japanese) which we have showcased are created by taking the passive form of the transitive verb pair. In the "thief" example, we use「捕まえられる」, the passive form of「捕まえる」, the transitive "catch". However, what's special about Japanese is that we also have access to the passive form of「捕まる」, the intransitive "catch". This yields the word「捕まられる」.
 
+I will be honest and say that I have no clue as to how to interpret or use「捕まられる」and other "intransitive passives". 
 
-## The sufferring passive
+??? note "So.. I asked an LLM and.."
+
+    「捕まえられる」と「捕まられる」はどちらも受け身形として使われることがありますが、意味に違いがあります。
+    <h3> 1. 捕まえられる（受け身形）</h3>
+        - 動詞「捕まえる」の受け身形。
+        - 意味: 誰か（主語）が他者に捕まえられる（他の人によって捕まえられる）こと。
+        - 例: 「彼は警察に捕まえられた。」→ 警察が彼を捕まえたという意味です。
+    <h3> 2. 捕まられる（受け身形）</h3>
+        - 動詞「捕まる」の受け身形。
+        - 意味: 誰か（主語）が他者に捕まる（その人自身が捕まること）こと。
+        - 例: 「彼は警察に捕まられた。」→ 彼自身が警察に捕まったという意味です。
+
+    <h3> 違いのポイント： </h3>
+        - 「捕まえられる」: 誰かが他の人や物を捕まえるという行為の受け身形。主語は捕まえられる対象です。
+        - 「警察に捕まえられる」→ 警察が主語を捕まえる。
+        - 「捕まられる」: 主語が自分自身で他者に捕まるという受け身形。主語自身が捕まるという意味です。
+        - 「警察に捕まられる」→ 主語が警察に捕まる。
+    <h3> 例文での比較： </h3>
+        - 「彼は警察に捕まえられた」 → 警察が彼を捕まえた（他者が彼を捕まえた）。
+        - 「彼は警察に捕まられた」 → 彼が自分で警察に捕まった（彼自身が捕まった）。
+    それぞれのニュアンスの違いに注意して使い分けることが重要です。
+
+    It appears that「捕まえられた」can be thought of as "to be caught" and「捕まられた」 as "to turn one's self in". But of course, I cannot guarantee that this is 100% factual.
+
+The good thing is that they are not frequently used so it's cool to not understand them. Nonetheless, here are some examples I was able to find :
+
+> Since English intransitive verbs do not have a passive form, there is no direct equivalent for common Japanese expressions such as the following:
+>
+> - 子供に泣かれた。(The child cried. / I couldn't stop the child from crying.)
+> - 雨に降られた。 (We were caught in the rain.)
+>
+> [Source](https://user.keio.ac.jp/~hjb/passive%20verbs.html)
+
+## The suffering passive
+
+$$かばんが盗まれた$$
+
+"(My) bag was stolen". This sentence, in both English and Japanese, does not really convey the negative impact of this situation (towards the owner of the bag). The subject is "the bag" (かばん) and it received the action "steal" (盗まれた) from some external agent, there is no emphasis on the owner of the bag.
+
+In English we might instead say "I was stolen from, they took my bag", or some other equivalent to help convey the negative impact of this situation. In Japanese we might say「私がかばんを盗まれた」, now "I (the owner)" becomes the subject, *I* received the action "steal" from some external agent; and what they took was my bag. This is known as the 'suffering passive'.
+
+Now, there are some issues to be addressed. When a sentence is turned passive the direct object turns into the subject so that, in a sense, a passive sentence should not have a direct object. Yet「私がかばんを盗まれた」has an を-marked object. One could simply treat this as an edge case, a minor discrepancy to the rules, and that is fine. However, there is an unconventional way of thinking about Japanese verb conjugations which resolves this discrepancy. I will eventually get around to introducing these ideas, but for now here are some videos you can watch (in order) :
+
+- [Lesson 10: "Japanese conjugation" myth busted! Also, potential verb form secret unlocked](https://www.youtube.com/watch?v=qcOhHmU0znI)
+- [Japanese Passive - the simple secret - it ISN'T passive!](https://www.youtube.com/watch?v=eIoyAZwPqz0)
+- [Japanese suffering passive finally demystified! Adversity passive laid to rest!](https://www.youtube.com/watch?v=gKNGbZvxgzM)
 
 ## Quickfire points
 
 1. Japanese transitive verbs may appear to be without a direct object.
 
-> For example in the sentence「昨日は朝まで飲んだ」, thus appearing to behave intransitively. This is not really an instance of a rulebreak but rather the Japanese tendency to omit information. The intransitive behavior of「昨日は朝まで飲んだ」is in appearance only. Revealing the implicit information gives「昨日は朝まで(〇〇を)飲んだ」where 〇〇 probably refers to 酒.
->
-> Some people may argue otherwise, regarding the verb as intransitive if the を-marked object is omitted, but I believe that the former way of thinking is an easier pill to swallow.
+!!! note "For example"
+
+    「飲む」is transitive, but it does not appear with an を-marked object in the sentence「昨日は朝まで飲んだ」. This is not really an instance of a rulebreak but rather the Japanese tendency to omit information. Revealing the implicit information gives「昨日は朝まで(〇〇を)飲んだ」where 〇〇 probably refers to 酒.
 
 2. Japanese has ambitransitive verbs, but these are rare (e.g. 噴く)
 
-3. Some Japanese transitive verbs don't have an intransitive pair (e.g. 食べる)
+3. Some Japanese transitive verbs don't have an intransitive pair (e.g. 食べる) and vice versa (e.g. 泣く)
 
 <!--
 Let us put these guidelines to use. "Go" is an intransitive verb. "Go" doesn't accept direct objects so we have to use PPs to provide additional context if need be, e.g. "Go to the convenience store". The object (convenience store) which represents the directionality/destination of the verb "Go" is an object inside of a PP as opposed to a direct object. 
