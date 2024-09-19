@@ -4,4 +4,5 @@ This is a space for lists. Lists of all sorts, YouTubers I find cool, anime I fi
 
 ### [My Top 10 Anime](top10anime.md)
 ### [Japanase Language Learning Resources](../Japanese%20Section%20🗾/Resources.md)
+### [Awesome YouTube Stuff](YTlist.md)
 

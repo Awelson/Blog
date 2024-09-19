@@ -241,15 +241,15 @@ Now, there are some issues to be addressed. When a sentence is turned passive th
 
 ## Quickfire points
 
-1. Japanese transitive verbs may appear to be without a direct object.
+- Japanese transitive verbs may appear to be without a direct object.
 
 !!! note "For example"
 
     「飲む」is transitive, but it does not appear with an を-marked object in the sentence「昨日は朝まで飲んだ」. This is not really an instance of a rulebreak but rather the Japanese tendency to omit information. Revealing the implicit information gives「昨日は朝まで(〇〇を)飲んだ」where 〇〇 probably refers to 酒.
 
-2. Japanese has ambitransitive verbs, but these are rare (e.g. 噴く)
+- Japanese has ambitransitive verbs, but these are rare (e.g. 噴く)
 
-3. Some Japanese transitive verbs don't have an intransitive pair (e.g. 食べる) and vice versa (e.g. 泣く)
+- Some Japanese transitive verbs don't have an intransitive pair (e.g. 食べる) and vice versa (e.g. 泣く)
 
 <!--
 Let us put these guidelines to use. "Go" is an intransitive verb. "Go" doesn't accept direct objects so we have to use PPs to provide additional context if need be, e.g. "Go to the convenience store". The object (convenience store) which represents the directionality/destination of the verb "Go" is an object inside of a PP as opposed to a direct object. 
