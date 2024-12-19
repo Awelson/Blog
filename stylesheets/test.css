@@ -1,0 +1,13 @@
+.clickable {
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.info {
+    display: none;
+    background-color: #000000;
+    padding: 10px;
+    border: 1px solid #000000;
+    margin-top: 5px;
+    color: white;
+}
