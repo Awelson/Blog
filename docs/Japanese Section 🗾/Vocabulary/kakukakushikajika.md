@@ -3,7 +3,7 @@
 I came across an interesting-sounding word while watching episode 8 of [Youkai Gakkou no Sensei Hajimemashita!](https://myanimelist.net/anime/57533/Youkai_Gakkou_no_Sensei_Hajimemashita) :
 
 <video width="720" height="640" controls>
-  <source src="../Kakukakushikajika.mp4" type="video/mp4">
+  <source src="https://github.com/Awelson/Blog/raw/refs/heads/main/docs/Japanese%20Section%20%F0%9F%97%BE/Vocabulary/kakukakushikajika.mp4" type="video/mp4">
 </video>
 
 The anime was even kind enough to provide an explanation, and I thought that was funny. I was wondering why an explanation was needed... 
