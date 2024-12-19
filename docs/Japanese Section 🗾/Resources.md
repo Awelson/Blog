@@ -14,18 +14,20 @@
 - [IgrecL](https://github.com/IgrecL/japanese)
 - [animecards](https://animecards.site)
 
+<h4>Database</h4>
+
+- [Core6000](https://core6000.neocities.org)
+- [japbase](https://japbase.neocities.org/full_night)
+
 <h4>Grammar</h4>
 
 - [Ixrec's Guide to Japanese](https://ixrec.neocities.org)
+- [Organic Japanese](https://learnjapaneseonline.info)
 - [Tae Kim's Guide to Learning Japanese](https://guidetojapanese.org/learn/)
-- [Core6000](https://core6000.neocities.org)
-- [japbase](https://japbase.neocities.org/full_night)
 - [boirodaisuki](https://boirodaisuki.neocities.org/dark)
 - [tofugu](https://www.tofugu.com)
-
-!!! note ""
-
-    Most of these websites generally have the same content, but the most complete is probably TheMoeWay, Tatsumoto Ren, and Itazuraneko. For grammar specifically, japbase and Tae Kim's Guide is good.
+- [imabi](https://www.imabi.org)
+- [sakubi](https://sakubi.neocities.org)
 
 ## Books, Manga, etc...
 
@@ -34,12 +36,12 @@
 - [Manga Zip](https://manga-zip.is/post) -> [alt](https://manga-zip.info/home.i1/)
 - [Alphapolis](https://www.alphapolis.co.jp)
 - [syosetsu](https://yomou.syosetu.com)
-- [yaoi-sei](https://yaoi-sei.com/home.html)
+- [yaoi-sei](https://yaoi-sei.com/home.html) - BL stuff
 - [Dlraw](https://dlraw.to/raw/)
 - [rawkuma](https://rawkuma.com)
 - [mangaz](https://www.mangaz.com)
-- [nhentai](https://nhentai.net)
-- [hitomi](https://hitomi.la)
+- [nhentai](https://nhentai.net) - for research purposes only, trust
+- [hitomi](https://hitomi.la) - for research purposes only, trust
 - [aarinfantasy](https://aarinfantasy.com/forum/forum.php) - BL stuff
 - [anime-sharing](https://www.anime-sharing.com)
 - [nyaa.si](https://nyaa.si/?f=0&c=1_2&q)
@@ -47,23 +49,26 @@
 
 <h4>Paid (but occasionally has free stuff too)</h4>
 
-- [How to buy japanese ebooks](https://www.tofugu.com/japanese/how-to-buy-japanese-ebooks/)
+- [How to buy japanese ebooks (Guide)](https://www.tofugu.com/japanese/how-to-buy-japanese-ebooks/)
 - [booklive](https://booklive.jp)
 - [cmoa](https://www.cmoa.jp)
 - [ebookjapan](https://ebookjapan.yahoo.co.jp)
+- [DLsite](https://www.dlsite.com/index.html)
+- [Line Manga](https://manga.line.me) - needs a Japanese VPN
 - [pixiv](https://comic.pixiv.net)
 - [amazon.co.jp](https://www.amazon.co.jp/-/en/本-書籍-通販/b/?ie=UTF8&node=465392&ref_=nav_cs_books)
 
-<h4>Subtitles</h4>
+<h4>Anime, etc.. subtitles</h4>
 
-- [jimaku.cc](https://jimaku.cc) - jp subtitles
+- [jimaku.cc](https://jimaku.cc)
 
 ## Tools
 
 <h4>Dictionary</h4>
 
 - [yomitan](https://github.com/themoeway/yomitan) - Pop-up dictionary for browser
-- [jpdb](https://jpdb.io) - Dictionary
+- [goo](https://dictionary.goo.ne.jp)
+- [jpdb](https://jpdb.io)
 
 <h4>Character Recogntion</h4>
 
@@ -77,6 +82,8 @@
 - [massif.la](https://massif.la/ja)
 - [immersionkit](https://www.immersionkit.com) - example sentences from anime
 - [youglish](https://youglish.com/japanese) - example sentences from YouTube
+- [kanshudo](https://www.kanshudo.com/searcht)
+- [eijirou](https://eow.alc.co.jp)
 
 <h4>Video players</h4>
 
@@ -104,6 +111,8 @@
 - [Gush and Emo](https://www.youtube.com/@GUSH_and.Emo_BLch)
 - [Kajiyama](https://www.youtube.com/@blch735)
 - [Kadokawa](https://www.youtube.com/@kadokawa6694)
+- [Sankosha](https://www.youtube.com/@sankosha_BL)
+- [Cue Egg Label & Melty Drop](https://www.youtube.com/@LibrePublishing)
 
 <h4>Manga/Animation with kanji subtitles</h4>
 
@@ -118,13 +127,36 @@
     - [Night Owl](https://www.youtube.com/@NightOwl-HN)
 - [Chrono reverse](https://www.youtube.com/@Chronover_info)
 - [tasukukoma](https://www.youtube.com/@komatasuku)
-- [FermiLab](https://www.youtube.com/@fermi_lab)
+- [fermilab](https://www.youtube.com/@fermi_lab)
+- [rinlab](https://www.youtube.com/@rin_lab)
 - [teipen](https://www.youtube.com/@teipen.official)
-- [manimani](https://www.youtube.com/@manimani-people)
+
+<h4>Gaming and stuff</h4>
+
+- [Soravv](https://www.youtube.com/@soravv)
+- [kouku](https://www.youtube.com/@futoumei)
+- [kkvv](https://www.youtube.com/@kkvv.)
+- [mafumafu](https://www.youtube.com/@uni_mafumafu) - gaming videos and stuff are in the early channel days
+- [soraru](https://www.youtube.com/@SorarunoKakurega)
+- [Ado](https://www.youtube.com/@ado-sense)
+
+<h4>Boy Bands (lots of content from here, gaming, music, vlog, quiz shows, etc...)</h4>
+
+- [sutopuri](https://www.youtube.com/@StrawberryPrince)
+- [KnightA](https://www.youtube.com/@Knight_A_info)
+- [ireisu](https://www.youtube.com/@ireisu)
+- [starpolar](https://www.youtube.com/@starpola)
+- [sixfonia](https://www.youtube.com/channel/UCGMG8BNfA8gsH9Rn_d_yW2A)
+- [amptak](https://www.youtube.com/@AMPTAKxCOLORS)
+- [meropaka](https://www.youtube.com/@meropaka)
+
+The members from these bands usually have their own channels too, so you can check those out as well
 
 ## YouTube channels teaching Japanese
 
-- [Japanese with Shun](https://www.youtube.com/@JapanesewithShun)
 - [Moshi Moshi Yusuke](https://www.youtube.com/@moshimoshi.yusuke/featured)
-
-I also occasionally [annotate](Annotated.md) Japanese videos, e.g, highlighting relevant vocabulary, explaining contexts, etc...
+- [Haru's Japanese Cafe](https://www.youtube.com/@HarusJapaneseCafe)
+- [Yohei Akiyama](https://www.youtube.com/@YoheiAkiyama/featured)
+- [Kaname Naito](https://www.youtube.com/@kanamenaito)
+- [Cure Dolly](https://www.youtube.com/@organicjapanesewithcuredol49)
+- [Maruhi Academy](https://www.youtube.com/@maruhigakuen) - very obscure aspects of Japanese language

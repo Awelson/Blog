@@ -4,8 +4,12 @@ $\small こんにち$-what's up! This is the japanese section where you can find
 
 - ## [Language Learning Resources](Resources.md)
 - ## [Annotated Videos](Annotated.md)
-- ## [Unlocking Japanese](Unlocking%20Japanese/index.md)
+- ## [Vocabulary]
+- ## [Grammar Points]
 
+<!---
+- ## [Unlocking Japanese](Unlocking%20Japanese/index.md)
+--->
 
 <!---
 <script src="https://giscus.app/client.js"
