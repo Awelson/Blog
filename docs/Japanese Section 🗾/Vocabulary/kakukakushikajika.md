@@ -10,7 +10,7 @@ The anime was even kind enough to provide an explanation, and I thought that was
 
 "Maybe it's an archaic term that no one bothers to use anymore?" Turns out I was half correct.
 
-While it was written as 斯々然々 in the anime, this term is not often as such. Instead, it is usually written in full hiragana, かくかくしかじか. It is often used in media as a practical phrase that an author can use as a placeholder for some long explanation that the reader/viewer might already be aware of. For example, imagine the following situation :
+While it was written as 斯々然々 in the anime, this term is not often used as such. Instead, it is usually written in full hiragana, かくかくしかじか. It is often used in media as a practical phrase that an author can use as a placeholder for some long explanation that the reader/viewer might already be aware of. For example, imagine the following situation :
 
 - Scene 1 : Something happens to character A
 - Scene 2 : Character B shows up and asks what happened
@@ -26,7 +26,7 @@ Here are some examples [3] :
 
 In terms of pop culture, かくかくしかじか has been used as a title for a certain [manga](https://en.wikipedia.org/wiki/Blank_Canvas:_My_So-Called_Artist%27s_Journey). It is also the name of a [deer mascot character](https://www.daihatsu.co.jp/fan/character/kakushika/) used by Daihatsu for advertisments and such. This is probably a pun, $\stackrel{\tiny しか}{\footnotesize 鹿}$ being the kanji for deer.
 
-In the anime, it was also mentioned that かくかくしかじか was used in the 万葉集 (Man'yōshū), an 8th century anthology of Japanese poetry. Both かくかく and しかじか are archaic ways of saying こうだ/このように and so it seems that people of the time decided to combine them to create the かくかくしかじか that we know of today. It is one of the few terms from Old Japanese whose meaning and functionality has remained in tact all the way to the modern age.
+In the anime, it was also mentioned that かくかくしかじか was used in the [万葉集 (Man'yōshū)](https://en.wikipedia.org/wiki/Man'yōshū), an 8th century anthology of Japanese poetry. Both かくかく and しかじか are archaic ways of saying こうだ/このように [4] and so it seems that people of the time decided to combine them to create the かくかくしかじか that we know of today. It is one of the few terms from Old Japanese whose meaning and functionality has remained in tact all the way to the modern age.
 
 ### References
 

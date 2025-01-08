@@ -113,6 +113,7 @@
 - [Kadokawa](https://www.youtube.com/@kadokawa6694)
 - [Sankosha](https://www.youtube.com/@sankosha_BL)
 - [Cue Egg Label & Melty Drop](https://www.youtube.com/@LibrePublishing)
+- [Nabarashoko](https://www.youtube.com/@nabarashoko)
 
 <h4>Manga/Animation with kanji subtitles</h4>
 
@@ -130,17 +131,21 @@
 - [fermilab](https://www.youtube.com/@fermi_lab)
 - [rinlab](https://www.youtube.com/@rin_lab)
 - [teipen](https://www.youtube.com/@teipen.official)
+- [karekoreya](https://www.youtube.com/@karekoreya)
+- [Kutsuzure Days](https://www.youtube.com/@Kutsuzure_Days)
+- [Atashin'chi](https://www.youtube.com/@Atashinchi) - no kanji subs, but has Eng subs
 
-<h4>Gaming and stuff</h4>
+<h4>Utaite</h4>
 
-- [Soravv](https://www.youtube.com/@soravv)
-- [kouku](https://www.youtube.com/@futoumei)
-- [kkvv](https://www.youtube.com/@kkvv.)
-- [mafumafu](https://www.youtube.com/@uni_mafumafu) - gaming videos and stuff are in the early channel days
+- [kkvv](https://www.youtube.com/@kkvv.)    
+    - [soravv](https://www.youtube.com/@soravv)
+    - [kouku](https://www.youtube.com/@futoumei)
+- [mafumafu](https://www.youtube.com/@uni_mafumafu) - look into his older videos
 - [soraru](https://www.youtube.com/@SorarunoKakurega)
 - [Ado](https://www.youtube.com/@ado-sense)
+- [Amatsuki](https://www.youtube.com/@amatsuki_YHch)
 
-<h4>Boy Bands (lots of content from here, gaming, music, vlog, quiz shows, etc...)</h4>
+<h4>Boy Bands</h4>
 
 - [sutopuri](https://www.youtube.com/@StrawberryPrince)
 - [KnightA](https://www.youtube.com/@Knight_A_info)
@@ -149,6 +154,7 @@
 - [sixfonia](https://www.youtube.com/channel/UCGMG8BNfA8gsH9Rn_d_yW2A)
 - [amptak](https://www.youtube.com/@AMPTAKxCOLORS)
 - [meropaka](https://www.youtube.com/@meropaka)
+- [meteorites](https://www.youtube.com/@mtor_info)
 
 The members from these bands usually have their own channels too, so you can check those out as well
 

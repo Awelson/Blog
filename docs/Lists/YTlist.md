@@ -23,6 +23,7 @@
 - [Vsauce](https://www.youtube.com/@Vsauce)
 - [The Thought Emporium](https://www.youtube.com/@thethoughtemporium)
 - [melodysheep](https://www.youtube.com/@melodysheep)
+- [Captain Disillusion](https://www.youtube.com/@CaptainDisillusion)
 
 ## Chemistry
 
@@ -97,10 +98,7 @@
 
 - [Mikasacus](https://www.youtube.com/@mikasacus)
 - [Mattias Pilhede](https://www.youtube.com/@MattiasPilhede)
-- [Captain Disillusion](https://www.youtube.com/@CaptainDisillusion)
 - [David Hoffman](https://www.youtube.com/@DavidHoffmanFilmmaker)
 - [JREG](https://www.youtube.com/@JREG)
 - [jan Misali](https://www.youtube.com/@HBMmaster)
 - [theweeklyslap](https://www.youtube.com/@theweeklyslap)
-- [TheraminTrees](https://www.youtube.com/@TheraminTrees)
-- [NonStampCollector](https://www.youtube.com/@NonStampCollector)
