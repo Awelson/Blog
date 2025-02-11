@@ -148,7 +148,7 @@
 - [meropaka](https://www.youtube.com/@meropaka)
 - [meteorites](https://www.youtube.com/@mtor_info)
 
-The members from these bands usually have their own channels too, so you can check those out as well
+> The members from these bands usually have their own channels too, so you can check those out as well
 
 <h4>Misc</h4>
 
