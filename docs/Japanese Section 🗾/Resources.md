@@ -115,7 +115,9 @@
 - [Cue Egg Label & Melty Drop](https://www.youtube.com/@LibrePublishing)
 - [Nabarashoko](https://www.youtube.com/@nabarashoko)
 
-<h4>Manga/Animation with kanji subtitles</h4>
+<h4>「アニメコント」 with kanji subtitles</h4>
+
+> コント means a short story, skit, comedy sketch, etc... It originates from the French word *conte*. Below are some アニメコント channels I enjoy, but there are loads more just search "アニメコント" on YouTube to explore. 
 
 - [Paranormal HS](https://www.youtube.com/@parako)
 - [MariMariMari](https://www.youtube.com/@marymarymary80s/featured)
@@ -135,16 +137,6 @@
 - [Kutsuzure Days](https://www.youtube.com/@Kutsuzure_Days)
 - [Atashin'chi](https://www.youtube.com/@Atashinchi) - no kanji subs, but has Eng subs
 
-<h4>Utaite</h4>
-
-- [kkvv](https://www.youtube.com/@kkvv.)    
-    - [soravv](https://www.youtube.com/@soravv)
-    - [kouku](https://www.youtube.com/@futoumei)
-- [mafumafu](https://www.youtube.com/@uni_mafumafu) - look into his older videos
-- [soraru](https://www.youtube.com/@SorarunoKakurega)
-- [Ado](https://www.youtube.com/@ado-sense)
-- [Amatsuki](https://www.youtube.com/@amatsuki_YHch)
-
 <h4>Boy Bands</h4>
 
 - [sutopuri](https://www.youtube.com/@StrawberryPrince)
@@ -158,6 +150,16 @@
 
 The members from these bands usually have their own channels too, so you can check those out as well
 
+<h4>Misc</h4>
+
+- [kkvv](https://www.youtube.com/@kkvv.)    
+- [Mafumafu](https://www.youtube.com/@uni_mafumafu) - look into his older videos
+- [Soraru](https://www.youtube.com/@SorarunoKakurega)
+- [Ado](https://www.youtube.com/@ado-sense)
+- [Amatsuki](https://www.youtube.com/@amatsuki_YHch)
+- [ChroNoir](https://www.youtube.com/@ChroNoiR)
+- [ROFMAO](https://www.youtube.com/@ROFMAO)
+
 ## YouTube channels teaching Japanese
 
 - [Moshi Moshi Yusuke](https://www.youtube.com/@moshimoshi.yusuke/featured)
@@ -166,3 +168,4 @@ The members from these bands usually have their own channels too, so you can che
 - [Kaname Naito](https://www.youtube.com/@kanamenaito)
 - [Cure Dolly](https://www.youtube.com/@organicjapanesewithcuredol49)
 - [Maruhi Academy](https://www.youtube.com/@maruhigakuen) - very obscure aspects of Japanese language
+- [Scripting Japan](https://www.youtube.com/@scriptingjapan)
