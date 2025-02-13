@@ -35,7 +35,7 @@ The only reason I thought to write about this "incident" is because this blooper
 ### Part 1 : The Context
 
 <div id="timestamps" markdown>
-<div class="timestamp" data-time="0"><h3>0:00</h3></div>
+<div class="timestamp" data-time="0"><h3>0:00-0:08</h3></div>
 ```
 大島 : 今日は結構気温東京上がりましたけどもダンゴムシはまだ今日は見当たらなかったですか？
 山口 : 今日は出なかったです。
@@ -50,7 +50,7 @@ Secondly, Yamaguchi is well known to be a data enthusiast, personally collecting
 
 ### Part 2 : The Incident
 
-<div class="timestamp" data-time="8"><h3>0:08</h3></div>
+<div class="timestamp" data-time="8"><h3>0:08-0:13</h3></div>
 <pre><code>大島 : さあ、ということでダンゴムシ<b>にも</b>ね、解説していただきましたけど。
 </code></pre>
 
@@ -104,7 +104,7 @@ What? You think we're done with learning about particles? We're just getting sta
 
 Yamaguchi was quick to correct Ohshima's mistake :
 
-<div class="timestamp" data-time="13"><h3>0:13</h3></div>
+<div class="timestamp" data-time="13"><h3>0:13-0:16</h3></div>
 ```
 山口 : ダンゴムシ"の"ですよね？
 ```
@@ -135,7 +135,7 @@ What we have overlooked is the fact that we do indeed have a second noun, 解説
 
 ### Part 4 : Another Correction
 
-<div class="timestamp" data-time="23"><h3>0:23</h3></div>
+<div class="timestamp" data-time="23"><h3>0:23-0:37</h3></div>
 ```
 大島 : 違う違う。山口さん、違いますよ
     : 山口さん、ダンゴムシ"も"解説していただきましたけどって
