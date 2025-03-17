@@ -169,3 +169,7 @@
 - [Cure Dolly](https://www.youtube.com/@organicjapanesewithcuredol49)
 - [Maruhi Academy](https://www.youtube.com/@maruhigakuen) - very obscure aspects of Japanese language
 - [Scripting Japan](https://www.youtube.com/@scriptingjapan)
+
+## Misc
+
+- [NEKOPARA - Catboys Paradise prologue dialogue](../Misc/nekopara.md)

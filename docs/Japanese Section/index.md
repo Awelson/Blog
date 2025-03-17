@@ -4,8 +4,7 @@ $\small こんにち$-what's up! This is the japanese section where you can find
 
 - ## [Language Learning Resources](Resources.md)
 - ## [Annotated Videos](Annotated.md)
-- ## [Vocabulary](Vocabulary/index.md)
-- ## [Grammar Points]
+- ## [Blog Posts](Blog%20Posts\index.md)
 
 <!---
 - ## [Unlocking Japanese](Unlocking%20Japanese/index.md)

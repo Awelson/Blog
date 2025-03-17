@@ -237,3 +237,11 @@
 p {
   text-align: justify;
 }
+.latex-code {
+  background-color: #272a35; /* Light gray background */
+  padding: 2px 3px; /* Padding around the content */
+  border-radius: 3px; /* Rounded corners */
+  font-family: 'mononoki'; /* Monospace font */
+  font-size: 14px; /* Font size */
+  display: inline-block; /* Keeps it inline with other text */
+}
