@@ -1,0 +1,45 @@
+.container {
+  width: 800px;
+  max-width: 80%;
+  margin: 0 auto;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  height: auto;
+}
+#text-display {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 20px;
+  padding: 10px;
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+  transition: all 1s ease;
+  width: fit-content;
+}
+#timestamps {
+  margin-top: 20px;
+}
+.timestamp {
+  cursor: pointer;
+  color: rgb(106, 106, 219);
+  text-decoration: underline;
+}
+p {
+  text-align: justify;
+}
+.lcode {
+  background-color: #272a35; /* Light gray background */
+  padding: 2px 3px; /* Padding around the content */
+  border-radius: 3px; /* Rounded corners */
+  font-family: monospace; /* Monospace font */
+  font-size: 14px; /* Font size */
+  display: inline; /* Keeps it inline with other text */
+}
+.katex {
+  font-size: 1.1em;
+}

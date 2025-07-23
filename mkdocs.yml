@@ -66,18 +66,17 @@ plugins:
   - section-index
 
 extra_javascript:
-  - javascripts/katex.js 
   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js  
   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js
   - https://unpkg.com/mermaid/dist/mermaid.min.js
-  - javascripts/glider.js
+  - javascripts/katex.js 
+  # - javascripts/glider.js
   - https://www.youtube.com/iframe_api
   - javascripts/YTTS.js
-  - javascripts/Proof.js
 
 extra_css:
   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css
   # - https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.core.css
   # - https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.theme.css
-  - stylesheets/glider.css
+  - stylesheets/stylesheet.css
 

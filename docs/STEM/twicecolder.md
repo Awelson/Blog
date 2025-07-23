@@ -125,9 +125,7 @@ This refers to the different types of scales we measure our variables with. The 
 
     Examples include weight (measured in grams), length (measured in meters), time (measured in seconds), etc... 0g means an absence of any weight, 0cm means an absence of any length, etc... It perfectly makes sense to say that twice the weight of 50kg is 100kg or half the length of 10cm is 5cm and so on.
 
-> There are some valid criticisms to the "Nominal", "Ordinal", "Interval", "Ratio" classification of measurement scales proposed by Stevens and it remains a hot topic of debate to this day. 
->
-> - [Ref](https://www.tandfonline.com/doi/abs/10.1080/00031305.1993.10475938)
+> There are some valid criticisms to the "Nominal", "Ordinal", "Interval", "Ratio" classification of measurement scales proposed by Stevens and it remains a hot topic of debate to this day. [^1]
 
 ## Back to Question 2
 
@@ -143,7 +141,7 @@ The solution I proposed in the video was to create a new scale to measure coldne
 
 No matter how the "zero" for this new scale is chosen, once we are satisfied that this "zero" represents the lack of coldness, we may then work with ratios and be free to answer the question : "What is twice colder than 0°C?"
 
-
+[^1]: [Velleman, P. F., & Wilkinson, L. (1993). Nominal, Ordinal, Interval, and Ratio Typologies are Misleading. The American Statistician, 47(1), 65–72](https://doi.org/10.1080/00031305.1993.10475938)
 
 
 

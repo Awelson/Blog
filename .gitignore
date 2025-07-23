@@ -1,8 +1,8 @@
-.vscode/settings.json
+.vscode/*
 .obsidian/*
 docs/Chess
 docs/Maths
 docs/YouTube
-docs/Japanese\ Section/Unlocking\ Japanese
+temp/
 commands.txt
 todo.md

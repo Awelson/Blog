@@ -29,38 +29,46 @@
 - [imabi](https://www.imabi.org)
 - [sakubi](https://sakubi.neocities.org)
 
-## Books, Manga, etc...
+<h4>Misc</h4>
+
+- [Japanese with Anime](https://www.japanesewithanime.com) - more pop-culture oriented
+
+## Books, Manga, Anime, etc... 
+
+> Most of these are NSFW so keep that in mind (they are for research purposes only of course, trust) 
+
+<h4> 🏴‍☠️ </h4>
 
 - [Itazuraneko](https://itazuraneko.org/index.html)
+- [dl-raw](https://dl-raw.ac)
 - [Bilingual Manga](https://bilingualmanga.org)
 - [Manga Zip](https://manga-zip.is/post) -> [alt](https://manga-zip.info/home.i1/)
 - [Alphapolis](https://www.alphapolis.co.jp)
 - [syosetsu](https://yomou.syosetu.com)
 - [yaoi-sei](https://yaoi-sei.com/home.html) - BL stuff
+- [aarinfantasy](https://aarinfantasy.com/forum/forum.php) - BL stuff
 - [Dlraw](https://dlraw.to/raw/)
 - [rawkuma](https://rawkuma.com)
 - [mangaz](https://www.mangaz.com)
-- [nhentai](https://nhentai.net) - for research purposes only, trust
-- [hitomi](https://hitomi.la) - for research purposes only, trust
-- [aarinfantasy](https://aarinfantasy.com/forum/forum.php) - BL stuff
+- [nhentai](https://nhentai.net)
+- [hitomi](https://hitomi.la) 
+- [hentaiera](https://hentaiera.com)
+- [hentai-one](https://hentai-one.com)
 - [anime-sharing](https://www.anime-sharing.com)
 - [nyaa.si](https://nyaa.si/?f=0&c=1_2&q)
-    - [sukubei](https://sukebei.nyaa.si/rules) - nyaa.si with NSFW included
+- [sukubei](https://sukebei.nyaa.si/rules) - an NSFW version of nyaa.si apparently
 
-<h4>Paid (but occasionally has free stuff too)</h4>
+<h4>Legal</h4>
 
-- [How to buy japanese ebooks (Guide)](https://www.tofugu.com/japanese/how-to-buy-japanese-ebooks/)
+> Here is a guide on how to buy japanese ebooks : [How to buy japanese ebooks (Guide)](https://www.tofugu.com/japanese/how-to-buy-japanese-ebooks/). Since there may be difficulties with payments, region-lock, etc..
+
 - [booklive](https://booklive.jp)
 - [cmoa](https://www.cmoa.jp)
 - [ebookjapan](https://ebookjapan.yahoo.co.jp)
 - [DLsite](https://www.dlsite.com/index.html)
-- [Line Manga](https://manga.line.me) - needs a Japanese VPN
+- [Line Manga](https://manga.line.me)
 - [pixiv](https://comic.pixiv.net)
 - [amazon.co.jp](https://www.amazon.co.jp/-/en/本-書籍-通販/b/?ie=UTF8&node=465392&ref_=nav_cs_books)
-
-<h4>Anime, etc.. subtitles</h4>
-
-- [jimaku.cc](https://jimaku.cc)
 
 ## Tools
 
@@ -70,10 +78,14 @@
 - [goo](https://dictionary.goo.ne.jp)
 - [jpdb](https://jpdb.io)
 
-<h4>Character Recogntion</h4>
+<h4 Kanji subtitles for anime, etc..> </h4>
+
+- [jimaku](https://jimaku.cc)
+
+<h4>Character Extraction/Recogntion</h4>
 
 - [mokuro](https://github.com/kha-white/mokuro) - Manga ocr
-- [YomiNinja](https://github.com/matt-m-o/YomiNinja) - Screen ocr (for Japanese video games)
+- [YomiNinja](https://github.com/matt-m-o/YomiNinja) - Screen ocr (for Japanese games for example)
 - [textractor](https://github.com/Artikash/Textractor) - Extract/mine text from visual novels
 
 <h4>Example sentence search</h4>
@@ -84,6 +96,8 @@
 - [youglish](https://youglish.com/japanese) - example sentences from YouTube
 - [kanshudo](https://www.kanshudo.com/searcht)
 - [eijirou](https://eow.alc.co.jp)
+
+> Alternatively you can search up a word in google, twitter, etc.. (surround the word with quotation marks like "this") to find examples of sentences containing that word.
 
 <h4>Video players</h4>
 
@@ -97,7 +111,7 @@
 - [BL skip](https://www.youtube.com/@blskip)
 - [BL kiss](https://www.youtube.com/@blmanga)
 - [gyu BL](https://www.youtube.com/@gyu-bl)
-- [CIEL BL](https://www.youtube.com/@blchannel_cf) - has furigana, very helpful
+- [CIEL BL](https://www.youtube.com/@blchannel_cf)
 - [After school](https://www.youtube.com/@5afterschoolinlovein5minut17)
 - [moving BL](https://www.youtube.com/@BL-cc4if)
 - [KYOMUO](https://www.youtube.com/@kyomuo)
@@ -115,7 +129,7 @@
 - [Cue Egg Label & Melty Drop](https://www.youtube.com/@LibrePublishing)
 - [Nabarashoko](https://www.youtube.com/@nabarashoko)
 
-<h4>「アニメコント」 with kanji subtitles</h4>
+<h4>アニメコント</h4>
 
 > コント means a short story, skit, comedy sketch, etc... It originates from the French word *conte*. Below are some アニメコント channels I enjoy, but there are loads more just search "アニメコント" on YouTube to explore. 
 
@@ -128,7 +142,6 @@
     - [Hawk Eyes](https://www.youtube.com/@HawkEyes-uk5do)
     - [Swallow Tail](https://www.youtube.com/@SwallowTail-cq1fd)
     - [Night Owl](https://www.youtube.com/@NightOwl-HN)
-- [Chrono reverse](https://www.youtube.com/@Chronover_info)
 - [tasukukoma](https://www.youtube.com/@komatasuku)
 - [fermilab](https://www.youtube.com/@fermi_lab)
 - [rinlab](https://www.youtube.com/@rin_lab)
@@ -137,28 +150,50 @@
 - [Kutsuzure Days](https://www.youtube.com/@Kutsuzure_Days)
 - [Atashin'chi](https://www.youtube.com/@Atashinchi) - no kanji subs, but has Eng subs
 
-<h4>Boy Bands</h4>
+<h3>YouTuberグループ</h3>
+
+> This just means YouTuber group, as in a YouTube channel hosted by more than one individual. These types of channels are usually high production and are thus well-organized and easy to follow and will also most likely include subtitles. They are usually focused on entertainment, this includes : gameplay, quiz/challenges, vlogs, commentary, etc... I particularly enjoy virtual YouTuber Groups and I list some of them below. Each member in the groups usually have their own channels so you can check them out too.
+
+<h4>STPR</h4>
 
 - [sutopuri](https://www.youtube.com/@StrawberryPrince)
 - [KnightA](https://www.youtube.com/@Knight_A_info)
+- [Meteorites](https://www.youtube.com/@mtor_info)
+- [amptak](https://www.youtube.com/@AMPTAKxCOLORS)
+
+<h4> VOISING </h4>
+
 - [ireisu](https://www.youtube.com/@ireisu)
 - [starpolar](https://www.youtube.com/@starpola)
-- [sixfonia](https://www.youtube.com/channel/UCGMG8BNfA8gsH9Rn_d_yW2A)
-- [amptak](https://www.youtube.com/@AMPTAKxCOLORS)
+- [Chrono▷◀Reverse](https://www.youtube.com/@Chronover_info)
+
+<h4> MEROPRO </h4>
+
 - [meropaka](https://www.youtube.com/@meropaka)
-- [meteorites](https://www.youtube.com/@mtor_info)
+- [BOOM MENT](https://www.youtube.com/@BOOM_MENT)
 
-> The members from these bands usually have their own channels too, so you can check those out as well
+<h4> Nijisanji </h4>
 
-<h4>Misc</h4>
-
-- [kkvv](https://www.youtube.com/@kkvv.)    
-- [Mafumafu](https://www.youtube.com/@uni_mafumafu) - look into his older videos
-- [Soraru](https://www.youtube.com/@SorarunoKakurega)
-- [Ado](https://www.youtube.com/@ado-sense)
-- [Amatsuki](https://www.youtube.com/@amatsuki_YHch)
 - [ChroNoir](https://www.youtube.com/@ChroNoiR)
 - [ROFMAO](https://www.youtube.com/@ROFMAO)
+- [Seitokai](https://www.youtube.com/@seitokai_07)
+
+<h4>Independent</h4>
+
+- [sixfonia](https://www.youtube.com/channel/UCGMG8BNfA8gsH9Rn_d_yW2A) - formerly part of VOISING, now independent
+- [kokubibi](https://www.youtube.com/@kkvv.)
+- [Atatakakunaru](https://www.youtube.com/@atatakakunaru)
+
+<!-- 
+
+<h3> Misc </h3>
+
+- [Mafumafu](https://www.youtube.com/@uni_mafumafu) - newer videos are music, older videos are entertainment
+- [Soraru](https://www.youtube.com/@SorarunoKakurega)
+- [Amatsuki](https://www.youtube.com/@amatsuki_YHch)
+- [Ado](https://www.youtube.com/@ado-sense)
+
+-->
 
 ## YouTube channels teaching Japanese
 
@@ -167,8 +202,10 @@
 - [Yohei Akiyama](https://www.youtube.com/@YoheiAkiyama/featured)
 - [Kaname Naito](https://www.youtube.com/@kanamenaito)
 - [Cure Dolly](https://www.youtube.com/@organicjapanesewithcuredol49)
-- [Maruhi Academy](https://www.youtube.com/@maruhigakuen) - very obscure aspects of Japanese language
+- [Maruhi Academy](https://www.youtube.com/@maruhigakuen)
 - [Scripting Japan](https://www.youtube.com/@scriptingjapan)
+- [Jiro Japanese](https://www.youtube.com/@JiroJapanese)
+- [Sorami](https://www.youtube.com/@dc_srm) - not strictly educational, but uses easy Japanese + there are ENG subs
 
 ## Misc
 
