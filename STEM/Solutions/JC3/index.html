@@ -1,0 +1,1799 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../JC1/">
+      
+      
+        <link rel="next" href="../../../TIGM/">
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
+    
+    
+      
+        <title>Solutions to Chapter 3 - AWelson's Blog</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css">
+    
+      <link rel="stylesheet" href="../../../stylesheets/stylesheet.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="pink" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#exercise-36" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="AWelson&#39;s Blog" class="md-header__button md-logo" aria-label="AWelson's Blog" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            AWelson's Blog
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Solutions to Chapter 3
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="pink" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4M7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="pink" data-md-color-accent="blue"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Welcome
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../Japanese%20Section/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Japanese Section
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../TIGM/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  TIGM
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../Lists/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Lists
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../" class="md-tabs__link">
+        
+  
+  
+    
+  
+  STEM
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../Misc/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Misc
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="AWelson&#39;s Blog" class="md-nav__button md-logo" aria-label="AWelson's Blog" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    AWelson's Blog
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Welcome
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../Japanese%20Section/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Japanese Section
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Japanese Section
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Japanese%20Section/Resources/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Language Learning Resources
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Japanese%20Section/Annotated/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Annotated Videos
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../Japanese%20Section/Misc/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Misc
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            Misc
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Japanese%20Section/Misc/kakukakushikajika/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    斯々然々
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Japanese%20Section/Misc/pillbug/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    The Pillbug Incident
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../TIGM/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    TIGM
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            TIGM
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../TIGM/2023/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    2023
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            2023
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TIGM/2023/July/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    July
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TIGM/2023/August/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    August
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TIGM/2023/September/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    September
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TIGM/2023/October/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    October
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TIGM/2023/November/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    November
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TIGM/2023/December/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    December
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../TIGM/2024/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    2024
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            2024
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TIGM/2024/January/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    January
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TIGM/2024/February/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    February
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TIGM/2024/March/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    March
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TIGM/2024/April/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    April
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TIGM/2024/May/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    May
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TIGM/2024/June/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    June
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TIGM/2024/July/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    July
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TIGM/2024/August/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    August
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TIGM/2024/September/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    September
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../TIGM/2025/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    2025
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            2025
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TIGM/2025/July/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    July
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Lists/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Lists
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    STEM
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../Misc/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Misc
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Misc
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Misc/nekopara/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    NEKOPARA - Catboys Paradise prologue dialogue
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Misc/12FanClub/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    いーあるふぁんくらぶ (Cantonese version) lyrics
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#exercise-36" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exercise 3.6
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercise-38" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exercise 3.8
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercise-310" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exercise 3.10
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercise-312" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exercise 3.12
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercise-318" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exercise 3.18
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercise-323" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exercise 3.23
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercise-328" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exercise 3.28
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercise-329" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exercise 3.29
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercise-330" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exercise 3.30
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercise-333" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exercise 3.33
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercise-336" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exercise 3.36
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercise-339" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exercise 3.39
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercise-341" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exercise 3.41
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercise-343" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exercise 3.43
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercise-344" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exercise 3.44
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#misc-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Misc 1
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#misc-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Misc 2
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>Solutions to Chapter 3</h1>
+
+<h3 id="exercise-36">Exercise 3.6<a class="headerlink" href="#exercise-36" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p>Consider the sequence</p>
+<div class="arithmatex">\[ \frac{1}{2},\frac{1}{3},\frac{2}{3},\frac{1}{4},\frac{2}{4},\frac{3}{4}, \cdots \]</div>
+<p>For which numbers <span class="arithmatex">\(L\)</span> does the above have a subsequence converging to <span class="arithmatex">\(L\)</span>? Furthermore, does there exist a sequence <span class="arithmatex">\((a_n)\)</span> where for every <span class="arithmatex">\(L\in \mathbb{R}\)</span> there is a subsequence of <span class="arithmatex">\((a_n)\)</span> which converges to <span class="arithmatex">\(L\)</span>?</p>
+</blockquote>
+<details class="note">
+<summary>Answer</summary>
+<p>The second part has already been answered <a href="../../subseq/">here</a>. After reading the solution, the first part should be obvious. </p>
+</details>
+<h3 id="exercise-38">Exercise 3.8<a class="headerlink" href="#exercise-38" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p>Assume that <span class="arithmatex">\((a_n)\)</span> converges to some <span class="arithmatex">\(a\in \mathbb{R}\)</span> and <span class="arithmatex">\((b_n)\)</span> converges to some <span class="arithmatex">\(b\in \mathbb{R}\)</span>. Also assume <span class="arithmatex">\(c\in \mathbb{R}\)</span>.</p>
+<ul>
+<li>Prove that <span class="arithmatex">\((a_n+b_n)\)</span> converges to <span class="arithmatex">\(a+b\)</span></li>
+<li>Prove that <span class="arithmatex">\((c\cdot a_n)\)</span> converges to <span class="arithmatex">\(ca\)</span></li>
+</ul>
+</blockquote>
+<details class="note">
+<summary>Answer</summary>
+<blockquote>
+<p>Recall that we proved <span class="arithmatex">\(|ab| =|a||b|\)</span> for any real <span class="arithmatex">\(a,b\)</span> in <a href="../JC1/#exercise-114">Exercise 1.14</a>. We will be relying on this without reference moving forward.</p>
+</blockquote>
+<p><strong>Part 1.</strong> Let <span class="arithmatex">\(\epsilon&gt;0\)</span>, then there exists <span class="arithmatex">\(N_1, N_2\)</span> such that <span class="arithmatex">\(|a_n-a|&lt;\epsilon/2\)</span> whenever <span class="arithmatex">\(n&gt; N_1\)</span> and <span class="arithmatex">\(|b_n-b|&lt;\epsilon/2\)</span> whenever <span class="arithmatex">\(n&gt; N_2\)</span>. Let <span class="arithmatex">\(N:= \max\{N_1,N_2\}\)</span>, thus <span class="arithmatex">\(|a_n-a| + |b_n-b| &lt; \epsilon\)</span> whenever <span class="arithmatex">\(n\geq N\)</span>, and by triangle inequality :</p>
+<div class="arithmatex">\[|(a_n+b_n) - (a+b)| = |(a_n-a) + (b_n-b)| \leq |a_n-a| + |b_n-b| &lt; \epsilon\]</div>
+<p>whenever <span class="arithmatex">\(n\geq N\)</span> as needed.</p>
+<p><strong>Part 2.</strong> The case when <span class="arithmatex">\(c=0\)</span> is obvious, so assume <span class="arithmatex">\(c\neq 0\)</span> and let <span class="arithmatex">\(\epsilon&gt;0\)</span>, then there exists an <span class="arithmatex">\(N\)</span> such that <span class="arithmatex">\(|a_n-a|&lt;\frac{\epsilon}{|c|}\)</span> whenever <span class="arithmatex">\(n\geq N\)</span>. Multiplying by <span class="arithmatex">\(|c|\)</span> on both sides gives</p>
+<div class="arithmatex">\[ |c||a_n-a| = |ca_n - ca|  &lt; \epsilon \]</div>
+<p>whenever <span class="arithmatex">\(n\geq N\)</span> as needed.</p>
+</details>
+<h3 id="exercise-310">Exercise 3.10<a class="headerlink" href="#exercise-310" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p>Assuming that <span class="arithmatex">\((a_{2n})\)</span> converges to <span class="arithmatex">\(L\)</span> and <span class="arithmatex">\((a_{2n-1})\)</span> converges to <span class="arithmatex">\(L\)</span>, show that <span class="arithmatex">\((a_n)\)</span> also converges to <span class="arithmatex">\(L\)</span>.</p>
+</blockquote>
+<details class="note">
+<summary>Answer</summary>
+<p>I answered this in <a href="../../seq/">"An "Almost Always" Approach to Sequences</a></p>
+<p>Let <span class="arithmatex">\(\epsilon&gt;0\)</span>. Then there is <span class="arithmatex">\(N_1\)</span> and <span class="arithmatex">\(N_2\)</span> such that <span class="arithmatex">\(|a_{2n}-L|&lt;\epsilon\)</span> whenever <span class="arithmatex">\(n&gt;N_1\)</span> and <span class="arithmatex">\(|a_{2n-1}-L|&lt;\epsilon\)</span> whenever <span class="arithmatex">\(n&gt;N_2\)</span>. Let <span class="arithmatex">\(N:=\max\{2N_1,2N_2-1\}\)</span> and assume <span class="arithmatex">\(m&gt;N\)</span>. If <span class="arithmatex">\(m\)</span> is even then <span class="arithmatex">\(m=2n\)</span> for some <span class="arithmatex">\(n\)</span> which implies <span class="arithmatex">\(n&gt;N_1\)</span> and hence <span class="arithmatex">\(|a_m-L|=|a_{2n}-L|&lt;\epsilon\)</span>. If <span class="arithmatex">\(m\)</span> is odd then <span class="arithmatex">\(m=2n-1\)</span> which implies <span class="arithmatex">\(n&gt;N_2\)</span> and hence <span class="arithmatex">\(|a_{2n-1}-L|=|a_m-L|&lt;\epsilon\)</span>. Thus <span class="arithmatex">\((a_n)\to L\)</span> as needed.</p>
+</details>
+<h3 id="exercise-312">Exercise 3.12<a class="headerlink" href="#exercise-312" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p>Suppose <span class="arithmatex">\((a_n)\)</span> is a sequence and <span class="arithmatex">\(f:\mathbb{N}\to \mathbb{N}\)</span> is a bijection. For each of the following, prove that the statement is true or find a counterexample showing that the statement is false. </p>
+<ul>
+<li>If <span class="arithmatex">\((a_n)\)</span> diverges to <span class="arithmatex">\(\infty\)</span>, then <span class="arithmatex">\((a_{f(n)})\)</span> diverges to <span class="arithmatex">\(\infty\)</span></li>
+<li>If <span class="arithmatex">\((a_n)\)</span> converges to <span class="arithmatex">\(L\)</span>, then <span class="arithmatex">\((a_{f(n)})\)</span> converges to <span class="arithmatex">\(L\)</span>.</li>
+<li>If <span class="arithmatex">\((a_n)\)</span>'s limit does not exist, then <span class="arithmatex">\((a_{f(n)})\)</span>'s limit does not exist.</li>
+</ul>
+</blockquote>
+<details class="note">
+<summary>Answer</summary>
+<p>I will just prove the first two parts for which the property that <span class="arithmatex">\(f\)</span> is injective is sufficient so we shall assume that that is the case moving forward. We shall prove two lemmas, from which parts 1 and 2 should be immediately obvious </p>
+<blockquote>
+<p><strong>Lemma 1.</strong> Suppose <span class="arithmatex">\((a_n)\to L\)</span> where <span class="arithmatex">\(L\)</span> can be real or <span class="arithmatex">\(\pm\infty\)</span>. For any sequence <span class="arithmatex">\((k_n)\)</span> of natural numbers that diverges to <span class="arithmatex">\(\infty\)</span>, we have <span class="arithmatex">\((a_{n_k})\to L\)</span>. </p>
+<p><strong>Proof.</strong> We prove the case for when <span class="arithmatex">\(L\in \mathbb{R}\)</span>, the proof is similar for <span class="arithmatex">\(L=\pm \infty\)</span>. Let <span class="arithmatex">\(\epsilon&gt;0\)</span>, then there is an <span class="arithmatex">\(N\)</span> such that <span class="arithmatex">\(|a_n-L|&lt;\epsilon\)</span> whenever <span class="arithmatex">\(n&gt;N\)</span>. Since <span class="arithmatex">\((k_n)\to \infty\)</span> there is an <span class="arithmatex">\(N'\)</span> such that <span class="arithmatex">\(k_n&gt;N\)</span> whenever <span class="arithmatex">\(n&gt;N'\)</span>. The idea is that <span class="arithmatex">\(n&gt;N' \ \Rightarrow \ k_n&gt;N \ \Rightarrow \ |a_{k_n}-L|&lt;\epsilon\)</span>, thus <span class="arithmatex">\((a_{n_k})\to L\)</span> as needed.    </p>
+</blockquote>
+<hr />
+<blockquote>
+<p><strong>Lemma 2.</strong> Let <span class="arithmatex">\(f:\mathbb{N}\to \mathbb{N}\)</span> be injective, then <span class="arithmatex">\(f(n)\to \infty\)</span>, in other words : for any <span class="arithmatex">\(M\in \mathbb{R}\)</span> there exists an <span class="arithmatex">\(N\in \mathbb{N}\)</span> such that <span class="arithmatex">\(f(n)&gt;M\)</span> whenever <span class="arithmatex">\(n&gt;N\)</span>. </p>
+<p><strong>Proof.</strong> Set <span class="arithmatex">\(A:=\{1,2,\ldots,M\}\)</span> and consider <span class="arithmatex">\(f^{-1}(A)\)</span>. The inverse image of a finite set is finite so <span class="arithmatex">\(f^{-1}(A)\)</span> is finite. This means that there is an <span class="arithmatex">\(N\)</span> large enough such that </p>
+<div class="arithmatex">\[f^{-1}(A)\subseteq \{n\in \mathbb{N} \ \vert \ n\leq N\} \quad \Longrightarrow \quad \{n\in \mathbb{N} \ \vert \ n\leq N\}^C \subseteq f^{-1}(A)^C\]</div>
+<p>Thus, <span class="arithmatex">\(n\in f^{-1}(A)^C \ \Rightarrow \ f(n)\notin A \ \Rightarrow \ f(n) &gt; M\)</span> whenever <span class="arithmatex">\(n&gt;N\)</span> as required.</p>
+</blockquote>
+</details>
+<h3 id="exercise-318">Exercise 3.18<a class="headerlink" href="#exercise-318" title="Permanent link">&para;</a></h3>
+<blockquote>
+<ul>
+<li>
+<p>Assume that <span class="arithmatex">\((a_n)\)</span> is bounded and <span class="arithmatex">\((b_n)\)</span> converges to 0. Prove that <span class="arithmatex">\((a_n\cdot b_n)\)</span> also converges to 0.</p>
+</li>
+<li>
+<p>Give an example of sequences <span class="arithmatex">\((a_n)\)</span> and <span class="arithmatex">\((b_n)\)</span> such that <span class="arithmatex">\(b_n\to 0\)</span> but <span class="arithmatex">\((a_n\cdot b_n)\)</span> does not converge to zero.</p>
+</li>
+</ul>
+</blockquote>
+<details class="note">
+<summary>Answer</summary>
+<p><strong>Part 1.</strong> Since <span class="arithmatex">\((a_n)\)</span> is bounded, there exists some positive <span class="arithmatex">\(C\in \mathbb{R}\)</span> such that <span class="arithmatex">\(|a_n|&lt;C\)</span> for all <span class="arithmatex">\(n\)</span>. Let <span class="arithmatex">\(\epsilon&gt;0\)</span>. Since <span class="arithmatex">\((b_n)\to 0\)</span> there exists an <span class="arithmatex">\(N\)</span> such that <span class="arithmatex">\(|b_n|&lt;\epsilon / C\)</span> whenever <span class="arithmatex">\(n&gt;N\)</span>. Combining both inequalities, we get :</p>
+<div class="arithmatex">\[ |a_n||b_n| = |a_n\cdot b_n| &lt; \epsilon \]</div>
+<p>whenever <span class="arithmatex">\(n&gt;N\)</span>, thus <span class="arithmatex">\((a_n\cdot b_n)\to 0\)</span> as needed.</p>
+<p><strong>Part 2.</strong> Consider <span class="arithmatex">\((a_n) = (1,2,3,\ldots)\)</span> and <span class="arithmatex">\(b_n = (1, 1/2, 1/3, \ldots)\)</span>. Then clearly <span class="arithmatex">\((b_n)\to 0\)</span> but <span class="arithmatex">\((a_n\cdot b_n) = (1,1,1,\ldots)\to 1\)</span>. </p>
+</details>
+<h3 id="exercise-323">Exercise 3.23<a class="headerlink" href="#exercise-323" title="Permanent link">&para;</a></h3>
+<blockquote>
+<ul>
+<li>Prove that if <span class="arithmatex">\(a_n\to L\)</span>, then <span class="arithmatex">\(|a_n|\to |L|\)</span></li>
+<li>Give an example where <span class="arithmatex">\(|a_n|\to |L|\)</span> but <span class="arithmatex">\(a_n\not\to L\)</span></li>
+</ul>
+</blockquote>
+<details class="note">
+<summary>Answer</summary>
+<p><strong>Part 1.</strong> By the reverse triangle inequality ||a_n|-|L||\leq |a_n-L|$ for all <span class="arithmatex">\(n\)</span>. Thus, our task is equivalent to showing that for any <span class="arithmatex">\(\epsilon&gt;0\)</span> there is an <span class="arithmatex">\(N\)</span> such that <span class="arithmatex">\(|a_n-L|&lt;\epsilon\)</span> whenever <span class="arithmatex">\(n&gt;N\)</span>, but this is precisely what <span class="arithmatex">\(a_n\to L\)</span> means.</p>
+<p><strong>Part 2.</strong> Let <span class="arithmatex">\((a_n):=(1,-1,1,-1,\ldots)\)</span> and <span class="arithmatex">\(L:=1\)</span>. Then clearly <span class="arithmatex">\(|a_n|\to |L|\)</span> but <span class="arithmatex">\(a_n \not\to L\)</span>. </p>
+</details>
+<h3 id="exercise-328">Exercise 3.28<a class="headerlink" href="#exercise-328" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p>Prove that the sequence <span class="arithmatex">\((r^n)\)</span> converges to 0 if <span class="arithmatex">\(r\in(-1,1)\)</span>, converges to <span class="arithmatex">\(1\)</span> if <span class="arithmatex">\(r=1\)</span>, and diverges otherwise. </p>
+</blockquote>
+<details class="note">
+<summary>Lemma 1</summary>
+<blockquote>
+<p><strong>Lemma 1.</strong> (Bernoulli's Inequality). For any real <span class="arithmatex">\(x&gt;-1\)</span> and integer <span class="arithmatex">\(n\geq 1\)</span> :</p>
+<div class="arithmatex">\[ (1+x)^n \geq 1+nx \]</div>
+</blockquote>
+<p><strong>Proof.</strong> It is easy to show by induction.</p>
+</details>
+<details class="note">
+<summary>Lemma 2</summary>
+<blockquote>
+<p><strong>Lemma 2.</strong> <span class="arithmatex">\(a_n\to 0 \ \Leftrightarrow \ |a_n|\to 0\)</span>. </p>
+</blockquote>
+<p><strong>Proof.</strong> The forward direction has already been shown by Exercise 3.23. The reverse direction is very easy to show.</p>
+</details>
+<details class="note">
+<summary>Answer</summary>
+<blockquote>
+<p>We split this into 6 cases, the first three are obvious :</p>
+<ul>
+<li>Convergence to 1 when <span class="arithmatex">\(r=1\)</span></li>
+<li>Convergence to 0 when <span class="arithmatex">\(r=0\)</span></li>
+<li>Divergence when <span class="arithmatex">\(r=-1\)</span></li>
+<li>Convergence to 0 when <span class="arithmatex">\(0&lt;|r|&lt;1\)</span></li>
+<li><span class="arithmatex">\(r^n\)</span> diverges when <span class="arithmatex">\(r&gt;1\)</span></li>
+<li><span class="arithmatex">\(r^n\)</span> diverges when <span class="arithmatex">\(r&lt;-1\)</span></li>
+</ul>
+</blockquote>
+<p><strong>Case 4.</strong> <span class="arithmatex">\(r^n\to 0\)</span> whenever <span class="arithmatex">\(0&lt;|r|&lt;1\)</span></p>
+<p>By Lemma 2, we can prove <span class="arithmatex">\(|r^n|\to 0\)</span> instead of <span class="arithmatex">\(r^n\to 0\)</span>. Since <span class="arithmatex">\(0&lt;|r|&lt;1\)</span>, taking the reciprocal we have <span class="arithmatex">\(1&lt;1/|r|\)</span>. This means we can write <span class="arithmatex">\(1/|r|=1+h\)</span> for some <span class="arithmatex">\(h&gt;0\)</span>. We use Bernoulli's Inequality with <span class="arithmatex">\(x:=h\)</span> to get</p>
+<div class="arithmatex">\[ \frac{1}{|r|}^n\geq 1+nh \quad \Longrightarrow |r^n| \leq \frac{1}{1+nh} \]</div>
+<p>for any integer <span class="arithmatex">\(n\geq 1\)</span>. Now 0 is a lower bound for <span class="arithmatex">\(|r^n|\)</span> and clearly <span class="arithmatex">\(\frac{1}{1+nh}\to 0\)</span> as <span class="arithmatex">\(n\to \infty\)</span>, thus <span class="arithmatex">\(|r^n|\to 0\)</span> by the squeeze theorem.</p>
+<p><strong>Case 5.</strong> <span class="arithmatex">\(r^n\)</span> diverges when <span class="arithmatex">\(r&gt;1\)</span></p>
+<p>We can write <span class="arithmatex">\(r=1+h\)</span> for some <span class="arithmatex">\(h&gt;0\)</span>. We use Bernoulli's inequality with <span class="arithmatex">\(x:=h\)</span> to get</p>
+<div class="arithmatex">\[ r^n \geq 1+nh \]</div>
+<p>The RHS grows without bound as <span class="arithmatex">\(n\to \infty\)</span> thus it is clear that <span class="arithmatex">\(r^n\to \infty\)</span> as well. </p>
+<p><strong>Case 6.</strong> <span class="arithmatex">\(r^n\)</span> diverges when <span class="arithmatex">\(r&lt;1\)</span></p>
+<p>By the contrapositive of Exercise 3.23 : If <span class="arithmatex">\(|r^n|\)</span> diverges, then so does <span class="arithmatex">\(r^n\)</span>. If <span class="arithmatex">\(r&lt;-1\)</span> then <span class="arithmatex">\(|r|&gt;1\)</span> so <span class="arithmatex">\(|r|^n\)</span> diverges by Case 5 and we are done.  </p>
+</details>
+<h3 id="exercise-329">Exercise 3.29<a class="headerlink" href="#exercise-329" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p>Suppose <span class="arithmatex">\((a_n)\)</span> is a sequence for which <span class="arithmatex">\(a_n\to a\)</span>. Define a new sequence by</p>
+<div class="arithmatex">\[ b_n := \frac{a_1+a_2+\cdots + a_n}{n} \]</div>
+<p>Prove that <span class="arithmatex">\(b_n\to a\)</span>.</p>
+</blockquote>
+<details class="note">
+<summary>Answer</summary>
+</details>
+<h3 id="exercise-330">Exercise 3.30<a class="headerlink" href="#exercise-330" title="Permanent link">&para;</a></h3>
+<h3 id="exercise-333">Exercise 3.33<a class="headerlink" href="#exercise-333" title="Permanent link">&para;</a></h3>
+<h3 id="exercise-336">Exercise 3.36<a class="headerlink" href="#exercise-336" title="Permanent link">&para;</a></h3>
+<h3 id="exercise-339">Exercise 3.39<a class="headerlink" href="#exercise-339" title="Permanent link">&para;</a></h3>
+<h3 id="exercise-341">Exercise 3.41<a class="headerlink" href="#exercise-341" title="Permanent link">&para;</a></h3>
+<h3 id="exercise-343">Exercise 3.43<a class="headerlink" href="#exercise-343" title="Permanent link">&para;</a></h3>
+<h3 id="exercise-344">Exercise 3.44<a class="headerlink" href="#exercise-344" title="Permanent link">&para;</a></h3>
+<h2 id="misc-1">Misc 1<a class="headerlink" href="#misc-1" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>Suppose <span class="arithmatex">\((a_n)\)</span> is a sequence and <span class="arithmatex">\(a\in \mathbb{R}\)</span>. Prove that <span class="arithmatex">\(a_n\to a\)</span> iff <span class="arithmatex">\(|a_n-a|\to 0\)</span> </p>
+</blockquote>
+<details class="note">
+<summary>Answer</summary>
+<p><span class="arithmatex">\(|a_n-a|\to 0\)</span> means that for any <span class="arithmatex">\(\epsilon&gt;0\)</span> there is an <span class="arithmatex">\(N\)</span> such that <span class="arithmatex">\(||a_n-a|-0| = |a_n-a|&lt;\epsilon\)</span> whenever <span class="arithmatex">\(n&gt;N\)</span> which is exactly what it means for <span class="arithmatex">\(a_n\to a\)</span>. We can simply reverse this argument to obtain the other direction.</p>
+</details>
+<h2 id="misc-2">Misc 2<a class="headerlink" href="#misc-2" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>Assume that <span class="arithmatex">\((a_n)\)</span> converges to some <span class="arithmatex">\(a\in \mathbb{R}\)</span> and <span class="arithmatex">\((b_n)\)</span> converges to some <span class="arithmatex">\(b\in \mathbb{R}\)</span>. Prove that <span class="arithmatex">\((a_n\cdot b_n)\to ab\)</span>.</p>
+</blockquote>
+<details class="note">
+<summary>Answer</summary>
+<p>Although already proved in the book (Theorem 3.21), I would like to provide an alternative proof utilizing ideas from Misc 1, Exercise 3.18 and Exercise 3.8. To prove <span class="arithmatex">\((a_n\cdot b_n)\to ab\)</span> is equivalent to proving <span class="arithmatex">\(|a_nb_n - ab|\to 0\)</span> by Misc 1. Notice that</p>
+<div class="arithmatex">\[ \begin{align*}
+0\leq |a_nb_n-ab| &amp;= |a_nb_n - ab_n + ab_n - ab| \\
+&amp;\leq |a_nb_n - ab_n| + |ab_n - ab| \\
+&amp;= |a_n-a|\cdot |b_n| + |a|\cdot |b_n-b|
+\end{align*}
+\]</div>
+<p>Thus, by the Squeeze Theorem it suffices to show that the expression <span class="arithmatex">\(|a_n-a|\cdot |b_n| + |a|\cdot |b_n-b|\)</span> converges to zero. By Exercise 3.8, this is equivalent to showing that <span class="arithmatex">\(|a_n-a|\cdot |b_n|\to 0\)</span> and <span class="arithmatex">\(|a|\cdot |b_n-b|\to 0\)</span> individually.</p>
+<ol>
+<li>
+<p>Since <span class="arithmatex">\((a_n)\to a\)</span> we have <span class="arithmatex">\(|a_n-a|\to 0\)</span>. Furthermore, <span class="arithmatex">\(|b_n|\)</span> is bounded (since <span class="arithmatex">\(b_n\)</span> is convergent), thus <span class="arithmatex">\(|a_n-a|\cdot |b_n|\to 0\)</span> by Exercise 3.18.  </p>
+</li>
+<li>
+<p>Since <span class="arithmatex">\((b_n)\to b\)</span> we have <span class="arithmatex">\(|b_n-b|\to 0\)</span> so that <span class="arithmatex">\(|a||b_n-b|\to 0\)</span> by Exercise 3.8. </p>
+</li>
+</ol>
+</details>
+
+
+
+
+
+
+
+  
+    
+  
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Last update">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="July 23, 2025 15:05:49 UTC">July 23, 2025</span>
+  </span>
+
+    
+    
+    
+    
+  </aside>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.tabs.sticky"], "search": "../../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+  <!-- Add scripts that need to run before here -->
+  
+      <script src="../../../assets/javascripts/bundle.56ea9cef.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js"></script>
+      
+        <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+      
+        <script src="../../../javascripts/katex.js"></script>
+      
+        <script src="https://www.youtube.com/iframe_api"></script>
+      
+        <script src="../../../javascripts/YTTS.js"></script>
+      
+    
+  <!-- Add scripts that need to run afterwards here -->
+        <script>
+            window.addEventListener('load', function(){
+                new Glider(document.querySelector('.glider'), {
+                    slidesToShow: 1,
+                    dots: '#dots',
+                    draggable: true,
+                    arrows: {
+                        prev: '.glider-prev',
+                        next: '.glider-next'
+                    }
+                });
+            })
+        </script>
+
+  </body>
+</html>

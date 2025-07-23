@@ -1,0 +1,1663 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../IPStoTOP/">
+      
+      
+        <link rel="next" href="../solutions/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
+    
+    
+      
+        <title>An "Almost Always" Approach to Sequences - AWelson's Blog</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/stylesheet.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="pink" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#introduction" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="AWelson&#39;s Blog" class="md-header__button md-logo" aria-label="AWelson's Blog" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            AWelson's Blog
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              An "Almost Always" Approach to Sequences
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="pink" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4M7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="pink" data-md-color-accent="blue"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Welcome
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../Japanese%20Section/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Japanese Section
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../TIGM/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  TIGM
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../Lists/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Lists
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../" class="md-tabs__link">
+        
+  
+  
+    
+  
+  STEM
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../Misc/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Misc
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="AWelson&#39;s Blog" class="md-nav__button md-logo" aria-label="AWelson's Blog" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    AWelson's Blog
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Welcome
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../Japanese%20Section/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Japanese Section
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Japanese Section
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Japanese%20Section/Resources/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Language Learning Resources
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Japanese%20Section/Annotated/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Annotated Videos
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../Japanese%20Section/Misc/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Misc
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            Misc
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Japanese%20Section/Misc/kakukakushikajika/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    斯々然々
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Japanese%20Section/Misc/pillbug/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    The Pillbug Incident
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../TIGM/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    TIGM
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            TIGM
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../TIGM/2023/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    2023
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            2023
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TIGM/2023/July/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    July
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TIGM/2023/August/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    August
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TIGM/2023/September/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    September
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TIGM/2023/October/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    October
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TIGM/2023/November/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    November
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TIGM/2023/December/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    December
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../TIGM/2024/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    2024
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            2024
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TIGM/2024/January/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    January
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TIGM/2024/February/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    February
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TIGM/2024/March/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    March
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TIGM/2024/April/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    April
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TIGM/2024/May/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    May
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TIGM/2024/June/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    June
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TIGM/2024/July/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    July
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TIGM/2024/August/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    August
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TIGM/2024/September/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    September
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../TIGM/2025/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    2025
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            2025
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TIGM/2025/July/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    July
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Lists/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Lists
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    STEM
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../Misc/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Misc
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Misc
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Misc/nekopara/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    NEKOPARA - Catboys Paradise prologue dialogue
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Misc/12FanClub/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    いーあるふぁんくらぶ (Cantonese version) lyrics
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#convergence-as-an-eventual-behavior" class="md-nav__link">
+    <span class="md-ellipsis">
+      Convergence as an Eventual Behavior
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#convergence-as-an-almost-always-behavior" class="md-nav__link">
+    <span class="md-ellipsis">
+      Convergence as an "Almost Always" Behavior
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#divergence-as-an-almost-always-behavior" class="md-nav__link">
+    <span class="md-ellipsis">
+      Divergence as an "Almost Always" Behavior
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cofinite-larger-than-infinity" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cofinite : Larger than Infinity?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pushforward" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pushforward
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pullback" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pullback
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>An "Almost Always" Approach to Sequences</h1>
+
+<h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
+<p>A sequence in some space <span class="arithmatex">\(X\)</span> is usually represented by some function <span class="arithmatex">\(a:\mathbb{N}\to X\)</span> so that the first term of the sequence is <span class="arithmatex">\(a(1)\)</span>, the second is <span class="arithmatex">\(a(2)\)</span> and so on. However, indices are often used to represent these terms, i.e. we usually write <span class="arithmatex">\(a_n\)</span> in place of <span class="arithmatex">\(a(n)\)</span>. Keep in mind that we shall switch between these two conventions where appropriate.</p>
+<p>Given a sequence <span class="arithmatex">\(a_n\)</span> of points in <span class="arithmatex">\(X\)</span>, an interesting question to ask is whether or not this sequence converges to some <span class="arithmatex">\(L\in X\)</span>. In order for this question to make sense there has to be some notion of distance on the space <span class="arithmatex">\(X\)</span>, which we can do by specifying a <a href="https://en.wikipedia.org/wiki/Metric_space">metric</a> (or more generally a <a href="https://en.wikipedia.org/wiki/Topological_space">topology</a>) on <span class="arithmatex">\(X\)</span>. Very briefly, a metric on <span class="arithmatex">\(X\)</span> is a function <span class="arithmatex">\(d:X\times X\to \mathbb{R}\)</span> that can be used as some sort of "ruler" on <span class="arithmatex">\(X\)</span>. More precisely, for any <span class="arithmatex">\(x,y\in X\)</span> the real number <span class="arithmatex">\(d(x,y)\)</span> represents how far away these two points are from each other, the smaller <span class="arithmatex">\(d(x,y)\)</span> is the closer <span class="arithmatex">\(x\)</span> and <span class="arithmatex">\(y\)</span> are and vice-versa. </p>
+<blockquote>
+<p>Of course, a metric has to "make sense". For example, we cannot have <span class="arithmatex">\(d(x,x)=2\)</span>, or <span class="arithmatex">\(d(x,y)&lt;0\)</span>, and so on. There is a list of properties that a function <span class="arithmatex">\(d:X\times X\to \mathbb{R}\)</span> has to satisfy in order for it to "make sense" to be used as a metric. For example <span class="arithmatex">\(d(x,y):= |x-y|\)</span> is an example of a function that makes sense to be used as a metric on the space <span class="arithmatex">\(\mathbb{R}\)</span>. I won't get into all of the details here since it suffices to just have an intuitive idea; you can of course look into it at your own time.</p>
+</blockquote>
+<h2 id="convergence-as-an-eventual-behavior">Convergence as an Eventual Behavior<a class="headerlink" href="#convergence-as-an-eventual-behavior" title="Permanent link">&para;</a></h2>
+<p>Intuitively speaking, convergence is an <em>eventual behavior</em> of a sequence. For example, if <span class="arithmatex">\(a_n\to L\)</span> then any modification of <span class="arithmatex">\(a_n\)</span> that does not alter its eventual behavior (for example, randomizing the first 100 terms) will not affect its convergence. Thus, to understand sequence convergence it is paramount that we understand what is exactly meant by <em>eventual behavior</em>. To that end, consider the following definition :</p>
+<blockquote>
+<p><strong>Definition</strong>. Given a sequence <span class="arithmatex">\(a_n\)</span> of points in <span class="arithmatex">\(X\)</span> and some predicate/property <span class="arithmatex">\(P\)</span> on <span class="arithmatex">\(X\)</span>, we say that <span class="arithmatex">\(P\)</span> is an <em>eventual behavior</em> of <span class="arithmatex">\(a_n\)</span> (or alternatively, <span class="arithmatex">\(a_n\)</span> eventually satisfies <span class="arithmatex">\(P\)</span>) if we can find an <span class="arithmatex">\(N\in \mathbb{N}\)</span> such that for all <span class="arithmatex">\(n&gt;N\)</span>, <span class="arithmatex">\(a_n\)</span> satisfies <span class="arithmatex">\(P\)</span>. </p>
+</blockquote>
+<div class="admonition note">
+<p class="admonition-title">Example</p>
+<p>Let <span class="arithmatex">\(X:=\mathbb{N}\)</span> and <span class="arithmatex">\(P\)</span> be the property "is equal to 1". Then the sequence </p>
+<div class="arithmatex">\[ 5,4,3,2,1,1,1,1,\ldots \]</div>
+<p>eventually satisfies <span class="arithmatex">\(P\)</span> since <span class="arithmatex">\(a_n = 1\)</span> for all <span class="arithmatex">\(n&gt;4\)</span>.</p>
+</div>
+<p>The following definition will also be useful towards defining convergence :</p>
+<blockquote>
+<p><strong>Definition.</strong> For any <span class="arithmatex">\(\epsilon&gt;0\)</span> and <span class="arithmatex">\(L\in X\)</span> we define <span class="arithmatex">\(B_\epsilon(L):=\{x\in X \ \vert \ d(L,x)&lt;\epsilon\}\)</span>. This can be thought of as the collection of points that are close to <span class="arithmatex">\(L\)</span>. Thinking of <span class="arithmatex">\(\epsilon&gt;0\)</span> as a parameter, we can control exactly how close the points in <span class="arithmatex">\(B_\epsilon(L)\)</span> are to <span class="arithmatex">\(L\)</span>.  </p>
+</blockquote>
+<div class="admonition note">
+<p class="admonition-title">Example</p>
+<p>In the space <span class="arithmatex">\(\mathbb{R}\)</span> with the metric <span class="arithmatex">\(d(x,y):=|x-y|\)</span>, the set <span class="arithmatex">\(B_1(0)\)</span> is exactly the open interval <span class="arithmatex">\((-1,1)\)</span>.</p>
+</div>
+<p>Fix some <span class="arithmatex">\(L\in X\)</span>. It makes sense to say that a sequence <span class="arithmatex">\(a_n\to L\)</span> if it is eventually "close to <span class="arithmatex">\(L\)</span>". To be more precise, we can replace "close to <span class="arithmatex">\(L\)</span>" with "contained in <span class="arithmatex">\(B_\epsilon(L)\)</span>" where <span class="arithmatex">\(\epsilon&gt;0\)</span> can be controlled to specify the desired level of "closeness". For example, to say that <span class="arithmatex">\(a_n\)</span> is eventually contained in <span class="arithmatex">\(B_1(L)\)</span> means that the terms of <span class="arithmatex">\(a_n\)</span> will eventually be at a distance of at most 1 away from <span class="arithmatex">\(L\)</span>. With this in mind, we come up with the following definition :</p>
+<blockquote>
+<p><strong>Definition</strong>. In a metric space <span class="arithmatex">\(X\)</span>, a sequence <span class="arithmatex">\(a_n\)</span> is said to converge to an <span class="arithmatex">\(L\in X\)</span> if for any <span class="arithmatex">\(\epsilon&gt;0\)</span> the sequence <span class="arithmatex">\(a_n\)</span> is <em>eventually</em> contained in <span class="arithmatex">\(B_\epsilon(L)\)</span></p>
+</blockquote>
+<h2 id="convergence-as-an-almost-always-behavior">Convergence as an "Almost Always" Behavior<a class="headerlink" href="#convergence-as-an-almost-always-behavior" title="Permanent link">&para;</a></h2>
+<p>While the definition above is standard and used widely throughout the mathematical community, there is an equivalent definition which I like better : We introduce the idea of "good" and "bad" indices. </p>
+<blockquote>
+<p><strong>Definition</strong>. Given a sequence <span class="arithmatex">\(a_n\)</span> of points from <span class="arithmatex">\(X\)</span> and a predicate <span class="arithmatex">\(P\)</span> on <span class="arithmatex">\(X\)</span>, the index <span class="arithmatex">\(m\in \mathbb{N}\)</span> is said to be "good" if <span class="arithmatex">\(a_m\)</span> satisfies <span class="arithmatex">\(P\)</span> and "bad" otherwise. We say that a sequence <span class="arithmatex">\(a_n\)</span> <em>almost always</em> satisfies <span class="arithmatex">\(P\)</span> if there are finitely many bad indices.</p>
+</blockquote>
+<p>We now prove the following theorem :</p>
+<blockquote>
+<p><strong>Theorem</strong>. If <span class="arithmatex">\(a_n\)</span> is a sequence and <span class="arithmatex">\(P\)</span> is a predicate on some space <span class="arithmatex">\(X\)</span>, then <span class="arithmatex">\(a_n\)</span> <strong>eventually</strong> satisfies <span class="arithmatex">\(P\)</span> iff <span class="arithmatex">\(a_n\)</span> <strong>almost always</strong> satisfies <span class="arithmatex">\(P\)</span>. </p>
+</blockquote>
+<details class="note">
+<summary>Proof</summary>
+<p>For the forward direction, we know that there is an <span class="arithmatex">\(N\)</span> such that <span class="arithmatex">\(n\)</span> is good for all <span class="arithmatex">\(n&gt;N\)</span>, thus <span class="arithmatex">\(N\)</span> is an upper bound for the number of bad indices that can exist. For the reverse direction, if there are finitely many bad indices we can take the maximum of this and any index beyond that will necessarily have to satisfy <span class="arithmatex">\(P\)</span>. </p>
+</details>
+<p>Thus, to prove that a sequence <span class="arithmatex">\(a_n\)</span> converges to <span class="arithmatex">\(L\)</span>, we can either show :</p>
+<ul>
+<li>for any <span class="arithmatex">\(\epsilon&gt;0\)</span>, <span class="arithmatex">\(a_n\)</span> is <em>eventually</em> contained in <span class="arithmatex">\(B_\epsilon(L)\)</span>, or</li>
+<li>for any <span class="arithmatex">\(\epsilon&gt;0\)</span>, <span class="arithmatex">\(a_n\)</span> is <em>almost always</em> contained in <span class="arithmatex">\(B_\epsilon(L)\)</span></li>
+</ul>
+<p>As previously mentioned, the second definition is more appealing to me and this is because it makes some results super obvious. For example, given a sequence <span class="arithmatex">\(a_n\)</span> that almost always satisfies a predicate <span class="arithmatex">\(P\)</span>, taking a subsequence or rearranging the terms of <span class="arithmatex">\(a_n\)</span> does not increase the number of bad indices and hence the resulting sequence will also almost always satisfy <span class="arithmatex">\(P\)</span>. As a consequence, since convergence is an "almost always" behavior, this means that if <span class="arithmatex">\(a_n\to L\)</span> then any subsequence or rearrangement of <span class="arithmatex">\(a_n\)</span> should also retain this behavior and converge to <span class="arithmatex">\(L\)</span> as well.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>It is more accurate to say that convergence is a family/collection of "almost always" (eventual) properties indexed by <span class="arithmatex">\(\epsilon&gt;0\)</span>. However, if every "almost always" property is preserved by some transformation, then that transformation should necessarily preserve convergence, which is by definition simply a collection of these properties.    </p>
+</div>
+<h2 id="divergence-as-an-almost-always-behavior">Divergence as an "Almost Always" Behavior<a class="headerlink" href="#divergence-as-an-almost-always-behavior" title="Permanent link">&para;</a></h2>
+<p>If there is no point <span class="arithmatex">\(L\in X\)</span> for which <span class="arithmatex">\(a_n\to L\)</span> then we say that <span class="arithmatex">\(a_n\)</span> is divergent. In the space <span class="arithmatex">\(\mathbb{R}\)</span>, there are three ways in which a sequence can diverge : either <span class="arithmatex">\(a_n\to \infty\)</span>, <span class="arithmatex">\(a_n\to -\infty\)</span>, or <span class="arithmatex">\(a_n\)</span> oscillates around. Divergence to <span class="arithmatex">\(\infty\)</span> or <span class="arithmatex">\(-\infty\)</span> can be framed as an "almost always" (or equivalently eventual) behavior :</p>
+<blockquote>
+<p><span class="arithmatex">\(a_n\to \infty\)</span> := for any real <span class="arithmatex">\(M&gt;0\)</span>, <span class="arithmatex">\(a_n\)</span> is almost always greater than <span class="arithmatex">\(M\)</span>
+<span class="arithmatex">\(a_n\to -\infty\)</span> := for any real <span class="arithmatex">\(M&lt;0\)</span>, <span class="arithmatex">\(a_n\)</span> is almost always lesser than <span class="arithmatex">\(M\)</span></p>
+</blockquote>
+<p>However, oscillation is not an "almost always" behavior since if that were to be the case then any subsequence of <span class="arithmatex">\((1,-1,1,-1,\ldots)\)</span> should also oscillate (since taking subsequences preserves "almost always" behaviors), but the subsequence <span class="arithmatex">\((1,1,1,1,\ldots)\)</span> clearly does not oscillate. </p>
+<h2 id="cofinite-larger-than-infinity">Cofinite : Larger than Infinity?<a class="headerlink" href="#cofinite-larger-than-infinity" title="Permanent link">&para;</a></h2>
+<p>Recall that given a sequence <span class="arithmatex">\(a_n\)</span> and a predicate <span class="arithmatex">\(P\)</span>, we can determine if <span class="arithmatex">\(a_n\)</span> almost always satisfies <span class="arithmatex">\(P\)</span> by making sure that there are finitely many bad indices. Alternatively, we can try to figure out if the set of good indices is "large enough" for <span class="arithmatex">\(P\)</span> to almost always hold. The issue is that even if the set of good indices are infinite, it is not necessarily true that <span class="arithmatex">\(P\)</span> almost always holds. For example if the good indices are <span class="arithmatex">\(2,4,6,8,\ldots\)</span> then this implies the existence of an infinite amount of bad indices, namely <span class="arithmatex">\(1,3,5,7,\ldots\)</span> Thus, we need a better notion of "large enough" :</p>
+<blockquote>
+<p><strong>Definition</strong>. Let <span class="arithmatex">\(A\)</span> be some subset of a space <span class="arithmatex">\(X\)</span>. We say that <span class="arithmatex">\(A\)</span> is cofinite if <span class="arithmatex">\(A^c := X\setminus A\)</span> is finite. Clearly, cofinite sets are "large enough" and won't cause any problems.</p>
+</blockquote>
+<div class="admonition note">
+<p class="admonition-title">Example</p>
+<ul>
+<li>In the space <span class="arithmatex">\(\mathbb{N}\)</span>, the subset <span class="arithmatex">\(E\)</span> of even numbers is not cofinite since <span class="arithmatex">\(E^c\)</span>, the subset of odd numbers, is not finite.</li>
+<li>In the space <span class="arithmatex">\(\mathbb{N}\)</span>, the subset <span class="arithmatex">\(\{5,6,7,8,\ldots\}\)</span> is cofinite since its complement is <span class="arithmatex">\(\{1,2,3,4\}\)</span>. However, it is not cofinite in the space <span class="arithmatex">\(\mathbb{Z}\)</span>.</li>
+</ul>
+</div>
+<blockquote>
+<p><strong>Definition</strong>. Let <span class="arithmatex">\(Fr\)</span> be the collection of all cofinite subsets of <span class="arithmatex">\(\mathbb{N}\)</span>, we call <span class="arithmatex">\(Fr\)</span> the <a href="https://en.wikipedia.org/wiki/Fr%C3%A9chet_filter">Fréchet filter</a>. Thus, to check if a subset <span class="arithmatex">\(A\subseteq \mathbb{N}\)</span> is large enough amounts to asking if <span class="arithmatex">\(A\)</span> is in the Fréchet filter.</p>
+</blockquote>
+<p>With the Fréchet filter in hand, we can provide an alternative definition for what it means for a property <span class="arithmatex">\(P\)</span> to almost always hold. </p>
+<blockquote>
+<p><strong>Definition</strong>. Let <span class="arithmatex">\(a_n\)</span> be a sequence of points from <span class="arithmatex">\(X\)</span> and <span class="arithmatex">\(P\)</span> be a predicate on <span class="arithmatex">\(X\)</span>. Then <span class="arithmatex">\(a_n\)</span> almost always satisfies <span class="arithmatex">\(P\)</span> if <span class="arithmatex">\(A\in Fr\)</span> where <span class="arithmatex">\(A\)</span> is the set of good indices. </p>
+</blockquote>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>There is a one-to-one correspondance between predicates and subsets of a space <span class="arithmatex">\(X\)</span>. For example, in the space <span class="arithmatex">\(\mathbb{N}\)</span>, the predicate "is equal to 1" corresponds to the subset <span class="arithmatex">\(\{1\}\subseteq \mathbb{N}\)</span>. Thus, formally speaking, given a sequence <span class="arithmatex">\(a_n\)</span> and a predicate <span class="arithmatex">\(P\)</span> on <span class="arithmatex">\(X\)</span>, the set of good indices can be represented by <span class="arithmatex">\(a^{-1}[P]\)</span>, where we consider sequences and predicates as functions and subsets respectively.   </p>
+</div>
+<h2 id="pushforward">Pushforward<a class="headerlink" href="#pushforward" title="Permanent link">&para;</a></h2>
+<p>In this section it will be helpful to view sequences as functions. Given a sequence <span class="arithmatex">\(a:\mathbb{N}\to X\)</span> and a function <span class="arithmatex">\(f:\mathbb{N}\to\mathbb{N}\)</span>, we can define a new sequence by composition : <span class="arithmatex">\(a\circ f\)</span>. An interesting question to ask is : for any predicate <span class="arithmatex">\(P\)</span> on <span class="arithmatex">\(X\)</span> that is almost always satisfied by <span class="arithmatex">\(a\)</span>, which functions ensure that <span class="arithmatex">\(P\)</span> is also almost always satisfied by <span class="arithmatex">\(a\circ f\)</span>? </p>
+<p>We shall call a function that satisfies this property a "pushforward" since the predicate <span class="arithmatex">\(P\)</span> gets <em>pushed forward</em> into the new sequence. For example, the identity function is a trivial example of a pushforward. Given a predicate <span class="arithmatex">\(P\)</span>, let <span class="arithmatex">\(A, A_f\)</span> denote the set of good indices for <span class="arithmatex">\(a\)</span> and <span class="arithmatex">\(a\circ f\)</span> respectively. Notice that </p>
+<div align="center"> $m\in A_f$ $\quad \Longleftrightarrow \quad$ $a(f(m))$ satisfies $P$ $\quad \Longleftrightarrow \quad $ $f(m)\in A$ </div>
+
+<p>In other words, <span class="arithmatex">\(A_f = f^{-1}[A]\)</span>. Thus, by definition <span class="arithmatex">\(f\)</span> is a pushforward iff for any subset <span class="arithmatex">\(A\subseteq \mathbb{N}\)</span>, <span class="arithmatex">\(A \in Fr \Rightarrow f^{-1}[A]\in Fr\)</span>. For those that are familiar with topology, this condition looks awfully similar to the definition of a <a href="https://en.wikipedia.org/wiki/Continuous_function#Continuous_functions_between_topological_spaces">continuous function</a>. In fact, the definitions match when we consider the space <span class="arithmatex">\(\mathbb{N}\)</span> with the <a href="https://en.wikipedia.org/wiki/Cofiniteness#Cofinite_topology">cofinite topology</a>. Alas I am not knowledgeable enough to quote on why this connection exists.</p>
+<p>A more useful characterization of pushforwards can be obtained by noticing that the condition : </p>
+<div align="center"> $\forall \ A\subseteq \mathbb{N}$, $ \ A \in Fr \quad \Longrightarrow \quad f^{-1}[A]\in Fr$ <span style="float:right;">(1)</span></div>
+
+<p>is equivalent to</p>
+<div align="center"> $\forall \ A\subseteq \mathbb{N}$, $ \ A$ is finite $\quad \Longrightarrow \quad$ $f^{-1}[A]$ is finite <span style="float:right;">(2)</span></div>
+
+<p>Proving this is not too hard once you recall that for any <span class="arithmatex">\(f:X\to Y\)</span> and <span class="arithmatex">\(A\subseteq Y\)</span> we have <span class="arithmatex">\((f^{-1}[A])^c =  f^{-1}[A^c]\)</span>. Another equivalent condition is :</p>
+<div align="center"> $\forall m\in \mathbb{N}$, $ \ f^{-1}[\{m\}]$ is finite <span style="float:right;">(3)</span></div>
+
+<p>The relevant hint here is that inverse images distribute under unions : <span class="arithmatex">\(f^{-1}[A\cup B] = f^{-1}[A] \cup f^{-1}[B]\)</span>. Finally, we have another equivalence :</p>
+<div align="center"> The sequence $f(n)$ diverges to $\infty$ <span style="float:right;">(4)</span></div>
+
+<p>To prove this, I would suggest using the contrapositive, i.e. to show that <span class="arithmatex">\(\neg(3)\to \neg(4)\)</span> and that <span class="arithmatex">\(\neg(4)\to \neg(3)\)</span>, but I will leave it up to you to fill in the details.</p>
+<h2 id="pullback">Pullback<a class="headerlink" href="#pullback" title="Permanent link">&para;</a></h2>
+<p>Naturally, we should also ask the question : which functions can serve as "pullbacks"? These functions are dual to the pushforwards. Pullbacks are the answer to the dual question : for any predicate <span class="arithmatex">\(P\)</span> on <span class="arithmatex">\(X\)</span> that is almost always satisfied by <span class="arithmatex">\(a\circ f\)</span>, which functions ensure that <span class="arithmatex">\(P\)</span> is also almost always satisfied by <span class="arithmatex">\(a\)</span>? </p>
+<p>In such a case, the predicate <span class="arithmatex">\(P\)</span> gets <em>pulled back</em> into the original sequence. Similar to pushforwards, <span class="arithmatex">\(f\)</span> is a pullback iff</p>
+<div align="center"> $\forall \ A\subseteq \mathbb{N}$, $ \ f^{-1}[A] \in Fr \quad \Longrightarrow \quad A\in Fr$ <span style="float:right;">(5)</span></div>
+
+<p>which is equivalent to the range/image of <span class="arithmatex">\(f\)</span> being cofinite. We will prove a more general result :</p>
+<blockquote>
+<p><strong>Theorem</strong>. Let <span class="arithmatex">\(F = \{f_1, f_2, \dots, f_k\}\)</span> be a finite collection of functions <span class="arithmatex">\(f_i: \mathbb{N} \to \mathbb{N}\)</span> and <span class="arithmatex">\(Im(F) = \bigcup_{i=1}^{k} f_i[\mathbb{N}]\)</span> be the union of their ranges. Then the condition</p>
+<div class="arithmatex">\[\forall \ A \subseteq \mathbb{N}, \quad \left( \forall i \in \{1,..,k\}, \ f_i^{-1}[A] \in Fr \right) \quad \Longrightarrow \quad A\in Fr \tag{5'}\]</div>
+<p>is equivalent to <span class="arithmatex">\(Im(F)\in Fr\)</span>. </p>
+</blockquote>
+<details class="note">
+<summary>Proof : <span class="arithmatex">\(Im(F)\in Fr \ \Rightarrow 5'\)</span></summary>
+<p>Let <span class="arithmatex">\(A\subseteq\mathbb{N}\)</span> and assume that for each <span class="arithmatex">\(i=1,2,\ldots,k\)</span> the preimage <span class="arithmatex">\(f_i^{-1}[A]\)</span> is cofinite, i.e. for each <span class="arithmatex">\(i=1,2,\ldots,k\)</span>, <span class="arithmatex">\(f_i^{-1}[A]^c\)</span> is finite. Our goal is to show that <span class="arithmatex">\(A^c\)</span> is finite.</p>
+<p><span class="arithmatex">\(A^c\)</span> can be decomposed into two disjoint parts based on whether its elements are in the combined range <span class="arithmatex">\(Im(F)\)</span>:</p>
+<div class="arithmatex">\[ A^c = \underbrace{\left(A^c \cap Im(F)\right)}_{\text{Part 1}} \cup \underbrace{\left(A^c \setminus Im(F)\right)}_{\text{Part 2}}\]</div>
+<p>For Part 2, notice that <span class="arithmatex">\(A^c \setminus Im(F) = A^c \cap Im(F)^c \subseteq Im(F)^c\)</span>. By assumption <span class="arithmatex">\(Im(F)^c\)</span> is finite so we are done. </p>
+<p>Part 1 will be harder and we need to introduce some terminology : </p>
+<ul>
+<li>Recall that we have a finite collection of functions <span class="arithmatex">\(f_1,f_2,\ldots f_k\)</span>.</li>
+<li>Let <span class="arithmatex">\(i\in \{1,2,\ldots,k\}\)</span>. </li>
+<li>An input <span class="arithmatex">\(x\)</span> for a function <span class="arithmatex">\(f_i\)</span> is said to be bad if <span class="arithmatex">\(f_i(x)\notin A\)</span>. </li>
+<li>The set of bad inputs for <span class="arithmatex">\(f_i\)</span> can be represented by <span class="arithmatex">\(Bad_i := f_i^{-1}[A]^c\)</span> which is finite by assumption. </li>
+<li><span class="arithmatex">\(f_i[Bad_i]\)</span> (which is also finite) can be thought of as the set of values obtained from feeding bad inputs into <span class="arithmatex">\(f_i\)</span>.</li>
+</ul>
+<p>An element <span class="arithmatex">\(y\)</span> is in Part 1 if <span class="arithmatex">\(y \notin A\)</span> and <span class="arithmatex">\(y\)</span> is in the range of at least one function <span class="arithmatex">\(f_i\)</span>. This means that there must exist some <span class="arithmatex">\(j \in \{1, ..., k\}\)</span> and some input <span class="arithmatex">\(x \in \mathbb{N}\)</span> such that <span class="arithmatex">\(f_j(x) = y\)</span>. Since <span class="arithmatex">\(y \notin A\)</span>, <span class="arithmatex">\(x\)</span> a bad input for <span class="arithmatex">\(f_j\)</span> and so <span class="arithmatex">\(y\in f_j[Bad_j]\)</span>. In other words :</p>
+<p><div align="center"> Part 1 $  \subseteq  $ <span class="arithmatex">\(f_1[Bad_1] \cup f_2[Bad_2] \cup \cdots \cup f_k[Bad_k]\)</span> </div></p>
+<p>i.e. Part 1 is contained in a finite union of finite subsets, so Part 1 is finite as needed.</p>
+</details>
+<details class="note">
+<summary>Proof : <span class="arithmatex">\(5' \Rightarrow\)</span> <span class="arithmatex">\(Im(F)\in Fr\)</span></summary>
+<p>Let <span class="arithmatex">\(A = Im(F) = \bigcup_{i=1}^{k} f_i(\mathbb{N})\)</span>. Using this specific <span class="arithmatex">\(A\)</span> in 5' yields :</p>
+<p><div align="center"> (for each <span class="arithmatex">\(i=1,2,\ldots k\)</span>, $  f_i^{-1}[Im(F)]\in Fr$) <span class="arithmatex">\(\quad \Rightarrow \quad\)</span> <span class="arithmatex">\(Im(F)\in Fr\)</span> </div></p>
+<p>Thus our goal can be proven by showing that <span class="arithmatex">\(f_i^{-1}[Im(F)]\in Fr\)</span> for each <span class="arithmatex">\(i=1,2,\ldots k\)</span>. Let <span class="arithmatex">\(j\in \{1,2,\ldots,k\}\)</span> be arbitrary. By definition, for any input <span class="arithmatex">\(x \in \mathbb{N}\)</span>, <span class="arithmatex">\(f_j(x)\in f_j[\mathbb{N}]\)</span>. The set <span class="arithmatex">\(f_j[\mathbb{N}]\)</span> is, by construction, a part of the union <span class="arithmatex">\(Im(F) = \bigcup_{i=1}^{k} f_i[\mathbb{N}]\)</span>. Therefore, for any <span class="arithmatex">\(x \in \mathbb{N}\)</span>, the output <span class="arithmatex">\(f_j(x)\)</span> is guaranteed to be in <span class="arithmatex">\(Im(F)\)</span>, i.e. <span class="arithmatex">\(\mathbb{N}\subseteq f_j^{-1}[Im(F)]\)</span> so that obviously <span class="arithmatex">\(f_j^{-1}[Im(F)]\)</span> is cofinite as required.</p>
+</details>
+<p>For example, let <span class="arithmatex">\(f_1(n) := 2n\)</span> and <span class="arithmatex">\(f_2(n) := 2n-1\)</span>. Then, a property <span class="arithmatex">\(P\)</span> that is almost always satisfied by <span class="arithmatex">\(a\circ f_1 = a_{2n}\)</span> fails to be pulled back completely by <span class="arithmatex">\(f_1\)</span> into the original sequence since <span class="arithmatex">\(Im(f_1)\)</span> is not cofinite. However, if it turns out that <span class="arithmatex">\(P\)</span> is almost always satisfied by <span class="arithmatex">\(a\circ f_2= a_{2n-1}\)</span> as well, then <span class="arithmatex">\(f_2\)</span> can cover for whatever was missed by <span class="arithmatex">\(f_1\)</span>. That is to say while individually <span class="arithmatex">\(f_1\)</span> and <span class="arithmatex">\(f_2\)</span> fails to pull <span class="arithmatex">\(P\)</span> back into the original sequence, their combined power succeeds in doing so, letting us conclude that the original sequence <span class="arithmatex">\(a_n\)</span> almost always satisfies <span class="arithmatex">\(P\)</span>. </p>
+
+
+
+
+
+
+
+  
+    
+  
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Last update">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="July 23, 2025 15:05:49 UTC">July 23, 2025</span>
+  </span>
+
+    
+    
+    
+    
+  </aside>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+  <!-- Add scripts that need to run before here -->
+  
+      <script src="../../assets/javascripts/bundle.56ea9cef.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js"></script>
+      
+        <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+      
+        <script src="../../javascripts/katex.js"></script>
+      
+        <script src="https://www.youtube.com/iframe_api"></script>
+      
+        <script src="../../javascripts/YTTS.js"></script>
+      
+    
+  <!-- Add scripts that need to run afterwards here -->
+        <script>
+            window.addEventListener('load', function(){
+                new Glider(document.querySelector('.glider'), {
+                    slidesToShow: 1,
+                    dots: '#dots',
+                    draggable: true,
+                    arrows: {
+                        prev: '.glider-prev',
+                        next: '.glider-next'
+                    }
+                });
+            })
+        </script>
+
+  </body>
+</html>

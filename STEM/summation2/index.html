@@ -1,0 +1,1643 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../subseq/">
+      
+      
+        <link rel="next" href="../twicecolder/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
+    
+    
+      
+        <title>On Sums over Countable Spaces - AWelson's Blog</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/stylesheet.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="pink" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#the-finite-case" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="AWelson&#39;s Blog" class="md-header__button md-logo" aria-label="AWelson's Blog" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            AWelson's Blog
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              On Sums over Countable Spaces
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="pink" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4M7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="pink" data-md-color-accent="blue"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Welcome
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../Japanese%20Section/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Japanese Section
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../TIGM/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  TIGM
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../Lists/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Lists
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../" class="md-tabs__link">
+        
+  
+  
+    
+  
+  STEM
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../Misc/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Misc
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="AWelson&#39;s Blog" class="md-nav__button md-logo" aria-label="AWelson's Blog" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    AWelson's Blog
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Welcome
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../Japanese%20Section/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Japanese Section
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Japanese Section
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Japanese%20Section/Resources/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Language Learning Resources
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Japanese%20Section/Annotated/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Annotated Videos
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../Japanese%20Section/Misc/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Misc
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            Misc
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Japanese%20Section/Misc/kakukakushikajika/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    斯々然々
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Japanese%20Section/Misc/pillbug/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    The Pillbug Incident
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../TIGM/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    TIGM
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            TIGM
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../TIGM/2023/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    2023
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            2023
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TIGM/2023/July/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    July
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TIGM/2023/August/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    August
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TIGM/2023/September/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    September
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TIGM/2023/October/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    October
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TIGM/2023/November/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    November
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TIGM/2023/December/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    December
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../TIGM/2024/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    2024
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            2024
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TIGM/2024/January/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    January
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TIGM/2024/February/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    February
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TIGM/2024/March/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    March
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TIGM/2024/April/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    April
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TIGM/2024/May/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    May
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TIGM/2024/June/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    June
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TIGM/2024/July/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    July
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TIGM/2024/August/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    August
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TIGM/2024/September/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    September
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../TIGM/2025/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    2025
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            2025
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TIGM/2025/July/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    July
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Lists/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Lists
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    STEM
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../Misc/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Misc
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Misc
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Misc/nekopara/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    NEKOPARA - Catboys Paradise prologue dialogue
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Misc/12FanClub/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    いーあるふぁんくらぶ (Cantonese version) lyrics
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#the-finite-case" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Finite Case
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-general-case" class="md-nav__link">
+    <span class="md-ellipsis">
+      The General Case
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#increasing-sequences-of-subsets" class="md-nav__link">
+    <span class="md-ellipsis">
+      Increasing Sequences of Subsets
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#countable-additivity" class="md-nav__link">
+    <span class="md-ellipsis">
+      Countable Additivity
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sum-partitions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sum Partitions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tonellis-theorem-discrete" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tonelli's Theorem (Discrete)
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>On Sums over Countable Spaces</h1>
+
+<h2 id="the-finite-case">The Finite Case<a class="headerlink" href="#the-finite-case" title="Permanent link">&para;</a></h2>
+<p>Suppose I have a space <span class="arithmatex">\(X\)</span> with three elements, we can represent this space with a set <span class="arithmatex">\(X:=\{\alpha, \beta, \gamma\}\)</span>. I want to be able to talk about sums over this space. Of course, <span class="arithmatex">\(\alpha + \beta + \gamma\)</span> doesn't make any sense. The elements of <span class="arithmatex">\(X\)</span> simply serve as placeholders for the values that we want to add, in other words, we are using the "three-ness" of the space <span class="arithmatex">\(X\)</span> to define a sum of three values. We can do this by assigning to each element <span class="arithmatex">\(x\in X\)</span> a real number <span class="arithmatex">\(r\in \mathbb{R}\)</span>, i.e. by defining a weight function <span class="arithmatex">\(f:X\to \mathbb{R}\)</span>. For example, if we define <span class="arithmatex">\(f\)</span> such that <span class="arithmatex">\(f(\alpha) = f(\beta) = 3\)</span> and <span class="arithmatex">\(f(\gamma)=10\)</span>, then it makes sense to proceed as follows :</p>
+<div class="arithmatex">\[
+\begin{align*}
+  \sum_{x\in X}f(x) &amp;= f(\alpha) + f(\beta) + f(\gamma) \\
+  &amp;= 3 + 3 + 10 \\
+  &amp;= 16 
+\end{align*}
+\]</div>
+<p>This works fine for finite spaces, but if <span class="arithmatex">\(X\)</span> is countably infinite then we quickly run into some problems. For example, we can try to define the sum this way : Since <span class="arithmatex">\(X\)</span> is countably infinite, then there is a bijection <span class="arithmatex">\(g:\mathbb{N}\to X\)</span>. Thus we can think of summation over <span class="arithmatex">\(X\)</span> in terms of the traditional infinite sum :</p>
+<div class="arithmatex">\[ \sum_{x\in X}f(x) = \sum_{n=1}^\infty{f(g(n))}, \]</div>
+<p>defined by the limit of the partial sums, but this is not ideal due to convergence issues and it is also not entirely obvious if a different choice of <span class="arithmatex">\(g\)</span> (a different rearrangement of the sum) will change the evaluation of the sum<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>. It turns out we can solve these issues by working in the space <span class="arithmatex">\([0,\infty]\)</span>. We can do this by declaring <span class="arithmatex">\(f:X\to [0,\infty]\)</span>. Due to monotonicity our sum has to converge to some <span class="arithmatex">\(x\in[0,\infty]\)</span> (the sum can only ever increase, there is no oscillation). Monotonicity also means that the order of summation does not matter; as long as we continue to add terms together, we are always progressing closer towards the value of the overall sum. </p>
+<div class="admonition note">
+<p class="admonition-title">The Space <span class="arithmatex">\([0,\infty]\)</span></p>
+<p>This space is constructed by adding a point "<span class="arithmatex">\(\infty\)</span>" to the space <span class="arithmatex">\([0,\infty)\)</span>. We can think of <span class="arithmatex">\([0,\infty]\)</span> as a linearly ordered topological space where the order on <span class="arithmatex">\([0,\infty)\)</span> is extended by setting <span class="arithmatex">\(x\leq \infty\)</span> for all <span class="arithmatex">\(x\in [0,\infty]\)</span>. In particular, this order is complete so any subset of <span class="arithmatex">\([0,\infty]\)</span> has a supremum, and via the topology, we can talk about the convergence of sequences in <span class="arithmatex">\([0,\infty]\)</span>.. Furthermore, we extend addition on this space by setting <span class="arithmatex">\(\infty + x = x+\infty = \infty\)</span> for all <span class="arithmatex">\(x\in [0,\infty]\)</span>. </p>
+</div>
+<h2 id="the-general-case">The General Case<a class="headerlink" href="#the-general-case" title="Permanent link">&para;</a></h2>
+<p>With all this in mind, we come up with the following "order-free" definition for the sum over a countable space <span class="arithmatex">\(X\)</span> by taking the supremum over all finite sub-sums :</p>
+<blockquote>
+<p><strong>Definition 1</strong>. Let <span class="arithmatex">\(X\)</span> be a countable space and <span class="arithmatex">\(w:X\to [0,\infty]\)</span> be its weight function. We define the sum over a subset <span class="arithmatex">\(A\)</span> of <span class="arithmatex">\(X\)</span> as <span class="arithmatex">\(\mu(A)\)</span> where :</p>
+<div class="arithmatex">\[\mu(A) := \sup\left\{\sum_{x\in F}w(x) \ \vert \ F\subseteq A, \ \text{finite }F \right\}, \]</div>
+<p>Note that the supremum (least upper bound) of a subset <span class="arithmatex">\(A\subseteq [0,\infty]\)</span> always exists since (at the very least) <span class="arithmatex">\(\infty\)</span> is an upper bound of <span class="arithmatex">\(A\)</span>. In other words, <span class="arithmatex">\(\mu\)</span> is a map from <span class="arithmatex">\(X\)</span> to <span class="arithmatex">\([0,\infty]\)</span>.</p>
+</blockquote>
+<p>Here are some notes that may be useful :</p>
+<div class="admonition note">
+<p class="admonition-title">Note 1</p>
+<p>Since the only finite subset of <span class="arithmatex">\(\varnothing\)</span> is itself, we have <span class="arithmatex">\(\mu(A) = \sum_{x\in \varnothing}w(x) = 0\)</span> or at least we shall define it as such. Additionally, if <span class="arithmatex">\(A\)</span> is finite then <span class="arithmatex">\(\mu(A)\)</span> is simply equivalent to the finite sum <span class="arithmatex">\(\sum_{x\in A}w(x)\)</span>.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note 2</p>
+<p>For any <span class="arithmatex">\(A\subseteq B\)</span> we have <span class="arithmatex">\(\mu(A)\leq \mu(B)\)</span> purely because</p>
+<div class="arithmatex">\[ \left\{\sum_{x\in F}w(x) \ \vert \ F\subseteq A, \ \text{finite }F \right\} \subseteq \left\{\sum_{x\in F}w(x) \ \vert \ F\subseteq B, \ \text{finite }F \right\} \]</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note 3</p>
+<p>To prove <span class="arithmatex">\(\mu(A)\leq r\)</span> it suffices to show that <span class="arithmatex">\(r\)</span> is an upper bound of <span class="arithmatex">\(\{\sum_{x\in F}w(x) \ \vert \  F\subseteq A, \ \text{finite }F\}\)</span>, i.e. that for any finite <span class="arithmatex">\(F\subseteq A\)</span> we have <span class="arithmatex">\(\sum_{x\in F}w(x)=\mu(F) \leq r\)</span>. On the other hand, to show that <span class="arithmatex">\(r\leq \mu(A)\)</span> it suffices to show that there exists a finite <span class="arithmatex">\(F\subseteq A\)</span> such that <span class="arithmatex">\(r\leq \sum_{x\in F}w(x) = \mu(F)\)</span>.</p>
+</div>
+<h2 id="increasing-sequences-of-subsets">Increasing Sequences of Subsets<a class="headerlink" href="#increasing-sequences-of-subsets" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p><strong>Definition 2</strong>. Let <span class="arithmatex">\(A:\texttt{set }X\)</span>. We say that a sequence of sets <span class="arithmatex">\(\{A_n\}_{n\in \mathbb{N}}\)</span> <strong>increases</strong> to <span class="arithmatex">\(A\)</span> (denoted <span class="arithmatex">\(A_n\nearrow A\)</span>) if : </p>
+<ul>
+<li><span class="arithmatex">\(A_1\subseteq A_2\subseteq \cdots \subseteq A\)</span> and </li>
+<li><span class="arithmatex">\(\bigcup_{n=1}^\infty A_n = A\)</span></li>
+</ul>
+<p><strong>Note.</strong> The second condition is equivalent to : for every <span class="arithmatex">\(x\in A\)</span> there exists an <span class="arithmatex">\(N:\mathbb{N}\)</span> such that <span class="arithmatex">\(x\in A_N\)</span>, which is more straightforward to show.</p>
+</blockquote>
+<p>The following lemmas allow us to reframe our arguments in terms of sequences which should prove helpful later on :</p>
+<blockquote>
+<p><strong>Lemma 1</strong>. For any <span class="arithmatex">\(A:\texttt{set }X\)</span> there exists finite <span class="arithmatex">\(A_1, A_2, \ldots\)</span> such that <span class="arithmatex">\(A_n\nearrow A\)</span>. </p>
+</blockquote>
+<details class="note">
+<summary>Proof</summary>
+<p>If <span class="arithmatex">\(A\)</span> is finite, then this is trivial. Suppose <span class="arithmatex">\(A\)</span> is countably infinite, then there exists a bijection <span class="arithmatex">\(g:\mathbb{N}\to A\)</span>. For each <span class="arithmatex">\(n: \mathbb{N}\)</span> define <span class="arithmatex">\(A_n := \{g(i) : i\leq n\}\)</span>. It is pretty clear that <span class="arithmatex">\(A_1\subseteq A_2\subseteq \cdots \subseteq A\)</span> and that each <span class="arithmatex">\(A_n\)</span> is finite.</p>
+<p>Now suppose <span class="arithmatex">\(x\in A\)</span>, then there exists an <span class="arithmatex">\(N:\mathbb{N}\)</span> such that <span class="arithmatex">\(x = g(N)\)</span>, thus <span class="arithmatex">\(x\in A_N\)</span>. Thus <span class="arithmatex">\(A_n\nearrow A\)</span> as needed. <span class="arithmatex">\(\Box\)</span></p>
+</details>
+<blockquote>
+<p><strong>Lemma 2</strong>. For any <span class="arithmatex">\(A:\texttt{set }X\)</span> and <span class="arithmatex">\(A_n\nearrow A\)</span>, we have <span class="arithmatex">\(\mu(A_n)\to \mu(A)\)</span>.</p>
+</blockquote>
+<details class="note">
+<summary>Proof</summary>
+<p>By Note 2 we have <span class="arithmatex">\(\mu(A_1)\leq \mu(A_2)\leq \cdots \leq \mu(A)\)</span>, thus <span class="arithmatex">\(\mu(A_n)\)</span> converges to some <span class="arithmatex">\(L\in [0,\infty]\)</span> with <span class="arithmatex">\(L\leq \mu(A)\)</span> by the Monotone Convergence Theorem. Now it suffices to show that <span class="arithmatex">\(\mu(A)\leq L\)</span> (see Note 3). Suppose <span class="arithmatex">\(F\subseteq A\)</span> is finite then there is an <span class="arithmatex">\(N:\mathbb{N}\)</span> large enough so that <span class="arithmatex">\(F\subseteq A_N\)</span>, thus :</p>
+<div class="arithmatex">\[ \sum_{x\in F}w(x) = \mu(F) \leq \mu(A_N)\leq L \]</div>
+<p>so we are done. <span class="arithmatex">\(\Box\)</span></p>
+</details>
+<p>Combining these two lemmas, we get : for any <span class="arithmatex">\(A:\texttt{set }X\)</span> there exists a sequence <span class="arithmatex">\(\{A_n\}_{n\in \mathbb{N}}\)</span> (each <span class="arithmatex">\(A_n\)</span> finite) such that <span class="arithmatex">\(\mu(A_n)\to \mu(A)\)</span>. </p>
+<h2 id="countable-additivity">Countable Additivity<a class="headerlink" href="#countable-additivity" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p><strong>Lemma 3</strong> (Finite Additivity). Let <span class="arithmatex">\(A_1, A_2, \cdots, A_N : \texttt{set }X\)</span> be a finite collection of pairwise disjoint sets, then :</p>
+<p>$$ \mu\left(\bigcup_{n=1}^N A_n\right) = \sum_{n=1}^N \mu(A_n). $$</p>
+</blockquote>
+<details class="note">
+<summary>Proof</summary>
+<p>It suffices to show that for any disjoint <span class="arithmatex">\(A,B : \texttt{set }X\)</span> we have <span class="arithmatex">\(\mu(A\cup B) = \mu(A) + \mu(B)\)</span>; the rest of the argument follows inductively. Also notice that the above identity is trivial for finite <span class="arithmatex">\(A\)</span> and <span class="arithmatex">\(B\)</span>.</p>
+<p><strong>Part 1 :</strong> <span class="arithmatex">\(\mu(A\cup B)\leq \mu(A) + \mu(B)\)</span>. </p>
+<p>Suppose <span class="arithmatex">\(F\subseteq A\cup B\)</span> is finite. Now define <span class="arithmatex">\(F_1 = F\cap A, \ F_2 = F\cap B\)</span>. Notice that <span class="arithmatex">\(F = F_1 \cup F_2\)</span> and that <span class="arithmatex">\(F_1, F_2\)</span> are disjoint. Thus,</p>
+<div class="arithmatex">\[ \mu(F) = \mu(F_1) + \mu(F_2) \leq \mu(A) + \mu(B).\]</div>
+<p>In other words, we have shown that <span class="arithmatex">\(\mu(F)\leq \mu(A) + \mu(B)\)</span> for any finite <span class="arithmatex">\(F\subseteq A\cup B\)</span> which is equivalent to our goal (see note 3).</p>
+<p><strong>Part 2 :</strong> <span class="arithmatex">\(\mu(A) + \mu(B)\leq \mu(A\cup B)\)</span>. </p>
+<p>Suppose <span class="arithmatex">\(F_1\subseteq A\)</span> and <span class="arithmatex">\(F_2\subseteq B\)</span> are finite, then <span class="arithmatex">\(F_1, F_2\)</span> are disjoint so</p>
+<div class="arithmatex">\[ \mu(F_1) + \mu(F_2) = \mu(F_1\cup F_2) \leq \mu(A\cup B).\]</div>
+<p>Now we use Lemmas 1 and 2 : There exists <span class="arithmatex">\(\{A_n\}_{n\in \mathbb{N}}\)</span> such that each <span class="arithmatex">\(A_n\)</span> is finite, <span class="arithmatex">\(A_n\nearrow A\)</span> and hence <span class="arithmatex">\(\mu(A_n)\to \mu(A)\)</span> (and the exact same for the case of <span class="arithmatex">\(B\)</span>). Thus, for each <span class="arithmatex">\(n:\mathbb{N}\)</span>, </p>
+<div class="arithmatex">\[ \mu(A_n) + \mu(B_n) \leq \mu(A\cup B).\]</div>
+<p>Taking the limit as <span class="arithmatex">\(n\to \infty\)</span> gives <span class="arithmatex">\(\mu(A)+ \mu(B)\leq \mu(A\cup B)\)</span> as desired. <span class="arithmatex">\(\Box\)</span></p>
+</details>
+<blockquote>
+<p><strong>Theorem 1.</strong> (Countable Additivity). Suppose <span class="arithmatex">\(A=\bigcup_{n=1}^\infty{A_n} : \texttt{set }X\)</span> and the <span class="arithmatex">\(A_n\)</span> are pairwise disjoint, i.e. <span class="arithmatex">\(\{A_n\}_{n\in \mathbb{N}}\)</span> is a partition of <span class="arithmatex">\(A\)</span>, then</p>
+<p>$$ \mu(A) = \sum_{n=1}^\infty \mu(A_n). $$</p>
+</blockquote>
+<details class="note">
+<summary>Proof</summary>
+<p><strong>Part 1 :</strong> <span class="arithmatex">\(\mu(A)\leq \sum_{n=1}^\infty \mu(A_n)\)</span></p>
+<p>Suppose <span class="arithmatex">\(F\subseteq A\)</span> is finite then only a finite number of <span class="arithmatex">\(A_n\)</span>'s are needed to cover <span class="arithmatex">\(F\)</span>. Thus there is an <span class="arithmatex">\(N:\mathbb{N}\)</span> large enough so that <span class="arithmatex">\(F\subseteq \bigcup_{n=1}^N A_{n}\)</span> and by finite additivity</p>
+<div class="arithmatex">\[ \mu(F) \leq \mu\left( \bigcup_{n=1}^N A_{n} \right) = \sum_{n=1}^N \mu(A_{n}) \leq \sum_{n=1}^\infty \mu(A_n). \]</div>
+<p><strong>Part 2 :</strong> <span class="arithmatex">\(\sum_{n=1}^\infty \mu(A_n)\leq \mu(A)\)</span></p>
+<p>By finite additivity, for any <span class="arithmatex">\(N:\mathbb{N}\)</span></p>
+<div class="arithmatex">\[ \sum_{n=1}^N \mu(A_n) = \mu\left( \bigcup_{n=1}^N A_n \right) \leq \mu(A).\]</div>
+<p>Taking <span class="arithmatex">\(N\to \infty\)</span> gives us the result we need. <span class="arithmatex">\(\Box\)</span></p>
+</details>
+<h2 id="sum-partitions">Sum Partitions<a class="headerlink" href="#sum-partitions" title="Permanent link">&para;</a></h2>
+<p>Suppose we were to use <span class="arithmatex">\(\mu\)</span> to define sums over the space <span class="arithmatex">\(\mathbb{N}\)</span>, would that be equivalent to the traditional infinite sum? In other words, with weight <span class="arithmatex">\(w:\mathbb{N}\to [0,\infty]\)</span>, is <span class="arithmatex">\(\mu(\mathbb{N}) = \sum_{n=1}^\infty w(n)\)</span>? The LHS is defined by a supremum over all finite sums whereas the RHS is defined by the limit of its partial sums so this is not immediately obvious, but countable additivity (Theorem 1) makes this almost trivial. </p>
+<p>We can partition <span class="arithmatex">\(\mathbb{N}\)</span> into the sets <span class="arithmatex">\(A_1 = \{1\}, \ A_2 = \{2\}, \ \ldots\)</span> Notice that <span class="arithmatex">\(\mu(A_n) = w(n)\)</span> for each <span class="arithmatex">\(n:\mathbb{N}\)</span> thus by countable additivity <span class="arithmatex">\(\mu(\mathbb{N}) = \sum_{n=1}^\infty \mu(A_n) = \sum_{n=1}^\infty w(n)\)</span>. In a similar vein, if <span class="arithmatex">\(g:\mathbb{N}\to \mathbb{N}\)</span> is a bijection, then the sets <span class="arithmatex">\(A_n = \{g(n)\}\)</span> form a partition of <span class="arithmatex">\(\mathbb{N}\)</span> so <span class="arithmatex">\(\mu(\mathbb{N}) = \sum_{n=1}^\infty w(g(n))\)</span>. In other words, infinite sums of non-negative terms are order-invariant. </p>
+<p>We can also partition <span class="arithmatex">\(\mathbb{N}\)</span> into its odd and even parts, further partition those into the sets <span class="arithmatex">\(O_n = \{2n-1\}, \ E_n = \{2n\}\)</span> for <span class="arithmatex">\(n=1,2,\ldots\)</span> and use countable additivity :</p>
+<div class="arithmatex">\[ \begin{align*}
+\mu(\mathbb{N}) &amp;= \mu(\mathbb{N}_{\text{odd}}) + \mu(\mathbb{N}_{\text{even}}) \\
+&amp;= \sum_{n=1}^\infty \mu(O_n) + \sum_{n=1}^\infty \mu(E_n) \\
+&amp;= \sum_{n=1}^\infty w(2n-1) + \sum_{n=1}^\infty w(2n) 
+\end{align*} \]</div>
+<p>The point is that infinite sums (with non-negative terms) can be broken down and summed piece by piece, and this may lead to some very nice simplifications.</p>
+<h2 id="tonellis-theorem-discrete">Tonelli's Theorem (Discrete)<a class="headerlink" href="#tonellis-theorem-discrete" title="Permanent link">&para;</a></h2>
+<p>The space <span class="arithmatex">\(\mathbb{N}^2\)</span> can be visualized as an infinite 2d matrix. Supposing we have a weight <span class="arithmatex">\(w:\mathbb{N}^2\to [0,\infty]\)</span>, we can visualize this by setting the entry at the <span class="arithmatex">\(n\)</span>-th row and <span class="arithmatex">\(m\)</span>-th column of the matrix to equal <span class="arithmatex">\(w(n,m)\)</span>. Summing over <span class="arithmatex">\(\mathbb{N}^2\)</span> is therefore summing over all entries of the corresponding matrix. Tonelli's Theorem states that if all entries are non-negative, then summing across all rows is equivalent to summing across all columns. More formally, we can define the subsets </p>
+<div class="arithmatex">\[ R_n = \{(n,i) \ \vert \  i\in\mathbb{N}\}, \quad C_n = \{(i,n) \ \vert \ i\in\mathbb{N}\} \]</div>
+<p>to specify the rows and columns of the matrix respectively. Thus :</p>
+<div class="arithmatex">\[ \sum_{n=1}^\infty \mu(R_n) = \sum_{n=1}^\infty \mu(C_n) \]</div>
+<p>which is trivial by countable additivity. Note that <span class="arithmatex">\(\mu(R_n) = \sum_{i=1}^\infty w(n,i)\)</span> and <span class="arithmatex">\(\mu(C_n) = \sum_{i=1}^\infty w(i,n)\)</span>, thus we can restate the above equaltiy as :</p>
+<div class="arithmatex">\[ \begin{align*}
+\sum_{n=1}^\infty \sum_{i=1}^\infty w(n,i) &amp;= \sum_{n=1}^\infty \sum_{i=1}^\infty w(i,n) \\
+&amp;= \sum_{i=1}^\infty \sum_{n=1}^\infty w(n,i), \quad \quad \text{(relabel/swap index)}
+\end{align*} \]</div>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>In fact the choice of <span class="arithmatex">\(g\)</span> does matter, see the <a href="https://en.wikipedia.org/wiki/Riemann_series_theorem">Riemann Rearrangement Theorem</a>&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+
+
+
+
+
+
+
+  
+    
+  
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Last update">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="July 23, 2025 15:05:49 UTC">July 23, 2025</span>
+  </span>
+
+    
+    
+    
+    
+  </aside>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+  <!-- Add scripts that need to run before here -->
+  
+      <script src="../../assets/javascripts/bundle.56ea9cef.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js"></script>
+      
+        <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+      
+        <script src="../../javascripts/katex.js"></script>
+      
+        <script src="https://www.youtube.com/iframe_api"></script>
+      
+        <script src="../../javascripts/YTTS.js"></script>
+      
+    
+  <!-- Add scripts that need to run afterwards here -->
+        <script>
+            window.addEventListener('load', function(){
+                new Glider(document.querySelector('.glider'), {
+                    slidesToShow: 1,
+                    dots: '#dots',
+                    draggable: true,
+                    arrows: {
+                        prev: '.glider-prev',
+                        next: '.glider-next'
+                    }
+                });
+            })
+        </script>
+
+  </body>
+</html>

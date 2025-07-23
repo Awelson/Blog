@@ -1,0 +1,1728 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../">
+      
+      
+        <link rel="next" href="../seq/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
+    
+    
+      
+        <title>From Inner Product Space to Topology - AWelson's Blog</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/stylesheet.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="pink" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#inner-products" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="AWelson&#39;s Blog" class="md-header__button md-logo" aria-label="AWelson's Blog" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            AWelson's Blog
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              From Inner Product Space to Topology
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="pink" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4M7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="pink" data-md-color-accent="blue"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Welcome
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../Japanese%20Section/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Japanese Section
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../TIGM/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  TIGM
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../Lists/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Lists
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../" class="md-tabs__link">
+        
+  
+  
+    
+  
+  STEM
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../Misc/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Misc
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="AWelson&#39;s Blog" class="md-nav__button md-logo" aria-label="AWelson's Blog" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    AWelson's Blog
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Welcome
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../Japanese%20Section/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Japanese Section
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Japanese Section
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Japanese%20Section/Resources/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Language Learning Resources
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Japanese%20Section/Annotated/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Annotated Videos
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../Japanese%20Section/Misc/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Misc
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            Misc
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Japanese%20Section/Misc/kakukakushikajika/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    斯々然々
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Japanese%20Section/Misc/pillbug/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    The Pillbug Incident
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../TIGM/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    TIGM
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            TIGM
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../TIGM/2023/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    2023
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            2023
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TIGM/2023/July/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    July
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TIGM/2023/August/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    August
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TIGM/2023/September/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    September
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TIGM/2023/October/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    October
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TIGM/2023/November/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    November
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TIGM/2023/December/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    December
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../TIGM/2024/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    2024
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            2024
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TIGM/2024/January/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    January
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TIGM/2024/February/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    February
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TIGM/2024/March/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    March
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TIGM/2024/April/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    April
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TIGM/2024/May/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    May
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TIGM/2024/June/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    June
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TIGM/2024/July/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    July
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TIGM/2024/August/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    August
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TIGM/2024/September/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    September
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../TIGM/2025/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    2025
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            2025
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TIGM/2025/July/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    July
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Lists/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Lists
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    STEM
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../Misc/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Misc
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Misc
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Misc/nekopara/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    NEKOPARA - Catboys Paradise prologue dialogue
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Misc/12FanClub/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    いーあるふぁんくらぶ (Cantonese version) lyrics
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#inner-products" class="md-nav__link">
+    <span class="md-ellipsis">
+      Inner Products
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#norms" class="md-nav__link">
+    <span class="md-ellipsis">
+      Norms
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-cauchy-schwartz-inequality" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Cauchy-Schwartz Inequality
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#triangle-inequality" class="md-nav__link">
+    <span class="md-ellipsis">
+      Triangle Inequality
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#norm-to-metric" class="md-nav__link">
+    <span class="md-ellipsis">
+      Norm to Metric
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#metric-space-to-topology" class="md-nav__link">
+    <span class="md-ellipsis">
+      Metric Space to Topology
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#an-inner-product-on-mathbbrn" class="md-nav__link">
+    <span class="md-ellipsis">
+      An Inner Product on \(\mathbb{R}^n\)
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>From Inner Product Space to Topology</h1>
+
+<p>For this post I will assume that you know (just the definitions) of a field, a vector space, a metric space, and a topological space.</p>
+<h2 id="inner-products">Inner Products<a class="headerlink" href="#inner-products" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p><strong>Definition 1</strong>. Let <span class="arithmatex">\(V\)</span> be a vector space over the field <span class="arithmatex">\(\mathbb{R}\)</span>. A (real) inner product is any function <span class="arithmatex">\(\langle \cdot, \cdot \rangle : V\to V\to \mathbb{R}\)</span> satisting : for all <span class="arithmatex">\(x,y,z\in V\)</span> and <span class="arithmatex">\(a,b\in \mathbb{R}\)</span>,</p>
+<ul>
+<li><p style="text-align:left;">
+        <span class="arithmatex">\(\langle x,y \rangle = \langle y,x\rangle\)</span> 
+    <span style="float:right;">
+        Symmetry
+    </span>
+    </p></li>
+<li><p style="text-align:left;">
+        <span class="arithmatex">\(\langle ax + by, z \rangle = a \langle x,z \rangle + b\langle y,z \rangle\)</span>
+    <span style="float:right;">
+        Linearity
+    </span>
+    </p></li>
+<li><p style="text-align:left;">
+        <span class="arithmatex">\(x\neq 0 \ \Longrightarrow \ \langle x,x \rangle &gt; 0\)</span>
+    <span style="float:right;">
+        Positive-definiteness
+    </span>
+    </p></li>
+</ul>
+<p>We shall say : "Let <span class="arithmatex">\(V\)</span> be a (real) inner product space" to mean that <span class="arithmatex">\(V\)</span> is a vector space over <span class="arithmatex">\(\mathbb{R}\)</span> that is equipped with a (real) inner product.</p>
+</blockquote>
+<div class="admonition note">
+<p class="admonition-title">Complex Inner Product Space?</p>
+<p>We emphasize "real" because inner products can also be defined over a complex vector space (a vector space <span class="arithmatex">\(V\)</span> over <span class="arithmatex">\(\mathbb{C}\)</span>). In particular, a <em>complex</em> inner product is a function <span class="arithmatex">\(\langle \cdot, \cdot \rangle: V\to V\to \mathbb{C}\)</span> satisfying a slightly different set of properties. A complex inner product space is a complex vector space equipped with a complex inner product. While both real and complex inner product spaces are largely equal in terms of their behavior, there are some differences here and there. In this post, we shall ignore <span class="arithmatex">\(\mathbb{C}\)</span> such that any mention of a vector/inner product space shall only refer to <em>real</em> vector/inner product spaces.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Additional (quickfire) properties of inner product spaces :</p>
+<p>It is easy to see that linearity is equivalent to the following two, simpler conditions :</p>
+<ul>
+<li><span class="arithmatex">\(\langle ax,z \rangle = a \langle x,z\rangle\)</span></li>
+<li><span class="arithmatex">\(\langle x+y,z \rangle = \langle x,z \rangle + \langle y,z \rangle\)</span></li>
+</ul>
+<p>Combining symmetry and linearity, we obtain linearity in the second argument :</p>
+<ul>
+<li><span class="arithmatex">\(\langle x, ay+bz \rangle = a \langle x,y \rangle + b\langle x,z \rangle\)</span></li>
+</ul>
+<p>By using linearity twice to break down the inner product :</p>
+<ul>
+<li><span class="arithmatex">\(\langle x+y, x+y \rangle = \langle x,x\rangle + 2\langle x,y\rangle + \langle y,y\rangle\)</span></li>
+</ul>
+<p>By setting <span class="arithmatex">\(a:=0\)</span> in <span class="arithmatex">\(\langle ax,z \rangle = a \langle x,z\rangle\)</span> and using symmetry we get :</p>
+<ul>
+<li><span class="arithmatex">\(\langle 0,z \rangle = \langle z,0 \rangle = 0\)</span></li>
+</ul>
+<p>As a corollary, we have :</p>
+<ul>
+<li><span class="arithmatex">\(\langle x,x \rangle = 0 \iff x=0\)</span></li>
+</ul>
+<p>Proof. The backwards direction is immediate from the previous line. For the forward direction, consider the contrapositive of positive-definiteness : <span class="arithmatex">\(\langle x,x \rangle \leq 0 \ \Longrightarrow \ x=0\)</span>. <span style="float:right;"> <span class="arithmatex">\(\Box\)</span> </span></p>
+<p>In other words, <span class="arithmatex">\(\langle x,x \rangle \geq 0\)</span> for all <span class="arithmatex">\(x\in V\)</span> with equality if and only if <span class="arithmatex">\(x=0\)</span>.</p>
+</div>
+<h2 id="norms">Norms<a class="headerlink" href="#norms" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p><strong>Definition 2</strong>. In an inner product space, the "norm" of a vector <span class="arithmatex">\(x\in V\)</span> is defined as the real number <span class="arithmatex">\(\sqrt{\langle x,x \rangle}\)</span> and is denoted <span class="arithmatex">\(\Vert x \Vert\)</span>. Note that <span class="arithmatex">\(\langle x,x\rangle\)</span> is always non-negative so we don't have to worry about negative values in the square root.</p>
+</blockquote>
+<p>It is easy to check (apart from the last property) that the norm satisfies the following properties : for all <span class="arithmatex">\(x\in V\)</span> and <span class="arithmatex">\(a\in \mathbb{R}\)</span>,</p>
+<ul>
+<li><p style="text-align:left;">
+        <span class="arithmatex">\(\Vert x \Vert \geq 0\)</span>
+    <span style="float:right;">
+        Non-negativity
+    </span>
+    </p></li>
+<li><p style="text-align:left;">
+        <span class="arithmatex">\(\Vert x \Vert = 0 \ \iff x=0\)</span>
+    <span style="float:right;">
+        Positive-definiteness
+    </span>
+    </p></li>
+<li><p style="text-align:left;">
+        <span class="arithmatex">\(\Vert ax \Vert = |a|\Vert x \Vert\)</span>
+    <span style="float:right;">
+        Absolute homogeneity
+    </span>
+    </p></li>
+<li><p style="text-align:left;">
+        <span class="arithmatex">\(\lVert x+y \rVert \leq \lVert x\rVert + \lVert y\rVert\)</span>
+    <span style="float:right;">
+        Triangle inequality
+    </span>
+    </p></li>
+</ul>
+<p>Proving the triangle inequality is not straightforward and some prior machinery is needed, namely we would first have to prove the Cauchy-Schwarz inequality.</p>
+<h2 id="the-cauchy-schwartz-inequality">The Cauchy-Schwartz Inequality<a class="headerlink" href="#the-cauchy-schwartz-inequality" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p><strong>Lemma 1</strong>. In an inner product space, for any <span class="arithmatex">\(x,y\in V\)</span></p>
+<div class="arithmatex">\[ \langle w,w\rangle = \langle x,x\rangle(\langle x,x\rangle \langle y,y\rangle - \langle x,y\rangle^2) \]</div>
+<p>where <span class="arithmatex">\(w:= \langle x,y\rangle x - \langle x,x\rangle y\)</span>.</p>
+</blockquote>
+<details class="note">
+<summary>Proof</summary>
+<p>By direct computation <span class="arithmatex">\(\langle w,w\rangle\)</span> expands (and then simplifies) to :</p>
+<div class="arithmatex">\[ \langle x,x\rangle^2 \langle y,y\rangle - \langle x,y\rangle^2 \langle x,x\rangle  \]</div>
+<p>Factoring <span class="arithmatex">\(\langle x,x\rangle\)</span> out :</p>
+<div class="arithmatex">\[ \langle x,x\rangle (\langle x,x\rangle \langle y,y\rangle - \langle x,y\rangle^2) \]</div>
+<p>as needed. <span style="float:right;"> <span class="arithmatex">\(\Box\)</span> </span> </p>
+</details>
+<blockquote>
+<p><strong>Theorem 1.1</strong> (Cauchy-Schwartz Inequality). In an inner product space, for any vectors <span class="arithmatex">\(x,y\in V\)</span> we have</p>
+<div class="arithmatex">\[ \langle x,y\rangle^2 \leq \langle x,x\rangle \langle y,y\rangle \]</div>
+</blockquote>
+<details class="note">
+<summary>Proof</summary>
+<p>In the case that <span class="arithmatex">\(x=0\)</span> then the result is trivial, thus we may suppose that <span class="arithmatex">\(x\neq 0\)</span>.</p>
+<p>By Lemma 1, </p>
+<div class="arithmatex">\[ 0\leq \langle w,w\rangle = \langle x,x\rangle(\langle x,x\rangle \langle y,y\rangle - \langle x,y\rangle^2) \]</div>
+<p>Since <span class="arithmatex">\(x\neq 0\)</span> we must have <span class="arithmatex">\(\langle x,x\rangle &gt; 0\)</span>. Thus \langle x,x\rangle \langle y,y\rangle - \langle x,y\rangle^2 has to be non-negative for the above to hold, but then</p>
+<div class="arithmatex">\[ \langle x,y\rangle^2 \leq $\langle x,x\rangle \langle y,y\rangle \]</div>
+<p>as needed. <span style="float:right;"> <span class="arithmatex">\(\Box\)</span> </span> </p>
+</details>
+<div class="admonition note">
+<p class="admonition-title">Note 1</p>
+<p>By taking the positive square-root in the CS inequality, we obtain the following equivalent form :</p>
+<div class="arithmatex">\[ |\langle x,y\rangle| \leq \Vert x\Vert \Vert y\Vert \]</div>
+</div>
+<p>The following theorem answers what it exactly means when 2 vectors achieve equality in the CS inequality :</p>
+<blockquote>
+<p><strong>Theorem 1.2</strong> (Cauchy-Schwartz Inequality). In an inner product space, for any vectors <span class="arithmatex">\(x,y\in V\)</span> the following are equivalent :</p>
+<ul>
+<li><span class="arithmatex">\(\langle x,y\rangle^2 = \langle x,x\rangle \langle y,y\rangle\)</span></li>
+<li><span class="arithmatex">\(x=0\)</span> OR <span class="arithmatex">\(y=\frac{\langle x,y\rangle}{\langle x,x\rangle}x\)</span></li>
+<li><span class="arithmatex">\(x=0\)</span> OR there exists a scalar <span class="arithmatex">\(k\in \mathbb{R}\)</span> such that <span class="arithmatex">\(y=kx\)</span></li>
+</ul>
+</blockquote>
+<details class="note">
+<summary>Proof</summary>
+<p><span class="arithmatex">\((1)\to (2)\)</span>. We shall instead prove that <span class="arithmatex">\(x\neq 0\)</span> implies <span class="arithmatex">\(y=\frac{\langle x,y\rangle}{\langle x,x\rangle}x\)</span>. By Lemma 1 : </p>
+<div class="arithmatex">\[ \langle w,w\rangle = \langle x,x\rangle(\langle x,x\rangle \langle y,y\rangle - \langle x,y\rangle^2) \]</div>
+<p>but (1) implies that <span class="arithmatex">\(\langle w,w\rangle = 0\)</span> which implies that <span class="arithmatex">\(w=0\)</span> which means <span class="arithmatex">\(\langle x,y \rangle x = \langle x,x\rangle y\)</span>. It suffices to divide both sides by <span class="arithmatex">\(\langle x,x\rangle\)</span> which we are allowed to do since <span class="arithmatex">\(x\neq 0\)</span> was assumed.</p>
+<p><span class="arithmatex">\((2)\to (3)\)</span>. Obvious</p>
+<p><span class="arithmatex">\((3)\to (1)\)</span>. If <span class="arithmatex">\(x=0\)</span> then (1) is obvious. Otherwise, On the LHS : </p>
+<div class="arithmatex">\[\langle x,y\rangle^2 = \langle x, kx\rangle^2 = k^2\langle x,x\rangle^2 \]</div>
+<p>On the RHS :</p>
+<div class="arithmatex">\[ \langle x,x\rangle \langle y,y\rangle = \langle x,x\rangle \langle kx,kx\rangle = k^2\langle x,x\rangle^2\]</div>
+<p>Thus both sides are equal as needed. <span style="float:right;"> <span class="arithmatex">\(\Box\)</span> </span> </p>
+</details>
+<h2 id="triangle-inequality">Triangle Inequality<a class="headerlink" href="#triangle-inequality" title="Permanent link">&para;</a></h2>
+<p>With the CS inequality, proving the triangle inequality is simple :</p>
+<div class="arithmatex">\[ \begin{align*}
+    \Vert x+y \Vert^2 &amp;= \Vert x\Vert^2 + \Vert y\Vert^2 + 2\langle x,y\rangle \\
+    &amp;\leq \Vert x\Vert^2 + \Vert y\Vert^2 + 2|\langle x,y\rangle| \\
+    &amp;\leq \Vert x\Vert^2 + \Vert y\Vert^2 + 2\Vert x\Vert \Vert y\Vert \\
+    &amp;= (\Vert x\Vert +\Vert y\Vert)^2
+\end{align*} \]</div>
+<blockquote>
+<p><strong>Definition 3</strong>. In general, given a vector space <span class="arithmatex">\(V\)</span>, a norm refers to any function <span class="arithmatex">\(\Vert \cdot \Vert : V\to \mathbb{R}\)</span> satisfying the 4 properties listed shortly after Definition 2. A vector space equipped with a norm is known as a normed space.</p>
+</blockquote>
+<p>Thus we have shown that in an inner product space, <span class="arithmatex">\(\Vert x\Vert = \sqrt{\langle x,x\rangle}\)</span> defines a norm. In other words, an inner product space is automatically equipped with a norm that is naturally defined by its inner product. </p>
+<h2 id="norm-to-metric">Norm to Metric<a class="headerlink" href="#norm-to-metric" title="Permanent link">&para;</a></h2>
+<p>Roughly speaking, a metric space is a space in which a notion of distance is defined, that is to say there is a way to take two points of the space and spit out an <span class="arithmatex">\(r\in \mathbb{R}\)</span> that represents the distance between them in a way that makes sense.</p>
+<p>There is a way to define a notion of distance in a normed space by setting the distance between two points as <span class="arithmatex">\(\Vert x-y\Vert\)</span>. For this to make sense we will have to prove, for all <span class="arithmatex">\(x,y,z\in V\)</span> that :</p>
+<ul>
+<li><span class="arithmatex">\(\Vert x-x\Vert =0\)</span> <span style="float:right;"> The distance between two points is zero </span></li>
+<li><span class="arithmatex">\(x\neq y \Longrightarrow \Vert x-y\Vert &gt;0\)</span>  <span style="float:right;"> Positivity </span></li>
+<li><span class="arithmatex">\(\Vert x-y\Vert = \Vert y-x\Vert\)</span> <span style="float:right;"> Symmetry </span>    </li>
+<li><span class="arithmatex">\(\Vert x-z\Vert \leq \Vert x-y\Vert + \Vert y-z\Vert\)</span> <span style="float:right;"> Triangle Inequality V2 </span></li>
+</ul>
+<p>Properties 1-3 are easy to show. Triangle inequality V2 is just a reformulation of the original triangle inequality :</p>
+<div class="arithmatex">\[ \Vert x-z \Vert = \Vert (x-y) + (y-z) \Vert \leq \Vert x-y \Vert + \Vert y-z \Vert \]</div>
+<h2 id="metric-space-to-topology">Metric Space to Topology<a class="headerlink" href="#metric-space-to-topology" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p><strong>Definition 4</strong>. In a metric space <span class="arithmatex">\(X\)</span> we define the open ball with center <span class="arithmatex">\(p\in X\)</span> and radius <span class="arithmatex">\(r\in \mathbb{R}\)</span> to be the subset containing all points <span class="arithmatex">\(x\in X\)</span> such that <span class="arithmatex">\(d(x,p)&lt;r\)</span>. We write <span class="arithmatex">\(B(p,r) := \{x\in X \ | \ d(x,p)&lt;r\}\)</span> to denote this subset.</p>
+<p><strong>Definition 5</strong>. In a metric space <span class="arithmatex">\(X\)</span>, a subset <span class="arithmatex">\(A\subseteq X\)</span> is said to be open iff for every <span class="arithmatex">\(x\in A\)</span> there exists a strictly positive <span class="arithmatex">\(r\in \mathbb{R}\)</span> such that <span class="arithmatex">\(B(x,r)\subseteq A\)</span>. </p>
+</blockquote>
+<p>To equip a set with a topology it suffices to specify which subsets are open (which we have already done) and then prove that the collection of open subsets satisfy the necessary topological properties : Let <span class="arithmatex">\(\tau\)</span> denote the collection of open subsets in a metric space <span class="arithmatex">\(X\)</span>, then we should show that</p>
+<ul>
+<li><span class="arithmatex">\(\varnothing, X \in \tau\)</span></li>
+<li>For any <span class="arithmatex">\(S\subseteq \tau, \bigcup S \in \tau\)</span></li>
+<li>For any finite <span class="arithmatex">\(S\subseteq \tau, \bigcap S\in \tau\)</span></li>
+</ul>
+<details class="note">
+<summary>Proof</summary>
+<ul>
+<li>
+<p>For the first property, note that <span class="arithmatex">\(\varnothing\)</span> is trivially open. Similarly, <span class="arithmatex">\(X\)</span> is open because for every <span class="arithmatex">\(p\in X\)</span> it is trivial that <span class="arithmatex">\(B(p,1)\subseteq X\)</span>.</p>
+</li>
+<li>
+<p>For the second property, suppose that <span class="arithmatex">\(x\in \bigcup S\)</span>, then <span class="arithmatex">\(x\in S'\)</span> for some <span class="arithmatex">\(S'\in S\)</span>. Thus <span class="arithmatex">\(S'\)</span> is open so there exists an <span class="arithmatex">\(r&gt;0\)</span> such that <span class="arithmatex">\(B(x,r)\subseteq S'\subseteq \bigcup S\)</span> so we are done.</p>
+</li>
+<li>
+<p>For the third property, suppose that <span class="arithmatex">\(x\in \bigcap S\)</span>, i.e. <span class="arithmatex">\(x\in S'\)</span> for every <span class="arithmatex">\(S'\in S\)</span>. Each <span class="arithmatex">\(S'\)</span> is open and since <span class="arithmatex">\(S\)</span> is finite, we obtain a finite list of radii <span class="arithmatex">\(r_1,r_2,\ldots,r_n&gt;0\)</span>. Let <span class="arithmatex">\(r_m\)</span> be the minimum of these radii, then <span class="arithmatex">\(B(r_m)\subseteq B(r_i)\)</span> for all <span class="arithmatex">\(i=1,2,\ldots,n\)</span> meaning <span class="arithmatex">\(B(r_m)\subseteq S'\)</span> for every <span class="arithmatex">\(S'\in S\)</span> so that <span class="arithmatex">\(B(r_m)\subseteq \bigcap S\)</span> as needed.</p>
+</li>
+</ul>
+</details>
+<h2 id="an-inner-product-on-mathbbrn">An Inner Product on <span class="arithmatex">\(\mathbb{R}^n\)</span><a class="headerlink" href="#an-inner-product-on-mathbbrn" title="Permanent link">&para;</a></h2>
+<p>To "naturally" give the vector space <span class="arithmatex">\(\mathbb{R}^n\)</span> a topology, it suffices to equip it with a "natural" inner product, which naturally defines a norm, which naturally defines a distance, which naturally defines a topology.</p>
+<p>Let <span class="arithmatex">\(x= (x_1,x_2,\ldots,x_n)\)</span> and <span class="arithmatex">\(y=(y_1,y_2,\ldots y_n)\)</span>. We define the inner product <span class="arithmatex">\(\langle x,y\rangle := \sum_{i=1}^n x_iy_i\)</span> and declare this to be the natural/default inner product on <span class="arithmatex">\(\mathbb{R}^n\)</span>. Of course, we would first have to prove that symmetry, linearity, and positive-definiteness are satisfied. </p>
+<details class="note">
+<summary>Proof</summary>
+<p>Both symmetry and positive-definiteness are obvious. For linearity, we show first that <span class="arithmatex">\(\langle ax,y\rangle =a\langle x,y\rangle\)</span> and then <span class="arithmatex">\(\langle x+y,z\rangle = \langle x,z\rangle + \langle y,z\rangle\)</span>. The former is obvious. As for the latter :</p>
+<div class="arithmatex">\[ x+y=(x_1+y_1,x_2+y_2,\ldots x_n+y_n)\]</div>
+<p>so that </p>
+<div class="arithmatex">\[\langle x+y,z\rangle = \sum_{i=1}^n x_iz_i+y_iz_i = \sum_{i=1}^n x_iz_i + \sum_{i=1}^n y_iz_i = \langle x,z\rangle + \langle y,z\rangle \tag*{□}\]</div>
+</details>
+<p>Specializing the CS inequality to the inner product on <span class="arithmatex">\(\mathbb{R}^n\)</span> we get the following inequality for free:</p>
+<div class="arithmatex">\[ \left|\sum_{i=1}^n x_iy_i\right| \leq \sqrt{\sum_{i=1}^nx_i^2}\sqrt{\sum_{i=1}^ny_i^2} \]</div>
+<p>for any <span class="arithmatex">\(x_1,x_2,\ldots,x_n,y_1,y_2,\ldots,y_n\in \mathbb{R}\)</span>.</p>
+
+
+
+
+
+
+
+  
+    
+  
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Last update">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="July 23, 2025 15:05:49 UTC">July 23, 2025</span>
+  </span>
+
+    
+    
+    
+    
+  </aside>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+  <!-- Add scripts that need to run before here -->
+  
+      <script src="../../assets/javascripts/bundle.56ea9cef.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js"></script>
+      
+        <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+      
+        <script src="../../javascripts/katex.js"></script>
+      
+        <script src="https://www.youtube.com/iframe_api"></script>
+      
+        <script src="../../javascripts/YTTS.js"></script>
+      
+    
+  <!-- Add scripts that need to run afterwards here -->
+        <script>
+            window.addEventListener('load', function(){
+                new Glider(document.querySelector('.glider'), {
+                    slidesToShow: 1,
+                    dots: '#dots',
+                    draggable: true,
+                    arrows: {
+                        prev: '.glider-prev',
+                        next: '.glider-next'
+                    }
+                });
+            })
+        </script>
+
+  </body>
+</html>
